@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="tabuada.css">
+
+</head>
+<body>
+    <header>
+        <h1>Vamos aprender Tabuada</h1>
+    </header>
+    
+    <section class="input">
+        <div id="input">
+            <label for="InputNumber">Número:</label>
+            <input type="number" name= 'numero' id='txtnumero' onkeypress="entrar()">
+            <input type="button" value="Calcular" onclick="calcular()">
+           
+
+        </div>
+        
+        <div class="result">
+           
+        <select name="tabuada" id="result" size='10'>
+       
+                 <option class = 'result' value="">Digite um número acima</option>
+        
+        </select>
+        
+        </div> 
+       
+
+    </section>
+
+    <footer>
+        <p>Teteo</p></footer>
+    
+<script src="tabuada.js"></script>
+
+</body>
+</html>

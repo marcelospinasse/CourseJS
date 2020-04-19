@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    
+
+<!-- <script src="testJS.js"></script> -->
+
+<script>
+// window.alert('Hello')
+
+    var myConcat = (arr1, arr2) => arr1.concat(arr2);
+
+    console.log(myConcat([1, 2], [3, 4, 5]));
+    document.write(myConcat([1, 2], [3, 4, 5]) + ". <br/>");
+
+
+    let nome = "Marcelo";
+    let sobrenome = "Spinassé";
+
+    const fullname = `${nome} ${sobrenome}`;
+    document.write(fullname + ". <br/>");
+
+
+    //filtering with arrow functions
+    const realNumberArray = [4, 5.6, -9.8, 3.14, 42, 6, 8.34, -2];
+
+    const squareList = (arr) => {
+        const squareIntegers = arr.filter(num => Number.isInteger(num) && num > 0).map(x => x * x);
+        return squareIntegers;
+    };
+
+    const squareIntegers = squareList(realNumberArray);
+    document.write(squareIntegers + ".<br/>");
+
+    //increment
+    const increment = (function () {
+        return function increment(number, value = 1) {
+            return number + value;
+        };
+    })();
+    document.write(increment(5, 2) + ".<br/>");
+    document.write(increment(5) + ".<br/>"); 
+
+    //rest operator
+    const sum = (function(){
+        return function sum(...args){
+            return args.reduce((a, b) => a + b, 0);
+        };
+    })();
+    document.write(sum(1, 2, 3, 10) + ".<br/>"); 
+
+    //spread operator
+    const arrMonth = ["jan" , "fev" , "mar"];
+    let arrTri;
+    (function() {
+        arrTri = [...arrMonth]
+    })();
+    document.write(arrTri + ".<br/>"); 
+
+    //using destructuring to assign
+    var voxel = { x: 3.6, y: 7.4, z: 6.54 };
+
+    // var x = voxel.x; // x = 3.6
+    // var y = voxel.y; // y = 7.4
+    // var z = voxel.z; // z = 6.54
+
+    const { x : a, y : b, z : c} = voxel;
+
+    const AVG_TEMPERATURES = {
+        today: 77.5 ,
+        tomorrow: 79.9,
+        nextWeek: {min: 70, max: 80}
+    };
+
+    //Destructuring
+    function getTempOfTmrw(avgTemperatures){
+        const{tomorrow : tempOfTomorrow} = avgTemperatures; //pela o campo 'tomorrrow 'em 'avgTemperatures e assina pro campo 'TempOfTomorrow'
+        return tempOfTomorrow;
+    }
+
+    function getTempMaxTemp(maxTemperatures) {
+            const { nextWeek : { max : maxNextWeek}} = maxTemperatures;
+            return maxNextWeek;
+    }
+
+    document.write(getTempOfTmrw(AVG_TEMPERATURES) + ".<br/>"); 
+    document.write(getTempMaxTemp(AVG_TEMPERATURES) + ".<br/>"); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>

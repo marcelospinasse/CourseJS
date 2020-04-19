@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Orientacao a Objeto</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>Orientação a Objeto:</h1>
+    <p id="pList"></p>
+    <p id="demo"></p>
+
+<script src="printBrowser.js"> //funcao Print no arquivo printBrowser.js</script> 
+<script>
+    //formas de criacao de objetos
+
+    //usando a notação literal
+    const obj1 = {}
+    console.log(obj1)
+
+    //Object em JS
+    const obj2 = new Object
+    console.log(obj2)
+
+    //usando funções construtoras
+    function Produto (nome, preco, desconto){
+        this.nome = nome
+        this.getPrecoComDesconto = () =>{
+            return preco * (1- desconto)
+        }
+    }
+    const p1 = new Produto("PC", 1500, 0.2)
+    print(`${p1.nome} = ${p1.getPrecoComDesconto()}.`)
+    const p2 = new Produto("iPad", 1000, 0.1)
+    print(`${p2.nome} = ${p2.getPrecoComDesconto()}.`)
+
+    //usando função factory
+    function criarFuncionario(nome, salario, faltas){
+        return {
+            nome, 
+            salario,
+            faltas,
+            getSalario(){
+                return parseFloat((salario/30) * (30-faltas)).toFixed(2)
+            }
+        }
+    }
+    func1 = criarFuncionario("Mateo", 1000, 5)
+    print(`${func1.nome} = R$${func1.getSalario()}.`)
+    func2 = criarFuncionario("Micaela", 2000, 2)
+    print(`${func2.nome} = R$${func2.getSalario()}.`)
+
+    //Object.creat
+    const filha = Object.create(null)
+    filha.nome = "Maria"
+    console.log(filha)
+
+    //usando um JSON - transformando em objeto
+    const fromJSON = JSON.parse('{"info" : "Eu sou um JSON convertido em objeto!"}')
+    console.log(fromJSON)
+    print(fromJSON.info)
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 align="center">Arrays!</h1>
+
+    <script>
+      const items = [
+        { name: "Bike", price: 100 },
+        { name: "TV", price: 200 },
+        { name: "Album", price: 50 },
+        { name: "Book", price: 5 },
+        { name: "Phone", price: 500 },
+        { name: "Computer", price: 1000 },
+        { name: "Keyboard", price: 25 }
+      ];
+      ///filter
+      const filteredItems = items.filter(item => {
+        return item.price <= 100;
+      });
+      console.log(filteredItems);
+      ////map
+      const filterNames = items.map(item => {
+        return item.name + item.price;
+      });
+      console.log(filterNames);
+      ///find
+      const findItem = items.find(item => {
+        return item.name == "Book";
+      });
+      console.log(findItem);
+      ///forEach
+      items.forEach((item) => {
+        var texto = ""
+        texto += " " + item.name
+        // console.log(item.name)
+        console.log(texto)
+
+      }) 
+
+
+
+      //////////////////////////////////////////////////////////
+      const body = document.querySelector("body");
+      const div1 = document.createElement("div");
+      var texto = filterNames.toString();
+      console.log(texto);
+      div1.innerHTML = texto;
+      body.appendChild(div1);
+    </script>
+  </body>
+</html>

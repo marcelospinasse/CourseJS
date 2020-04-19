@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IIFE, Call and Apply</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>IIFE, Call and Apply:</h1>
+    <h3>The Difference Between call() and apply()</h3>
+    <h4>The difference is:</h4> 
+    <p>The call() method takes arguments separately.</p> 
+    <p>The apply() method takes arguments as <strong>an array</strong>.</p>
+
+    <p id="pList"></p>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+
+<script src="printBrowser.js"> //funcao Print no arquivo printBrowser.js</script> 
+<script>
+   
+    //IIFE - Immediately Invoked Function Expression
+    
+    (function () {
+            document.getElementById("pList").innerHTML = "Hello! I called myself";
+    })();
+    
+    (function() {
+        print("Será executado na hora!")
+        print("Foge do escopo mais abrangente!")
+    })()
+
+
+    //Call
+    //With call(), an object can use a method belonging to another object.
+    var person = {
+        fullName: function (city, country) {
+            return this.firstName + " " + this.lastName + "," + city + "," + country;
+        }
+    }
+    var person1 = {
+        firstName: "John",
+        lastName: "Doe"
+    }
+    var person2 = {
+        firstName: "Mary",
+        lastName: "Doe"
+    }
+    var x = person.fullName.call(person1, " Oslo", " Norway");
+    document.getElementById("demo").innerHTML = x
+
+
+
+    //Apply
+    //Ainda usando a função person acima, usando apply e array
+    //The apply() method accepts arguments in an array
+    //
+    var y = person.fullName.apply(person2, [" Londres", " UK"]);
+        document.getElementById("demo1").innerHTML = y
+    
+    //Exemplo de applu com a função Math
+    print(Math.max.apply(null, [1, 2, 3]))
+
+    //A direrença entre call e apply é a chamada
+    var person3 = {
+    firstName: "Marcelo",
+    lastName: "Spinassé"
+    }
+    print(person.fullName.call(person3, " São Paulo" , " SP"))
+    print(person.fullName.apply(person3, [" São Paulo", " SP"]))
+    
+
+
+
+
+
+
+</script>
+</body>
+</html>

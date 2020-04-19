@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funções Importantes</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>Funções Importantes:</h1>
+    <p id="pList"></p>
+    <p id="demo"></p>
+
+<script src="printBrowser.js"> //funcao Print no arquivo printBrowser.js</script> 
+<script>
+    //Funções importantes de Objetc
+    const pessoa = {
+        nome: "Mateo",
+        idade: 10,
+        peso: 40
+    }
+
+    print(Object.keys(pessoa))
+    print(Object.values(pessoa))
+    print(Object.entries(pessoa)) //retorna um array com sub-arrays chave : valor
+    Object.entries(pessoa).forEach(([chave, valor]) => {
+        print(`${chave} : ${valor}`)
+    }) //fazendo destructuring do array para retirar os objetos
+
+    Object.defineProperty(pessoa, 'dataNascimento', {
+        enumerable: true,
+        writable: false,
+        value: "01/01/1980"
+    })
+    Object.entries(pessoa).forEach(([chave, valor]) => {
+            print(`${chave} : ${valor}`)
+    }) //destructuring o array para retirar os objetos
+   
+    console.log(Object.keys(pessoa))
+    console.log(Object.values(pessoa))
+    console.log(Object.entries(pessoa))
+
+    //Object.assign (ECMAScript 2015)   - concatena varios objetos
+    const destino = {a : 1}
+    const o2 = {b : 2 , c : 3}
+    const o3 = { d: 4, e: 5 }
+
+    const objt = Object.assign(destino, o2, o3)
+    console.log(destino)
+    console.log(objt) // será igual destino
+
+    Object.freeze(objt)
+    objt.c = 1234
+    console.log(objt) // objt não sofreá alteração porque está frozen
+
+
+    
+
+
+</script>
+</body>
+</html>

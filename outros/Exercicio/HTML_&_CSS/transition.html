@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition -CSS Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*Para resetar o CSS do style.css*/
+        *{background: local; 
+        color:inherit;
+        font-size: inherit;}
+        *{z-index: 0;} 
+        /*-------------------------------*/
+
+        div{
+            width: 100px; height:100px;
+            background: blue;
+            color:white;
+            margin: 15px;
+            transition: all 1s;
+
+        }
+        
+        div:hover{
+            transform: translateX(100px);
+        }
+
+        .ease{ transition-timing-function: ease;}
+        .linear{ transition-timing-function: linear;}
+        .ease-in{ transition-timing-function: ease-in;}
+        .ease-out{ transition-timing-function: ease-out;}
+        .ease-in-out{ transition-timing-function: ease-in-out;}
+
+    </style>
+
+</head>
+<body>
+    <!-- Header do Curso de HTML & CSS -->
+    <div class="header"><h1>Curso de HTML e CSS</h1></div>
+    <div class="menu"><a href="index.html">Home</a></div>
+    <!-- Header do Curso de HTML & CSS -->
+    <!-- Responsive Design, Styles on different Screens - Nobile Frist-->
+    
+<div class="defaut">default</div>
+<div class="ease">ease</div>
+<div class="linear">linear</div>
+<div class="ease-in">ease-in</div>
+<div class="ease-out">ease-out</div>
+<div class="ease-in-out">ease-in-out</div>
+
+</body>
+</html>

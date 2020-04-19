@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Interações em arrays</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>Interações em arrays:</h1>
+    <p id="pList"></p>
+    <p id="demo"></p>
+    
+
+<script src="printBrowser.js"> //funcao Print no arquivo printBrowser.js</script> 
+<script>
+    //-----Foreach-----
+    aprovados = ["Bia", "Carlos", "Ana", "Pedro"]
+    aprovados.forEach(function (nome, indice) {
+        print(`${indice + 1} ) ${nome}`)
+    })
+
+    //com arrow function
+    aprovados.forEach((nome, indice) => print(`${indice + 1} - ${nome}`)) 
+    
+    //com uma constante / funcao
+    const exibirAprovados = (aprovado , indice) => print(indice + " ] " + aprovado)
+    aprovados.sort().forEach(exibirAprovados)
+
+    const exibirAprovados2 = aprovado => print(aprovado)
+    aprovados.sort().forEach(exibirAprovados2)
+
+    //-----Map-----
+    //creates a new array by performing a function on each array element.
+    numbers1 = [45, 4, 9, 16, 25, 43, 72, 89, 95, 99, 10, 9, 110, 215]
+    numbers2 = numbers1.map(vezes2)
+    function vezes2(value, index) {
+        return value * 2
+    }
+    print(numbers2.join(" - ") + " - (* 2) com map ")
+
+    const carrinho = [
+        '{ "nome" : "Borracha" , "preco" : 3.45}',
+        '{ "nome" : "Caderno" , "preco" : 13.90}',
+        '{ "nome" : "Kit de Lapis" , "preco" : 41.22}',
+        '{ "nome" : "Caneta" , "preco" : 7.50}'
+    ]
+    //retornar um array com os preços
+    const paraObjeto = json => JSON.parse(json)
+    const apenasPreco = produto => produto.preco
+    const precos = carrinho.map(paraObjeto).map(apenasPreco)
+    console.log(precos)
+    print("Preços : " + precos.join(" - ")) 
+
+
+    //com arrow function
+    numbers3 = numbers1.map(value => value + 10)
+    print(numbers3.join(", ") + ", (+ 10) com map")
+
+    numbers4 = numbers1.map(value => value + 10).map(value => value *10)
+    print(numbers4.join(", ") + ", (+ 10 *10) com duas funções map")
+
+    numbers5 = numbers1.map(value => value + 10).map(value => value * 10).map(value => value / 100)
+    print(numbers5.join(", ") + ", (+10 * 10 / 100) com 03 funções map")
+
+    //FlatMap (Map com concat)
+    const escola = [{
+        nome: 'Turma M1',
+        alunos: [{
+            nome: 'Gustavo',
+            nota: 8.1
+        }, {
+            nome: 'Ana',
+            nota: 9.3
+        }]
+    }, {
+        nome: 'Turma M2',
+        alunos: [{
+            nome: 'Rebeca',
+            nota: 8.9
+        }, {
+            nome: 'Roberto',
+            nota: 7.3
+        }]
+    }]
+
+    const getNotaDoAluno = aluno => aluno.nota
+    const getNotasDaTurma = turma => turma.alunos.map(getNotaDoAluno)
+
+    const notas1 = escola.map(getNotasDaTurma)
+    console.log(notas1)
+
+    console.log([].concat([8.1, 9.3], [8.9, 7.3]))
+
+    Array.prototype.flatMap = function (callback) {
+        return Array.prototype.concat.apply([], this.map(callback))
+    }
+
+    const notas2 = escola.flatMap(getNotasDaTurma)
+    console.log(notas2)
+    print(notas2 + " - usando flatMap")
+
+
+    //-----Filter-----
+    //creates a new array with array elements that passes a test
+    maior30 = numbers1.filter(maior_30)
+    function maior_30(value, index, array){
+        return value > 30
+    }
+    print(maior30.join(", "))
+
+    //com arrow function + sort numerically function
+    maior20 = numbers1.filter(value => value > 20).sort(function (a, b) { return a - b }) //função para fazer o sort numérico
+    print(maior20.join(", "))
+
+    //-----reduce-----
+    //runs a function on each array element to produce (reduce it to) a single value
+    somaTotal = numbers1.reduce(somar);
+    function somar (total, value, index, array) {
+        return total + value;
+    }
+    print("Total com reduce = " + somaTotal)
+
+    //passando um parametro inicial
+    somaTotal = numbers1.reduce(somar2, 100); //100 como parametro inicial
+    function somar2(total, value, index, array) {
+        return total + value;
+    }
+    print("Total com reduce = " + somaTotal)
+
+    //com arrow function
+    somaTotal2 = numbers1.reduce((total, value) => total + value)
+    print("Total com reduce = " + somaTotal2)
+
+    somaTotal2 = numbers1.reduce(((total, value) => total + value), 200) //com parametro inicial 200
+    print("Total com reduce = " + somaTotal2)
+
+    //------------------------------------------------
+
+    const alunos = [
+        { nome: "João", nota: 7.2, bolsista: false },
+        { nome: "Maria", nota: 9.2, bolsista: true },
+        { nome: "Pedro", nota: 9.8, bolsista: false },
+        { nome: "Ana", nota: 8.7, bolsista: true }
+    ]
+
+    //resolução apresentada pelo curso
+
+    //desafio reduce 1: todos alunos são bolsitas?
+    const todosBolsistas = (resultado, bolsista) => resultado && bolsista
+    print(alunos.map(a => a.bolsista).reduce(todosBolsistas) + " - nem todos são bolsistas")
+
+    //desatio reduce 2: algum aluno é bolsista?
+    const algumBolsistas = (resultado, bolsista) => resultado || bolsista
+    print(alunos.map(a => a.bolsista).reduce(algumBolsistas) + " - alguns alunos são bolsistas")
+
+    //meu codigo no desafio
+    const checkBolsita = aluno => aluno.bolsista
+    const eBolsista = alunos.map(checkBolsita)
+
+    somaTotal = eBolsista.reduce(somar)
+    function somar(total, value) {
+        return total + value
+    }
+
+    // console.log(eBolsista)
+    // print(eBolsista)
+    print(somaTotal + " alunos são bolsitas, logo nem todos são porém alguns são")
+
+
+    //------------------------------------------------
+
+    //reduceRight() - contar da direita pra esquerda (final pro começo)
+    somaTotal2 = numbers1.reduceRight((total, value) => total + value)
+    print("Total com reduce = " + somaTotal2)
+
+    //-----array.every()-----
+    allOver1 = numbers1.every(value => value > 1)
+    print("Todos maior que 1 = " + allOver1)
+    allOver18 = numbers1.every( value => value > 18)
+    print("Todos maior que 18 = " + allOver18)
+
+    //-----array.some()-----
+    allOver1 = numbers1.some(value => value > 100)
+    print("Todos maior que 100 = " + allOver1)
+    allOver18 = numbers1.some(value => value > 1000)
+    print("Todos maior que 1000 = " + allOver18)
+
+    //-----array.indexOf()-----
+    //searches an array for an element value and returns its position
+    print("A posição do 9 no array é " + numbers1.indexOf(9))
+    print("IndexOf retorna -1 se o valor não for encontrato: " + numbers1.indexOf(150))
+
+    //-----array.lastIndexOf()-----
+    //is the same as Array.indexOf(), but searches from the end of the array
+    print("Do final, posição do 9 no array é " + numbers1.lastIndexOf(9))
+
+    //-----array.find-----
+    //returns the value of the first array element that passes a test function
+    print(numbers1.find((value) => value > 70))
+
+    firstNumber1 = numbers1.find(firstFunction)
+    function firstFunction(value, indice, array){
+        return value > 200
+    }
+    print(firstNumber1)
+
+    //-----array.findIndex()-----
+    //returns the index of the first array element that passes a test function
+    print(numbers1.find((value) => value > 70) + " - valor encontrado...")
+    print(numbers1.findIndex((value) => value > 70) + " - ...neste index")
+
+
+
+</script>

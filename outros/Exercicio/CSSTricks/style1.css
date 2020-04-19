@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+  
+}
+
+
+body{
+    font-size: 62.5%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     /* Use repeating image background anf fixed */
+    background-image: url("../images/repeatBkgrnd6.jpg");
+    background-attachment: fixed;
+
+    /* Create a gradient background */
+    background-image: -webkit-linear-gradient( top, #000, gray);
+    background-image: -moz-linear-gradient( top, #000, gray);
+    background-image: -ms-linear-gradient( top, #000, gray);
+    background-image: -o-linear-gradient( top, #000, gray);
+    background-image: linear-gradient( top, #000, gray);  
+
+    /* Use scalable background image */
+    background-image: url("../images/foto1.jpeg");
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+.header{
+    width: 900px;
+    margin: auto;
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: lighter;
+    text-shadow: 2px 2px 3px gray;
+    color: white;
+    text-transform: uppercase;
+}
+
+.header ul li a{
+    padding: 5px;
+    border-radius: 10%;
+    text-decoration: none;
+}
+
+.header ul li:hover{
+    background-color: rgba(9, 57, 119, 0.3) ;
+}
+
+.wrapper{
+    font-size: 1.6em;
+    padding: 2em;
+    margin: 0 auto;
+    width: 900px;
+    height: 2000px;
+    background-color: white; 
+
+    
+    /* Place nonrepeating background */
+    background-image: url("../images/pngImage.png");
+    background-repeat: no-repeat;
+    background-position: bottom  right;
+    /* Multiple background images */
+    background: url("../images/pngImage.png") top right no-repeat,
+                url("../images/pngImage.png") bottom right no-repeat,  #fff;
+    opacity: 0.9;
+}
+
+h1{
+    font-family: 'Lobster', cursive;
+}
+
+a:link, a:visited{
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+
+a:hover{
+    background-color: #FAEBD7;
+}
+
+h1{ 
+    margin-bottom: 0;
+    text-shadow: 2px 2px 3px gray;
+}
+
+h1+p{
+    margin-right: 0px;
+}  
+
+p{
+    margin: 10px;
+    text-align: justify;
+}
+
+.firstp{
+    padding-left: 1.4em;
+}
+
+.fourthp::first-letter{
+    font-size: 200%;
+    float: left;
+    line-height: 1;
+}
+
+.dog-pic{
+    border: 2px solid #000;
+    margin: 10px;
+    float: left;
+
+    /* Add drop shadow
+    horz-pos, vert-pos, blur amount, size of shadow, color */
+    -webkit-box-shadow: 2px 2px 3px 2px gray;
+    -moz-box-shadow: 2px 2px 3px 2px gray;
+    box-shadow: 2px 2px 3px 2px gray;
+
+    /* Rotate Image */
+    -webkit-transform: rotate( 3deg);
+    -moz-transform: rotate( 3deg);
+    -o-transform: rotate( 3deg);
+    -ms-transform: rotate( 3deg);
+    transform: rotate( 3deg);
+}
+
+
+
+ul{
+    list-style-image: url("../images/pngImage18px.png");
+    list-style-type: none;
+    padding-left: 20px;
+    margin-left: 0;
+}
+
+/* .notices li{
+    display: inline;
+} */
+
+table{
+    caption-side: bottom;
+    align-self: auto;
+}
+
+.quarterback-stats{
+    width: 600px;
+    border: 1px solid black;
+    border-collapse: collapse;
+     margin-left: auto;
+  margin-right: auto;
+}
+
+.quarterback-stats td, .quarterback-stats th{
+    border: 1px solid black;
+}
+
+.quarterback-stats td{
+    text-align: center;
+    padding: 0.3em;
+}
+
+.quarterback-stats th{
+    text-align: center;
+    font-weight: bold;
+    padding: 0.3em;
+    background-color: rgb(7, 159, 206);
+    color: #fff;
+}
+
+.quarterback-stats tr:nth-child(odd){
+    background-color: #7cb9e8;
+}
+
+.quarterback-stats tr:hover{
+    background-color: #2e5894;
+    color: white;
+}
+
+#cust-form{
+    width: 375px;
+}
+
+#cust-form div{
+    float: left;
+    width: 375px;
+    padding: 0.5em 0.75em 0.5em 0.5em;
+}
+
+#cust-form label{
+    float: left;
+    width: 100px;
+}
+
+#cust-form textarea, form input{
+    width: 250px;
+}
+
+#cust-submit{
+    float: right;
+    width: auto;
+    margin-right: 10px;
+}
+
+#cust-form input:focus , #cust-form textarea:focus{
+    background-color: #c8ebfc;
+} 
+
+.discount{
+    background-color: white;
+    border: 4px solid black;
+    padding: 10px;
+    font-size: 1.4em;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.wrapper{
+    position: relative;
+}
+
+ul.gallery{
+    list-style: none;
+    clear: both;
+}
+
+ul.gallery li{
+    display: inline-block;
+    position: relative;
+}
+
+ul.gallery span{
+    width: 250px;
+    height: 35px;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    background-color: #000;
+    left: 0px;
+    opacity: 0.75;
+    color:#fff;
+
+}
+
+ul.gallery span{
+    margin-left: -10000px;
+}
+
+ul.gallery li:hover span{
+    margin-left: 0px;
+}
+

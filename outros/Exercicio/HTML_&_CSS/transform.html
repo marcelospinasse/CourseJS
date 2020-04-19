@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transform and Scale -CSS Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*Para resetar o CSS do style.css*/
+        *{background: local; 
+        color:inherit;
+        font-size: inherit;}
+        *{z-index: 0;} 
+        /*-------------------------------*/
+
+        .one{
+            width: 150px; height: 150px;
+            display: inline-block;
+            background:red; 
+            transform: translateX(50%);
+            transform: scale(1.5 , 1.5);
+            transform: rotateZ(120deg);
+            transition-property: background, border-radius;
+            transition-duration: 4s, 2s;
+            transition-delay: 2s;
+            }
+            
+            .one:hover{ background: rgb(6, 110, 15);
+            border-radius: 50%;
+            }
+
+            .two{
+            width: 150px; height: 150px;
+            display: inline-block;
+            background:blue; 
+            transform: translateY(-30px);
+            /* transform: scaleX(0.5);  */
+            transform: rotate(45deg);
+            }
+            
+            .three{
+            width: 150px; height: 150px;
+            display: inline-block;
+            background:green; 
+            /* transform: translate(-50%, 30px); */
+            transform: scale(1.5);
+            /* transform: rotate(150deg); */
+            transform: skew(20deg);
+             }
+
+            .four{
+            width: 150px; height: 150px;
+            display: inline-block;
+            background:darkblue;
+            transform: translateX(50px);
+            transition: background 3s 2s, border-radius 5s 1s; /*versao contatecada.  backgound, tempo de duração e delay para cada ação do HOVER abaixo*/
+
+             }
+
+            .four:hover{ background: rgb(6, 110, 15);
+            border-radius: 50%;}
+    
+
+    </style>
+
+</head>
+<body>
+    <!-- Header do Curso de HTML & CSS -->
+    <div class="header"><h1>Curso de HTML e CSS</h1></div>
+    <div class="menu"><a href="index.html">Home</a></div>
+    <!-- Header do Curso de HTML & CSS -->
+    <!-- Responsive Design, Styles on different Screens - Nobile Frist-->
+    
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+    <div class="four"></div>
+
+
+</body>
+</html>

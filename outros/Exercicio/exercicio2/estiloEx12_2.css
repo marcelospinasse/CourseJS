@@ -1,0 +1,35 @@
+body{font:normal 12pt Arial;
+    color:rgb(243, 242, 247);
+    background-color:rgb(34, 144, 247);
+    padding:2px;
+}
+
+header{font:normal 12pt Arial;
+    color:rgb(245, 245, 247);
+    padding: 10px;
+    text-align: center; 
+}
+
+section{
+        background-color: aliceblue;
+        color: black;
+        border-radius: 10px;
+        padding: 15px;
+        width: 400px;
+        margin: auto;
+        box-shadow: 5px 5px 10px rgb(41, 73, 99);
+        text-align: center;
+    }
+
+footer{font:normal 12pt Arial;
+    color:rgb(255, 255, 255);
+  
+    text-align: center;
+    font-style: italic;
+    padding: 20px;
+}
+
+div {
+    padding: 10px;
+    text-align: center;
+}

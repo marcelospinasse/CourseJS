@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="This is the description">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Store Band</title>
+    <!-- https://fontawesome.com/download - baixar e incluir a biblioteca -->
+    <link rel="stylesheet" href="./fontawesome-free-5.9.0-web/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<header class="main-header">
+    <nav class="nav main-nav" >
+<ul id="menu">
+    <li><a href="index.html" target="_blank">home</a></li>
+    <li><a href="#">store</a></li>
+    <li><a href="about.html" target="_blank">about</a></li>
+</ul>
+</nav>
+<h1 class="band-name band-name-large">the Generics</h1>
+
+</header>
+<section class="container content-section">    
+    <h2 class="section-header">Music</h2>
+    <div class="shop-itens">
+    <div class="shop-item">
+            <span class="shop-item-title">Album 1</span>
+            <img class="shop-item-image" src="./images/CapaAlbum1.jpg" alt="album 1" width="150px">
+        <div class="shop-itens-details">
+            <span class="shop-item-price">$12.99</span>
+            <button class="btn btn-primary" role="button">Add to cart</button>
+        </div>
+    </div>
+
+    <div class="shop-item">
+            <span class="shop-item-title">Album 2</span>
+        <img class="shop-item-image" src="./images/CapaAlbum2.jpeg" alt="album 2" width="150px">
+        <div class="shop-itens-details">
+            <span class="shop-item-price">$14.99</span>
+            <button class="btn btn-primary" role="button">Add to cart</button>
+        </div>
+    </div>
+
+    <div class="shop-item">
+            <span class="shop-item-title">Album 3</span>
+        <img class="shop-item-image" src="./images/CapaAlbum3.jpeg" alt="album 1" width="150px">
+        <div class="shop-itens-details">
+            <span class="shop-item-price">$9.99</span>
+            <button class="btn btn-primary" role="button">Add to cart</button>
+        </div>
+    </div>
+
+    <div class="shop-item">
+            <span class="shop-item-title">Album 4</span>
+        <img class="shop-item-image" src="./images/CapaAlbum4.jpeg" alt="album 4" width="150px">
+        <div class="shop-itens-details">
+            <span class="shop-item-price">$19.99</span>
+            <button class="btn btn-primary" role="button">Add to cart</button>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="container content-section">
+    <h2 class="section-header">Merch</h2>
+    <div class="shop-itens">
+    <div class="shop-item">
+            <span class="shop-item-title">T-Shirt</span>
+        <img class="shop-item-image" src="./images/Tshirt.jpeg" alt="t-shirt" width="150px">
+        <div class="shop-itens-details">
+            <span class="shop-item-price">$12.99</span>
+            <button class="btn btn-primary" role="button">Add to cart</button>
+        </div>
+    </div>
+
+    <div class="shop-item">
+            <span class="shop-item-title">Coffee Cup</span>
+        <img class="shop-item-image"src="./images/cupOfCoffee.jpeg" alt="t-shirt" width="150px">
+        <div class="shop-itens-details">
+            <span class="shop-item-price">$12.99</span>
+            <button class="btn btn-primary" role="button">Add to cart</button>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="container content-section">
+    <h2 class="section-header">Cart</h2>
+    <div class="cart-row">
+        <span class="cart-column cart-header cart-item">ITEM</span>
+        <span class="cart-column cart-header cart-price">PRICE</span>
+        <span class="cart-column cart-header cart-quantity" >QUANTITY</span>
+    </div>
+    <div class="cart-row">
+    <div class="cart-item cart-column">
+        <img class="cart-item-img" src="./images/CapaAlbum1.jpg" alt="album1">
+        <span class="cart-item-title">Album 1</span>
+    </div>
+        <span class="cart-price cart-column">$9,99</span>
+    <div class="cart-quantity cart-column">
+        <input  class="cart-quantity-input" type="number" value="1">
+        <button class="btn btn-danger" role="button">remove</button>
+    </div>
+    </div>
+    <div class="cart-row">
+    <div class="cart-item cart-column">
+        <img class="cart-item-img" src="./images/Tshirt.jpeg" alt="T-Shirt">
+        <span class="cart-item-title">T-Shit</span>
+    </div>
+        <span class="cart-price cart-column">$19,99</span>
+    <div class="cart-quantity cart-column">
+        <input  class="cart-quantity-input" type="number" value="1">
+        <button class="btn btn-danger" role="button">remove</button>
+    </div>
+    </div>
+    <div class="cart-total">
+        <span class="cart-total-title">Total</span>
+        <span class="cart-total-price">$39,98</span>
+    </div>
+ 
+        <button class="btn btn-primary btn-purchase" role="button">Purchase</button>
+  
+</section>
+
+<footer class="main-footer">
+    <div class="main-footer">
+        <h1 class="band-name band-name-footer">The Generics</h1>
+    </div>
+    <div class="container main-footer-container">
+        <i class="fab fa-facebook fa-3x"></i>
+        <i class="fab fa-spotify fa-3x"></i>
+        <i class="fab fa-youtube-square fa-3x"></i>
+    </div>
+
+</footer>
+
+</body>
+</html>

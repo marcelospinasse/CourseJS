@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Try Catch</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>Try Catch:</h1>
+    <p id="pList"></p>
+<script>
+    //Function "print" bellow replaces documento.write that has issues in browsers!
+    // Os ... faz com que seja possível fazer esta função varias vezes usando multiplos argumentos - não só t 
+    function print(...t){
+        var p = document.createElement("p")
+        var texto = document.createTextNode(t)
+        p.appendChild(texto)
+        document.getElementById("pList").appendChild(p)
+    }
+
+    //Try Catch
+    const grito = {nome: "Marcelo Spinasse"}
+
+    function tratarErroELancar(){
+        throw  print("Erro enviado pelo throw!!!")
+    }
+    
+    function ImprimirGrito (grito){
+        try{
+            let p = grito.nome
+            print(p.toUpperCase())
+            print("Try OK!")
+        } catch(e){
+            print(e)
+            tratarErroELancar()
+        } finally{
+            print("Finally!")
+        }
+    }
+
+    ImprimirGrito(grito)
+    ImprimirGrito(123)
+
+    
+
+
+
+
+   
+
+
+
+
+</script>
+</body>
+</html>

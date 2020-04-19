@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This e bind</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>This e bind:</h1>
+    <p id="pList"></p>
+<script>
+    //Function "print" bellow replaces documento.write that has issues in browsers!
+    // Os ... faz com que seja possível fazer esta função varias vezes usando multiplos argumentos - não só t 
+    function print(...t){
+        var p = document.createElement("p")
+        var texto = document.createTextNode(t)
+        p.appendChild(texto)
+        document.getElementById("pList").appendChild(p)
+    }
+    // print(`  ${ }.`)
+
+    //This e bind
+    function Pessoa() {
+        this.idade = 0
+
+        const self = this  //self armazena o "this", neste caso Pessoa.   Substituimos então os this's por self.
+
+        setInterval(function(){
+            let age = self.idade++
+            print(self.idade)
+        }/*.bind(this)*/, 1000) // teste feito com bind funcionou!
+    }
+
+    new Pessoa
+
+    //Então podemos ou usar a const self ou o bind(this)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 align="center">Promise!</h1>
+
+    <script>
+      const userLeft = false;
+      const userWatchingCatMeme = false;
+
+      //Usando Callback, fica assim:
+      //   function watchTutotialCallback(callback, errorCallback) {
+      //     if (userLeft) {
+      //       errorCallback({
+      //         name: "User Left",
+      //         message: ":("
+      //       });
+      //     } else if (userWatchingCatMeme) {
+      //       errorCallback({
+      //         name: "User Watching Cat Meme",
+      //         message: "WebDev < Cat"
+      //       });
+      //     } else {
+      //       callback(":) :) :)");
+      //     }
+      //   }
+
+      //   watchTutotialCallback(
+      //     message => {
+      //       console.log("Sucess: " + message);
+      //     },
+      //     error => {
+      //       console.log(error.name + " " + error.message);
+      //     }
+      //   );
+
+      //Agora alterando para usar PROMISE:
+      function watchTutotialPromise() {
+        return new Promise((resolve, reject) => {
+          if (userLeft) {
+            reject({
+              name: "User Left",
+              message: ":("
+            });
+          } else if (userWatchingCatMeme) {
+            reject({
+              name: "User Watching Cat Meme",
+              message: "WebDev < Cat"
+            });
+          } else {
+            resolve(":) :) :)");
+          }
+        });
+      }
+
+      watchTutotialPromise()
+        .then(message => {
+          console.log("Sucess: " + message);
+        })
+        .catch(error => {
+          console.log(error.name + " " + error.message);
+        });
+
+      //Promisse.all
+      const a = new Promise((resolve, reject) => {
+        resolve("Const a");
+      });
+      const b = new Promise((resolve, reject) => {
+        resolve("Const b");
+      });
+      const c = new Promise((resolve, reject) => {
+        resolve("Const c");
+      });
+
+      Promise.all([a, b, c]).then(messages => {
+        console.log(messages);
+      });
+
+      //Promise.race - roda assim que o primeiro resolver
+      Promise.race([a, b, c]).then(message => {
+        console.log(message);
+      });
+      ///////////////////////////////////////////////////////////////////
+      //ArrowFunction
+      function sum(a, b) {
+        return a + b;
+      }
+      //arrow:
+      let sum2 = (a, b) => a + b;
+      ///////////////////////////////////////////////////////////////////
+      function isPositive(number) {
+        return number % 2 === 0;
+      }
+      //arrow:
+      let isPositive2 = number => number % 2 === 0;
+      ///////////////////////////////////////////////////////////////////
+      function randonNumber() {
+        return Math.randon;
+      }
+      //arrow:
+      let randonNumber2 = () => Math.randon;
+      ///////////////////////////////////////////////////////////////////
+      document.addEventListener("click", function() {
+        console.log("click");
+      });
+      //arrow:
+      document.addEventListener("click", () => console.log("click"));
+    </script>
+  </body>
+</html>

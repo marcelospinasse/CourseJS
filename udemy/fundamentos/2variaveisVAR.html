@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>variáveis VAR</title>
+</head>
+<style>
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>variáveis com VAR:</h1>
+<script>
+    //armazenando uma função em uma variável
+    {
+        {
+            {
+                {
+                    var sera = "Será!"
+                    // document.write(sera);
+                }
+
+            }
+        }
+    }
+
+     document.write((sera) + ".</br>"); //com VAR a variável tem acesso global, podendo ser acessada fora do escopo.
+
+     function teste() {
+         var local  ="Variável local";
+         document.write(local + ".</br>"); 
+    }
+    teste();
+    
+    //A VAR local não é acessível fora da função, vide erro da linha abaixo:
+    // document.write(local + ".</br>"); 
+
+    //No exemplo abaixo, os 2 doc.write imprimem 2, dentro e fora.  Isto porque o escopo de VAR é global.  Com LET isto não acontece.
+    var numero = 1;
+    {
+        var numero = 2;
+        document.write("dentro = " + numero + ".</br>"); 
+    };
+    document.write("fora = " + numero + ".</br>");
+    
+    //Com LET, no exemplo abaixo, dentro =2, fora = 1.
+    var numero = 1;
+    {
+        let numero = 2;
+        document.write("dentro = " + numero + ".</br>");
+    };
+    document.write("fora = " + numero + ".</br>");
+
+    //Usando VAR em loop
+    const funcs = []
+
+    for(var i = 0; i <10 ; i++){
+        funcs.push(function(){
+            console.log(i);
+        })
+    };
+    funcs[2]();
+ 
+
+</script>
+</body>
+</html>

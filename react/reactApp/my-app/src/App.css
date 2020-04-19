@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 20;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  color: #333333;
+  text-decoration: none;
+}
+
+.listItem{
+  background-color: rgb(151, 226, 148);
+  color: rgb(14, 105, 128);
+}

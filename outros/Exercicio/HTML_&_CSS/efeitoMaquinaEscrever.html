@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+body{
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+h1::after {
+    content: "|"; /*inclui a barra após cada letra do texto*/
+    margin-left: 5px;
+    font-weight: lighter;
+    color: grey;
+    opacity: 1;
+    animation: pisca 1s infinite;
+}
+
+@keyframes pisca {
+    0% , 100% {opacity: 1;}
+    50% {opacity: 0;}
+}
+
+</style>
+
+<body>
+    
+    <!-- <h1 class="txtmaquina">Adicionando um efeito máquina de escrever!!!</h1> -->
+    <h1 class="txtmaquina">O Mateo é muito muito muito muito muito MAAAAAAALAAAAAA!!!</h1>
+
+<script>
+
+function typewriter(elemento){
+    const textoarray = elemento.innerHTML.split('');
+    elemento.innerHTML = "";
+    textoarray.forEach((letra , i) => {
+        // setTimeout(function() {elemento.innerHTML += letra;}
+        //      , 75 * i) 
+        setTimeout(() => elemento.innerHTML += letra, 150 * i);
+        /*setTimeout de 150 milissegundos*/
+    });
+
+}
+
+    let titulo = window.document.querySelector('h1'); 
+    typewriter(titulo);
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlexBox- CSS Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+   
+     html, body{box-sizing: border-box; padding: 5px;}
+
+
+
+        li{ background-color: rgb(25, 197, 240);
+            color:rgb(237, 238, 162); 
+            list-style: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 0.5em; 
+        }
+
+        .container{
+            background-color: rgb(25, 197, 240);
+            margin:0; padding: 0;
+            border: 1px solid orange;
+            display: flex;
+            }
+       
+        .search{
+            background-color: rgb(25, 197, 240);
+            font-size: 1em;
+            font-weight: bold;
+            border: none;
+        }
+
+        input::placeholder{
+            background-color: rgb(25, 197, 240);
+            color:rgb(237, 238, 162);
+            text-decoration: underline;
+        }
+
+        @media all and (max-width: 600px){
+            .container{flex-wrap: wrap;}
+            .container > li{flex: 1 1 50%;}
+            .search > input {text-align: center;}
+            .search{order: 1;}
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <!-- Header do Curso de HTML & CSS -->
+    <div class="header"><h1>Curso de HTML e CSS</h1></div>
+    <div class="menu"><a href="index.html">Home</a></div></br>
+    <!-- Header do Curso de HTML & CSS -->
+    <!-- Responsive Design, Styles on different Screens - Mobile Frist-->
+
+        <nav>
+            <ul class = "container">
+                <li>Home</li>
+                <li>Profile</li>
+                <li>
+                    <input type="text" class="search" placeholder="Search">
+                </li>
+                <li>Login</li>
+            </ul>
+        </nav>
+</body>
+</html>

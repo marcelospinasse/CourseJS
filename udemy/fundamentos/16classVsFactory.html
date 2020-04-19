@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class vs Factory</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>Class vs Factory:</h1>
+    <p id="pList"></p>
+
+<script src="printBrowser.js"></script>
+<script>
+  
+    //-----Classe x Função Factory
+    //Usando a class - o uso no "this" sempre remete ao objeto atual.
+    class Pessoa{
+        constructor(nome) {
+            this.nome = nome
+        }
+        falar(){
+        print(`Meu nome é ${this.nome}.`)
+        }
+    }
+
+    const p1 = new Pessoa("Marcelo")
+    p1.falar()
+
+
+    //Usando Função Construtora - o uso no "this" sempre remete ao objeto atual.
+    function Pessoa3(nome) {
+        this.nome = nome
+
+        this.falar = function () {
+            print(`Meu nome é ${this.nome}.`)
+        }
+    }
+    const p2 = new Pessoa3("Marcela")
+    p2.falar()
+
+
+   //Usando Função Factory
+    const criarPessoa = nome => {
+        return{
+            falar: () => print(`Meu nome é ${nome}.`)
+        }
+    }
+    const p3 = criarPessoa("Mateo")
+    p3.falar()
+
+ 
+
+</script>
+</body>
+</html>

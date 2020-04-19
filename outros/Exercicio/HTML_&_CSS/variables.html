@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Variables - CSS Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+   
+        /* 
+        :root{}
+        --varName:: value
+        property: var(--varName)
+        */
+
+        :root {--OrangeColor:  orange;
+            --pinkColor: rgb(140, 12, 151);
+            --mainTransition: all 0.4s linear;}
+
+
+        .heading{ color: var(--OrangeColor);}
+
+        .text{ color: palevioletred;}
+
+        .main-text{ color:navy;}
+
+        .second-heading {color:var(--OrangeColor);
+                        transition: var(--mainTransition);}
+
+        .second-heading:hover { color: var(--pinkColor); font-size: 20px;}
+
+        .third-heading{color:maroon;}
+        
+       
+    
+
+    </style>
+
+</head>
+<body>
+    <!-- Header do Curso de HTML & CSS -->
+    <div class="header"><h1>Curso de HTML e CSS</h1></div>
+    <div class="menu"><a href="index.html">Home</a></div>
+    <!-- Header do Curso de HTML & CSS -->
+    <!-- Responsive Design, Styles on different Screens - Nobile Frist-->
+    
+
+    <h1 class="heading">mains heading</h1>
+    <p class="text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, explicabo consequatur! Cum, vitae impedit! Error ullam provident cum ipsum, laudantium ea fugiat vitae aliquam saepe alias veritatis ducimus temporibus itaque eaque amet? Molestias inventore harum voluptatum vel qui. Molestiae, ab.</p>
+
+    <div class="main">
+        <p class="main-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, libero voluptatem. Modi praesentium nihil magnam id, impedit sit eum consectetur, corrupti mollitia omnis nostrum. Dicta iure aliquid quasi quaerat repudiandae. Harum tempora deleniti fuga fugit doloribus reprehenderit magni rem adipisci, ab libero ducimus maxime natus reiciendis laudantium! Fugit, amet incidunt.</p>
+    </div>
+
+    <div class="main">
+    
+    <h3 class="second-heading">second heading</h3>  
+    <h3 class="third-heading">third heading</h3>
+
+    </div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.logo{
+    margin-left: 1rem;
+    text-decoration: none;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 2px gray;
+    padding: 2px 5px;
+    background-color: orangered;
+    border-radius: 10%;
+}
+
+a:link{
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px gray;
+}
+
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 4rem;;
+    align-items: center;
+    list-style-type: none;
+    vertical-align: center;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.menu > li{
+   margin-left: 10px;
+    justify-content: space-between;
+    display: block;
+    padding: 8px;
+    background-color: orangered;
+    border-radius: 10%;
+}
+
+.wrapper{
+    max-width: 800px;
+    margin: auto;
+    margin: 0;
+}
+
+/* CSS FLEXBOX 1 */
+
+h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+img{
+    max-width: 80%;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 800px;
+}
+
+.flex > div{
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.image{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: lighter;
+    color: darkslategrey;
+}
+
+.legenda{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: lighter;
+    color: darkslategrey;
+}
+
+/*Quando tiver intereção entre colunas e linhas tem que usar o GRID layout*/
+
+/* CSS GRID 1 */
+
+
+
+.grid1{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    margin: 0 auto;
+    max-width: 780px;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.grid1 > div:nth-child(n + 4){ /* atua a partir do quinto item (n+4) */ 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:20px;
+    align-items: center; /*Alinha o texto no centro da div*/
+}
+
+
+.grid1 > div.anuncio{
+    display: block;
+    grid-column: 1;
+    grid-row: 2 / 5;
+    
+}
+
+.legendaGrid1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: lighter;
+    color: darkslategrey;
+    margin-left: -100px;
+    padding: 0;
+}
+
+@media (max-width: 600px) {
+    .grid1 {grid-template-columns: repeat(2 , 1fr);}
+    .grid1 > div:nth-child(n + 4) {display: block;}
+    .grid1 > div.anuncio{grid-row: auto; grid-column: auto; order: -1;} /* order: -10;  coloca em primmeiro lugar */
+}
+
+/* CSS GRID 2 */
+
+.grid2{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+    }   
+
+.sidebar > div{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 600px){
+    .grid2 {grid-template-columns: 1fr; margin: auto;}
+    .sidebar {display: flex; overflow: scroll;}
+    .sidebar > div{flex: 1 0 200px; margin: 0 10px;}
+}
+
+
+

@@ -1,0 +1,861 @@
+id;rentrak;cinema;salas;circuito;cidade;estado;regiao;endereco
+1;64657;Cine Gama 2;2;AFA;Colatina;ES;SAO PAULO;Rua Capitão Avelino Bastos, 837, Cruzeiro
+2;64697;Cine Ritz Conceiçao 3;3;AFA;Linhares;ES;SAO PAULO;Av Shopping Itagua
+3;64872;Cine Ritz Guarapari 3;3;AFA;Guarapari;ES;ESPIRITO SANTO;Av  Getulio Vargas 481
+4;64997;Ritz Jardins 2;2;AFA;Vitória;ES;ESPIRITO SANTO;Av Florentino Avidos,80 Bairro Conceicao
+5;65031;Cine Via Sul 1;1;AFA;Marataizes;ES;ESPIRITO SANTO;Dr  Roberto Calmon, 266, Centro
+6;997748;Ritz Sul 4;4;AFA;Cachoeiro de Itapemirim;ES;ESPIRITO SANTO;Rua Carlos E M  De Lemos 262, Jardim Penha
+7;1027025;Cine São Mateus 1;1;AFA;São Mateus;ES;MINAS GERAIS;Rua Moacir José Leite, 100 
+8;1033173;Ritz Piuma 1;1;AFA;Piuma;ES;ESPIRITO SANTO;Avenida Rubens Rangel e Rua Do Cajueiro
+9;1047715;Shopping Aracruz 2;2;AFA;Aracruz;ES;MINAS GERAIS;Av José Corrêa Machado, 1079 - Ibituruna
+10;1063034;Ritz Perim Center 3;3;AFA;Cachoeiro de Itapemirim;ES;ESPIRITO SANTO;Av. Francisco Lacerda De Aguiar 304
+11;65027;Ritz Divinopolis 5;5;AFA;Divinópolis;MG;ESPIRITO SANTO;Praça São Benedito N°192 / Centro
+12;65606;Ibi Cinemas 4;4;AFA;Montes Claros;MG;ESPIRITO SANTO;Av. Izaias Scherrer 41
+13;1049492;Cine Ritz Cataguases 2;2;AFA;Cataguases;MG;RIO GRANDE DO SUL;Rua Voluntários da Pátria, 550
+14;1069175;Ritz Itaúna 3;3;AFA;Itaúna;MG;SAO PAULO;Vereador Jose Angelo Biagioni 660
+15;1074037;Ritz Lafaiete 1;1;AFA;Conselheiro Lafaiete;MG;ESPIRITO SANTO;Avenida Florestal 555
+16;1073933;Cine Floresta 1;1;AFA;Alta Floresta;MT;MINAS GERAIS;Estacionamento - Centro, Cataguases
+17;1039976;Cine Cruz Alta 2;2;AFA;Cruz Alta;RS;ESPIRITO SANTO;Av. Jones dos Santos Neves, 1372
+18;1076687;Cult Cinemas Ijuí 1;1;AFA;Ijuí;RS;MINAS GERAIS;Av Jove Soares 1049
+19;1087548;Cult Cinemas Alegrete 1;1;AFA;Alegrete;RS;MATO GROSSO;Av. Ariosto da Riva 2519
+20;63808;Cruzeiro 1;1;AFA;Cruzeiro;SP;MINAS GERAIS;Praça Tiradentes 88
+21;64410;Cine Porto 1;1;AFA;Ubatuba;SP;RIO GRANDE DO SUL;Rua Porto Alegre 40
+22;1047688;Boituva Cine Park 2;2;AFA;Boituva;SP;RIO GRANDE DO SUL;Praça Oswaldo Aranha 199
+23;64818;Cine Duplex 2;2;AGA;Amparo;SP;SAO PAULO;Rua Jose Araujo Cintra 100 Centro
+24;1072318;Cine Mania 1;1;AGA;Cosmopolis;SP;SAO PAULO;Rua Campinas 951
+25;1000696;Rio Branco 6;6;ARAU;Rio Branco;AC;RONDONIA;Avenida Rio Madeira, nº 3288
+26;1045730;Multiplex Via Norte 6;6;ARAU;Manaus;AM;SAO PAULO;Av. Joaquim Pompeu Toledo 601
+27;1000701;Multiplex Mestre Alvaro 5;5;ARAU;Serra;ES;SAO PAULO;R. Henrique Savi, 15055 - Vila Nova Cidade 
+28;65000;Dourados Av Center 3;3;ARAU;Dourados;MS;SAO PAULO;Av. Limeira 722
+29;64858;Multiplex Pantanal 8 3D;8;ARAU;Cuiabá;MT;SAO PAULO;Rua Passeio Flamboyants 200
+30;63927;Multiplex Catuai 7;7;ARAU;Londrina;PR;SAO PAULO;Rod. Mal. Rondon, 104
+31;63951;Avenida Center 4;4;ARAU;Maringa;PR;SAO PAULO;Av.Brigadeiro Faria Lima, 6363
+32;64701;Palladium Shop Center 4;4;ARAU;Ponta Grossa;PR;SAO PAULO;Estr. São Francisco, 2059
+33;65686;Catuai Shopping Center Maringa 5;5;ARAU;Maringa;PR;SAO PAULO;Av  Antonia Rosa Fioravante 3270
+34;65576;Cine Caxias Shopping 8 -3d;6;ARAU;Duque de Caxias;RJ;SAO PAULO;Estrada De Campo Limpo 459,santo Amaro
+35;65725;Multiplex Campos dos Goytacazes 5;5;ARAU;Campos dos Goytacazes;RJ;RIO DE JANEIRO;Rod  Waahington Luiz, Km 2 5 N 2895
+36;1000651;Multiplex Guadalupe 5;5;ARAU;Rio de Janeiro;RJ;MATO GROSSO;Av. Historiador Rubens de Mendonça, 3300
+37;1041515;Multiplex Parque Lagos 6;6;ARAU;Cabo Frio;RJ;MATO GROSSO DO SUL;Avenida Marcelino Pires, 3600 - Centro
+38;1075236;Multiplex Volta Redonda 6;6;ARAU;Volta Redonda;RJ;PARANA;Rod. Celso Garcia Cid.Km.377
+39;65585;Multiplex Porto Velho 6;6;ARAU;Porto Velho;RO;PARANA;Av Sao Paulo 448
+40;1047899;Pátio Roraima 5;5;ARAU;Boa Vista;RR;PARANA;Rua Hermelino De Leao, 703
+41;64198;Center Aracatuba 3;3;ARAU;Araçatuba;SP;PARANA;Av. Colombo 9161
+42;64229;Multiplex Bauru 5 3d;5;ARAU;Bauru;SP;RIO DE JANEIRO;Av. Dr Silvio Bastos Tavares 316
+43;64268;Shopping Piracicaba 7;7;ARAU;Piracicaba;SP;RIO DE JANEIRO;Av. Brasil 22155
+44;64351;Center Iguatemi 3;3;ARAU;São Carlos;SP;ACRE;rod. BR 364, 1707
+45;64462;Plaza 3;3;ARAU;Itu;SP;ESPIRITO SANTO;av. João Palacios, 300
+46;64592;Rio Preto 5/vip 3d;7;ARAU;São José do Rio Preto;SP;SAO PAULO;av John B. Dunlop, 3900
+47;64614;Taboao Da Serra 5 3d;5;ARAU;Taboão da Serra;SP;SAO PAULO;Av. Itavuvu 3365
+48;64646;Mauá Plaza Shopping 8 3d;8;ARAU;Maua;SP;SAO PAULO;Av. Afonso Vergueira 823
+49;64998;Multiplex Campo Limpo 5;5;ARAU;Sao Paulo;SP;RIO DE JANEIRO;Henrique Terra 1700
+50;1010433;Multiplex Parque Das Bandeiras 6;6;ARAU;Campinas;SP;AMAZONIAS;Av.Arquiteto José Henrique Bento Rodrigues, 3760
+51;1031847;Multiplex Sorocaba Cidade 6;6;ARAU;Sorocaba;SP;RORAIMA;Av. João Alencar s/n
+52;1032527;Mult Sorocaba Ciane 6;6;ARAU;Sorocaba;SP;SAO PAULO;Rua: Azaléia, 399
+53;1060562;Multiplex Boulevard Botucatu 3;3;ARAU;Botucatu;SP;RIO DE JANEIRO;Rod. Dos Metalurgicos, 1189
+54;64529;Aldeota 3;3;ARCO;Fortaleza;CE;CEARA;Avenida Dom Luís, 500 - Aldeota
+55;64610;Cinemas Del Paseo 2;2;ARCO;Fortaleza;CE;CEARA;Av. Santos Dumont, 3131 - Aldeota
+56;64953;Arco Aguas Claras 4;4;ARCO;Brasilia;DF;SAO PAULO;Av  Francisco Matarazzo 205
+57;64853;Arcoplex Cascavel 4;4;ARCO;Cascavel;PR;SAO PAULO;Rua Carlos Kuntz Busch, 800
+58;64103;Arcoplex Lajeado 4;4;ARCO;Lajeado;RS;SAO PAULO;Rua Siqueira Campos 1545/88
+59;64111;Bella Citta 2;2;ARCO;Passo Fundo;RS;DISTRITO FEDERAL;Avenida das Araucárias, 1835
+60;64124;Arcoplex Shopping do Vale 4;4;ARCO;Cachoeirinha;RS;RIO GRANDE DO SUL;Br 386 Km 346
+61;64428;Boulevard 2;2;ARCO;Porto Alegre;RS;RIO GRANDE DO SUL;Av. Coronel Chicuta, 355 
+62;64586;Cine Art 4;4;ARCO;Pelotas;RS;RIO GRANDE DO SUL;Av  Flores Da Cunha 40001
+63;64934;Rua Da Praia 2;2;ARCO;Porto Alegre;RS;SANTA CATARINA;Rua Geroncio Thives 1079
+64;65592;Apm Ctro De Educacao Int 2;2;ARCO;Campo Bom;RS;SANTA CATARINA;Rua Samuel Heusi 234
+65;65609;Arcoplex Royal Plaza 4;4;ARCO;Santa Maria;RS;SANTA CATARINA;Avenida Getúlio Vargas, 268
+66;1058698;Torres 2;2;ARCO;Torres;RS;SANTA CATARINA;Av Chile 1455
+67;1062128;Arcoplex Gravataí 5;5;ARCO;Gravataí;RS;SANTA CATARINA;Pc Dr Nereu Ramos, 364
+68;64134;Arcoplex Itaguacu 5;5;ARCO;São José;SC;SANTA CATARINA;Av Brasil 1271
+69;64140;Itajai 4;4;ARCO;Itajai;SC;RIO GRANDE DO SUL;Av Assis Brasil 4320
+70;64142;Breitheupt 5;5;ARCO;Jaraguá do Sul;SC;RIO GRANDE DO SUL;Rua Andrade Neves, 1934 - Centro
+71;64145;Criciúma Shopping 2;2;ARCO;Criciúma;SC;PARANA;Avenida Toledo, 432 - Centro, Cascavel
+72;64146;Della Giustina 2;2;ARCO;Criciúma;SC;RIO GRANDE DO SUL;Rua dos Andradas, 985
+73;64199;Atlantico 2;2;ARCO;Camboriu;SC;RIO GRANDE DO SUL;Rua 20 De Setembro 515
+74;65655;Arcoplex Via Catarina 4;4;ARCO;Palhoça;SC;RIO GRANDE DO SUL;Av Nossa Senh  Dores, 305
+75;65667;Cine Teatro Peperi 1;1;ARCO;São Miguel do Oeste;SC;SANTA CATARINA;Av, Atilio Pagani 270
+76;1003784;Arcoplex Patio Chapeco 4;4;ARCO;Chapeco;SC;SANTA CATARINA;Rua Marques Herval s/n
+77;1007020;Arcoplex Park Blumenau 5;5;ARCO;Blumenau;SC;SANTA CATARINA;Av. Fernando Machado 4000
+78;1056364;Arcoplex Araranguá 2;2;ARCO;Araranguá;SC;SANTA CATARINA;Sete de Maio 933
+79;64300;Arcoplex Rio Claro 5;5;ARCO;Rio Claro;SP;RIO GRANDE DO SUL;Rua Borges de Medeiros 275
+80;64466;Patio Limeira 5;5;ARCO;Limeira;SP;SANTA CATARINA;Av. Sete de Setembro, 755
+81;64530;Presidente Prudente 3;3;ARCO;Presidente Prudente;SP;RIO GRANDE DO SUL;Av Centenário, 555
+82;64638;Saladearte Cinema da UFBA 1;1;BAHI;Salvador;BA;BAHIA;Rua Princesa Leopoldina 398 Alto Da Lapa
+83;64687;Saladearte Cinema do Museu 1;1;BAHI;Salvador;BA;BAHIA;Av  Sete De Setembro, 2195
+84;65006;Saladearte Mam 1;1;BAHI;Salvador;BA;BAHIA;Av Sete Do Contorno S/n(solar Do Uniao)
+85;65624;Saladearte Cine Paseo 2;2;BAHI;Salvador;BA;BAHIA;Rua Rubens Guelli, 135
+86;63704;Laguna 2;2;BOTE;Alagoinhas;BA;BAHIA;Rua Dantas Biao S/n
+87;63718;Santa Clara 2;2;BOTE;Ilheus;BA;BAHIA;Av Soares Lopes 908
+88;63721;Itaguari 2;2;BOTE;Santo Antônio de Jesus;BA;BAHIA;Av  Roberto Santos S/n
+89;63725;Cinema Teixeira 2;2;BOTE;Teixeira de Freitas;BA;BAHIA;Rua Massanore Nagão, 281
+90;64765;Cine Plaza 1;1;BOTE;Porto Seguro;BA;BAHIA;Trevo do Cabral 101 - Centro
+91;1052359;Cine Teca 2;2;BOTE;Teófilo Otoni;MG;MINAS GERAIS;Av. Alfredo Sá,  2.221, Jardim das Acácias
+92;1073195;Cine Itauna 1;1;BOTE;Caratinga;MG;MINAS GERAIS;R. Coronel Pedro Marins 23
+93;1079171;Cine Alvorada 1;1;BOTE;Coronel Fabriciano;MG;MINAS GERAIS;Av. Geraldo Inácio 870
+94;64479;Roxy Gonzaga 5;5;CAMP;Santos;SP;SAO PAULO;Av. Ana Costa, 443 - Gonzaga
+95;65045;Roxy Brisamar 6;6;CAMP;São Vicente;SP;SAO PAULO;Rua Frei Gaspar 365 Centro
+96;65635;Roxy Patio Iporanga 4;4;CAMP;Santos;SP;SAO PAULO;Av Ana Costa 465
+97;1009675;Roxy Parque Anilinas 2;2;CAMP;Cubatao;SP;SAO PAULO;Av. Nove de Abril 2275 - 1°Piso- Centro
+98;1078896;CineArt Cafe - Rio Verde 3;3;CARC;Rio Verde;GO;SAO PAULO;Colombo
+99;1082136;CineArt Cafe - Mineiros 3;3;CARC;Mineiros;GO;SAO PAULO;Praca Da Independencia, 161 Centro
+100;1005409;CineArt Cafe - Alfenas 3;3;CARC;Alfenas;MG;MINAS GERAIS;Rua Presidente Artur Bernardes 609
+101;1005412;CineArt Cafe - Tres Coracoes 2;2;CARC;Três Corações;MG;MINAS GERAIS;Av Getulio Vargas 55 - Centro
+102;1007093;CineArt Cafe - Pouso Alegre 3;3;CARC;Pouso Alegre;MG;MINAS GERAIS;R Cel Octavio Meyer 160 4°
+103;1028978;CineArt Cafe - Lavras 2;2;CARC;Lavras;MG;MINAS GERAIS;Rua Antônio Gonçalves Faria - Lavras
+104;1028981;CineArt Cafe - Sao Lourenco 2;2;CARC;São Lourenço;MG;MINAS GERAIS;Av Comendador Costa 289
+105;1032156;CineArt Cafe S.S. de Paraiso 1;1;CARC;São Sebastião do Paraíso;MG;SAO PAULO;Rua Prudente Moraes, 40
+106;1076442;CineArt Cafe - Itajuba 4;4;CARC;Itajubá;MG;SAO PAULO;Av. Dona Renata 4785
+107;1045985;CineArt Cafe - Maraba 4;4;CARC;Marabá;PA;MINAS GERAIS;Rua Padre Benatti 1200, Centro
+108;1074295;CineArt Cafe - Altamira 3;3;CARC;Altamira;PA;PARÁ;A Folha 27
+109;1059878;CineArt Cafe - Resende 4;4;CARC;Resende;RJ;SAO PAULO;Dona Gertrudes 202
+110;1005404;CineArt Cafe - SJ Rio Pardo 1;1;CARC;São José do Rio Pardo;SP;SAO PAULO;Praça Maastricht 100
+111;1005407;CineArt Cafe - Pinhal 1;1;CARC;Espirito Santo do Pinhal;SP;RIO DE JANEIRO;Av Dorival Marcondes Godoy, 500
+112;1029578;CineArt Cafe - Itapira 2;2;CARC;Itapira;SP;PARÁ;Travessa Treze de Maio, S/n
+113;1030232;CineArt Cafe - Araras 3;3;CARC;Araras;SP;MINAS GERAIS;Av Doutor Jerson Dias 401
+114;1047778;CineArt Cafe S.S. Boa Vista 2;2;CARC;São João da Boa Vista;SP;GOIAS;Av Presidente Vargas 1740 
+115;1059084;CineArt Cafe - Bragança 3;3;CARC;Bragança Paulista;SP;GOIAS;Avenida Ino Rezende, Quadra 104 Lote 1
+116;1078378;Circuito Cinemas Ponta Porã 4;4;CCIN;Ponta Porã;MS;SAO PAULO;Av. Juscelino Kubitschek de Oliveira 429
+117;997370;Circuito Cinemas Parauapebas 4;4;CCIN;Parauapebas;PA;PARÁ;PA-275 - PA, Brazil
+118;1074110;Art Movie CKS 3;3;CCIN;Parauapebas;PA;SAO PAULO;Rua Doutor Ademar de Barros, 345
+119;65029;Circuito Cinemas Guarulhos 6;6;CCIN;Guarulhos;SP;SAO PAULO;Rod. Sarg Luciano Covolan, 1055
+120;1043995;Circuito Cinema Porto 3;3;CCIN;Porto Feliz;SP;SAO PAULO;Rva Deputado Laercio Corte 4500
+121;1056210;Circuito Cinema Penapolis 4;4;CCIN;Penapolis;SP;PARÁ;Rod. Municipal Faruk Salmen, km 07, 510
+122;1062403;Circuito Cinemas Limeira 4;4;CCIN;Limeira;SP;MATO GROSSO DO SUL;Av. Marechal Floriano Peixoto 2580
+123;63849;Novo Duocine Santa Cruz 2;2;CEFC;Juiz de Fora;MG;MINAS GERAIS;Rua Jarbas Lery Santos, 1685
+124;64694;Novo Cine Caxambu 1;1;CEFC;Caxambu;MG;MINAS GERAIS;Pc 16 Setembro, 34 
+125;65642;Centerplex Patio Maceio 5;5;CEPX;Maceió;AL;RONDONIA;R. Joaquim Nabuco 1855, Centro
+126;1069484;Centerplex Grande Circular 5;5;CEPX;Manaus;AM;CEARA;Av. Sen Carlos Jereissati, 100
+127;1073426;Centerplex Vitória da Conquista 6;6;CEPX;Vitoria da Conquista;BA;CEARA;Av Washington Soares, 4335
+128;64878;Centerplex Maracanau 4;4;CEPX;Maracanau;CE;SAO PAULO;Rua Jose Alvim 357
+129;65604;Centerplex Via Sul Shop. 6;6;CEPX;Fortaleza;CE;SAO PAULO;Pca Dr Cesario Motta 367
+130;1061357;Centerplex Messejana 5;5;CEPX;Fortaleza;CE;SAO PAULO;Rua Catao 72
+131;1048805;Centerplex SJ de Ribamar 6;6;CEPX;São José de Ribamar;MA;SAO PAULO;Av Armando Salles De Oliveira 1130
+132;64894;Centerplex Poços de Caldas 4;4;CEPX;Poços de Caldas;MG;MINAS GERAIS;Av  Silvio Monteiro Dos Santos
+133;1067898;Centerplex Mag Shopping 4;4;CEPX;João Pessoa;PB;ALAGOAS   ;Av. Menino Marcelo 3800
+134;997754;Centerplex Caruaru 4;4;CEPX;Caruaru;PE;SAO PAULO;Via Conselheiro Antônio Prado, 1400
+135;1078171;Centerplex Carpina 3;3;CEPX;Carpina;PE;PERNANBUCO;Rua Adjar Silva Casé, 800 - Indianopolis
+136;64443;Veneza 1;1;CEPX;Porto Velho;RO;SAO PAULO;Av. José Herculano 1086
+137;64448;Centerplex Atibaia 2;2;CEPX;Atibaia;SP;SAO PAULO;Alfredo A de Oliveira, 2077
+138;64453;Vera Cruz 2 2;2;CEPX;Capivari;SP;SAO PAULO;Carlos Kuntz Bush 800
+139;64484;Centerplex Lapa 3;3;CEPX;Sao Paulo;SP;MARANHÃO;Estrada de São José do Ribamar, 1000
+140;64560;Centerplex Suzano 5;5;CEPX;Suzano;SP;SAO PAULO;Rua 19 de Setembro, 187
+141;65723;Centerplex North Shopping Barretos 3;3;CEPX;Barretos;SP;CEARA;Av Frei Cirilo 3840
+142;1003713;Centerplex Serramar 4;4;CEPX;Caraguatatuba;SP;SAO PAULO;Rua Engenheiro Rene Benedito Da Silva
+143;1010278;Centerplex Cidade Norte 3;3;CEPX;São José do Rio Preto;SP;PARAIBA;Av Gobernador Flavio Ribeiro Coutinho 115
+144;1010853;Centerplex Limeira 5;5;CEPX;Limeira;SP;AMAZONAS;Av Autaz Mirim 6250
+145;1061352;Centerplex Guararema 1;1;CEPX;Guararema;SP;BAHIA;Av Olivia Flores, 2500
+146;1067238;Centerplex Itapevi Center 3;3;CEPX;Itapevi;SP;SAO PAULO;Av. Afonso Monteiro da Cruz 
+147;1076490;Centerplex Diadema 4;4;CEPX;Diadema;SP;PERNAMBUCO;Rod Pe 41 - Km 02 Shopping Carpina
+148;1032886;Cineflix Shopping JK Brasília 6;6;CFLX;Brasilia;DF;PARANA;Av Sao Paulo, 120 Centro Zona 1
+149;1045620;Cineflix Rio Verde 5;5;CFLX;Rio Verde;GO;RIO GRANDE DO SUL;Av. Cristovão Colombo 545, Floresta
+150;1063494;Cineflix Valparaiso 6;6;CFLX;Valparaíso;GO;SAO PAULO;Rua Francisco Franco de Godoy Bueno  801
+151;1066972;Cineflix Aparecida de Goiânia 5;5;CFLX;Aparecida de Goiânia;GO;RIO GRANDE DO SUL;Av. Ferreira Viana, 1526
+152;1056331;Cineflix Várzea Grande 6;6;CFLX;Várzea Grande;MT;DISTRITO FEDERAL;QNM 34, Area especial 1 - Taguatinga
+153;1003918;Cineflix Maringa Park 5;5;CFLX;Maringa;PR;SAO PAULO;Av Marginal 200
+154;1059477;Cineflix Londrina 5;5;CFLX;Londrina;PR;SAO PAULO;Marechal Rondon s/n Km 534,5
+155;1077624;Cineflix Shopping Cidade Maringá 4;4;CFLX;Maringa;PR;GOIAS;Rua O, 1044
+156;1003920;Cineflix Total Porto Alegre 5;5;CFLX;Porto Alegre;RS;MATO GROSSO;Presidente Arthur Bernades s/n
+157;1032067;Cineflix Shopping Pelotas 5;5;CFLX;Pelotas;RS;SAO PAULO;Rodovia Raposo Tavares, s/n. Km22,5
+158;1082820;Cineflix Rio Grande 5;5;CFLX;Rio Grande;RS;PARANA;Rua Ayrton Senna da Silva 400
+159;1010705;Cineflix Cinemas 5;5;CFLX;Mogi Guacu;SP;SAO PAULO;Av. Raimundo Pereira de Magalhães 11001
+160;1042223;Cineflix Botucatu 5;5;CFLX;Botucatu;SP;GOIAS;Rodovia: BR 40 - KM 12 - S/N - Quadra 01
+161;1045578;Cineflix Cinemas Araçatuba 5;5;CFLX;Araçatuba;SP;GOIAS;Av Independência 285
+162;1056654;Cineflix Cotia 6;6;CFLX;Cotia;SP;PARANA;Av Tuiuti, 710
+163;1060384;Cineflix Cantareira 5;5;CFLX;Sao Paulo;SP;SAO PAULO;Avenida Rebouças 3400
+164;1081601;Cineflix Park City Sumaré 5;5;CFLX;Sumaré;SP;SAO PAULO;Euclides da Cunha, 21
+165;1082585;Cineflix Miramar Santos 4;4;CFLX;Santos;SP;RIO GRANDE DO SUL;Euclides da Cunha, 21
+166;64334;Globo Santa Rosa 1;1;CGLOBO;Santa Rosa;RS;RIO GRANDE DO SUL;Rua Santos Dumont, 937
+167;64185;Globo Três Passos;1;CGLOBO;Três Passos;RS;RIO GRANDE DO SUL;Av  Julio De Castilhos 346
+168;1044220;Globo Palmeira 1;1;CGLOBO;Palmeira das Missões;RS;RIO GRANDE DO SUL;Rua General Osorio 850
+169;1080215;Globo Frederico 1;1;CGLOBO;Frederico Westphalen;RS;RIO GRANDE DO SUL;Rua Miguel Couto, 202
+170;63894;Apucarana G7 2;2;CIXV;Apucarana;PR;PARANA;Pc Int Manoel Ribas, 135
+171;1072210;Cine XV 4;4;CIXV;Guarapuava;PR;PARANA;Av. Guarapuava 1400
+172;1030113;Cinemagic Vitória Norte Sul 4;4;CMGC;Vitória;ES;SAO PAULO;Rua Campos Sales, 63
+173;64651;Cineplex Pampulha Mall 6;6;CMGC;Belo Horizonte;MG;MINAS GERAIS;Av  Antonio Carlos, 8100- Pampulha
+174;65509;Cineritz Holiday 3;3;CMGC;Rio das Ostras;RJ;RIO DE JANEIRO;Rodovia Amaral Peixoto, 4961
+175;65699;Cinemagic Araruama 2;2;CMGC;Araruama;RJ;RIO DE JANEIRO;Av John Kennedy 292.Loja 218
+176;1082647;Cinemagic Bacaxa 2;2;CMGC;Saquarema;RJ;ESPIRITO SANTO;Av Jose Maria Vivacqua Santos 400
+177;64401;Cine Cavaliere Orlandi 2;2;CMGC;Socorro;SP;RIO DE JANEIRO;Rod. Amaral Peixoto 51
+178;64711;Cinemaxx Gloria 1;1;CMXX;Itaperuna;RJ;RIO DE JANEIRO;Rua Amadeu Tinoco Lacerda 6
+179;63963;Cinemaxx Imperial 1;1;CMXX;Paracambi;RJ;RIO DE JANEIRO;Rua Dominique Lefel 30
+180;63972;Top Cine Hipershop Abc 2;2;CMXX;Petropolis;RJ;RIO DE JANEIRO;Rua Teresa 1415
+181;64070;Cinemaxx Casario shop. 2;2;CMXX;Vassouras;RJ;RIO DE JANEIRO;Rua Barão de Vassouras, 19
+182;64789;Cinemaxx Mercado Estação 3;3;CMXX;Petropolis;RJ;RIO DE JANEIRO;Rua Paulo Barbosa N° 310 1er Andar
+183;1064171;Cinemaxx Unapark Shopping Unamar 2;2;CMXX;Cabo Frio;RJ;RIO DE JANEIRO;Av Independencia Lote 16 quadra 15
+184;63834;Cineart Cidade 8;8;CNAR;Belo Horizonte;MG;MINAS GERAIS;Rua Sao Paulo, 957
+185;63840;Cineart Del Rey 7;7;CNAR;Belo Horizonte;MG;MINAS GERAIS;Av  Presidente Carloz Luz, 3001
+186;64720;Via Shopping 5;5;CNAR;Belo Horizonte;MG;MINAS GERAIS;Av  Afonso Vaz De Melo, 640
+187;64761;Itau Power 6;6;CNAR;Contagem;MG;MINAS GERAIS;Av  Gen  David Sarnoff, 5 160/251 Indust
+188;65710;Multiplex Boulevard Shopping 6;6;CNAR;Belo Horizonte;MG;MINAS GERAIS;Av. Dos Andradas 3000.3 andar
+189;1003747;Multiplex Minas 6;6;CNAR;Belo Horizonte;MG;MINAS GERAIS;Av. Cristinano Machado 4000,loja 8 2 and
+190;1009891;Cineart Paragem 5;5;CNAR;Belo Horizonte;MG;MINAS GERAIS;Av. Professor Mario Werneck 1360
+191;1027020;Cineart Ponteio 4;4;CNAR;Belo Horizonte;MG;MINAS GERAIS;Rodovia 356
+192;1031135;Cineart Serra Sul 4;4;CNAR;Pouso Alegre;MG;MINAS GERAIS;Kubitschek, BR 459, KM 107
+193;1033389;Cineart Contagem 8;8;CNAR;Contagem;MG;MINAS GERAIS;Av Severino Balesteros Rodrigues 850
+194;1047682;Monte Carmo 7;7;CNAR;Betim;MG;MINAS GERAIS;Av Juiz Marco Tulio Isaac 1119
+195;1078228;Cineart Barbacena 4;4;CNAR;Barbacena;MG;MINAS GERAIS;Av Helena Aguiar de Figueiredo 131 
+196;64598;708 Studio Festival Mall 8;8;CNMK;Manaus;AM;AMAZONAS;Av. Rodrigo Otavio, 555
+197;65056;785 Salvador 10;10;CNMK;Salvador;BA;SERGIPE;Av. Franklin de Campos Sobral, 215
+198;1059094;2127 Juá Garden 4;4;CNMK;Juazeiro;BA;RIO GRANDE DO NORTE;Av  Bernardo Vieira 3775 - Tirol
+199;1060805;2130 Camacari 5;5;CNMK;Camacari;BA;BAHIA;Avenida Tancredo Neves 2915
+200;1082324;2137 Itabuna 4;4;CNMK;Itabuna;BA;SERGIPE;Rua Delmiro Gouveia S/n
+201;64499;718 Taguatinga 9;9;CNMK;Brasilia;DF;MINAS GERAIS;Rodovia BR 356, 3049 - Loja OP 47
+202;64500;720 Pier 21 13;13;CNMK;Brasilia;DF;MINAS GERAIS;Av. Olegario Maciel, 1600
+203;65649;769 Iguatemi Brasília 6;6;CNMK;Brasilia;DF;RIO DE JANEIRO;Avenida das Americas 500
+204;65054;702 Cmkb Vitória 8;8;CNMK;Vitória;ES;SAO PAULO;Av. Piracema, 669
+205;1048997;2117 Vila velha 8;8;CNMK;Vila Velha;ES;SAO PAULO;Av. Pres. Kennedy, 1500 - Ribeirão Preto
+206;65040;2133 Flamboyant Goiania 8;8;CNMK;Goiânia;GO;SAO PAULO;Rua Garcia Lorca, 301 - Rudge Ramos
+207;1032259;2113 Passeio das Aguas 7;7;CNMK;Goiânia;GO;SAO PAULO;Av Aricanduva 5555
+208;63837;768 BH Shopping 10;10;CNMK;Belo Horizonte;MG;SAO PAULO;Av Interlagos 2255
+209;63842;767 Diamond Mall 6;6;CNMK;Belo Horizonte;MG;SAO PAULO;Domingos Agostim 91
+210;64869;697 Patio Savassi 8;8;CNMK;Belo Horizonte;MG;SAO PAULO;Av Higienopolis 646
+211;1004205;2101 Cmk Uberlândia 5;5;CNMK;Uberlândia;MG;SAO PAULO;Av Cruzeiro do Sul 1100
+212;1039993;2111 Metropolitan Garden Shop Betim 7;7;CNMK;Betim;MG;SAO PAULO;Av Industrial 600
+213;1056765;2122 Varginha 4;4;CNMK;Varginha;MG;SAO PAULO;Av Deputado Benedito Matarazzo 9403
+214;63795;694 Campo Grande 10;10;CNMK;Campo Grande;MS;SAO PAULO;Av Nacoes Unidas 22540
+215;1027178;2108 Goiabeiras 7;7;CNMK;Cuiabá;MT;SAO PAULO;Av Sao Joao 2200
+216;1027034;2107 Cmk Riomar Recife 12;12;CNMK;Recife;PE;SAO PAULO;Avenida Doutor Francisco Mesquita, 1000 - Vila Prudente
+217;64784;700 Parkshop Barigui 8;8;CNMK;Curitiba;PR;SAO PAULO;Av. Dr. Chucri Zaidan, 902
+218;64816;698 Muller 8;8;CNMK;Curitiba;PR;SAO PAULO;Alexandre Martins 80
+219;65579;894 Sj Dos Pinhais 5;5;CNMK;São José dos Pinhais;PR;SAO PAULO;Av. das Nações Unidas, 4777 - Alto de Pinheiros
+220;1031261;2104 Londrina 7;7;CNMK;Londrina;PR;RIO DE JANEIRO;Praia de Botafogo 400
+221;1060606;2129 Cinemark Foz do Iguaçu 6;6;CNMK;Foz do Iguaçu;PR;RIO DE JANEIRO;Avenida Vicente de Carvalho, 909
+222;64032;719 Downtown Barra 12;12;CNMK;Rio de Janeiro;RJ;SAO PAULO;Av Domingos De Moraes 2564
+223;64498;728 Botafogo 6;6;CNMK;Rio de Janeiro;RJ;SAO PAULO;Av Iguatemi 777
+224;64514;692 Carioca Shopping 6;6;CNMK;Rio de Janeiro;RJ;SAO PAULO;Barao De Jacarei, 354 Centro
+225;64836;691 Cmk Niteroi 8;8;CNMK;Niteroi;RJ;SAO PAULO;Travessa Casalbuono, 120 - Vila Guilherme
+226;1010719;2106 Village Mall 4;4;CNMK;Rio de Janeiro;RJ;RIO DE JANEIRO;Rua  XV De Novembro, 8 Loja 33
+227;1042341;2112 Metropolitano Barra 7;7;CNMK;Rio de Janeiro;RJ;MINAS GERAIS;Av  Do Contorno 6061 3 Andar Lj 337
+228;1052213;2118 Jacarepagua 4;4;CNMK;Rio de Janeiro;RJ;SAO PAULO;Avenida Brigadeiro Faria Lima, 2232, Pinheiros
+229;1072228;2136 São Gonçalo 6;6;CNMK;São Gonçalo;RJ;SAO PAULO;Av Reboucas 3970
+230;64970;681 Cmkb Natal 7;7;CNMK;Natal;RN;SAO PAULO;Rua Gonçalves Crespo, 78
+231;1052667;2123 Roraima 4;4;CNMK;Boa Vista;RR;ESPIRITO SANTO;Rua José Alexandre Buaiz, 200
+232;64125;693 Canoas Cinemark 7;7;CNMK;Canoas;RS;SAO PAULO;Av  Magalhães De Castro 12100
+233;64127;695 Ipiranga 8;6;CNMK;Porto Alegre;RS;SAO PAULO;Rua Treze De Maio - Paraiso
+234;65578;704 Barra Sul 8;8;CNMK;Porto Alegre;RS;SAO PAULO;Rodovia Presidente Dutra, 230
+235;1072221;2134 Novo Hamburgo 5;5;CNMK;Novo Hamburgo;RS;MATO GROSSO DO SUL;Avenida Afonso Pena, 4909 - Santa Fé
+236;1072236;2135 Wallig Porto Alegre 8;8;CNMK;Porto Alegre;RS;DISTRITO FEDERAL;Qs 1 Rua 210 Taguatinga
+237;65052;703 Florianopolis 7;7;CNMK;Florianopolis;SC;DISTRITO FEDERAL;Pier 21, SCES, Trecho 2, Conjunto 32
+238;1052218;2121 Lages 4;4;CNMK;Lages;SC;GOIAS;Av. Jamel Cecilio, 3300, Luc T-120
+239;63683;706 Aracaju Shop. Jardins 9;9;CNMK;Aracaju;SE;RIO GRANDE DO SUL;Av Guilherme Schell 6750
+240;65598;755 Shopping Riomar 7;7;CNMK;Aracaju;SE;RIO GRANDE DO SUL;Av  Ipiranga 5200 Loja - 201
+241;64220;717 Tambore 9;9;CNMK;Barueri;SP;PARANA;Rua Pedro Viriato Parigot De Souza
+242;64274;726 Novo Shopping 9;9;CNMK;Ribeirão Preto;SP;PARANA;Av  Candido De Abreu 127
+243;64320;724 Extra Anchieta 9;9;CNMK;São Bernardo do Campo;SP;SANTA CATARINA;Rod Virgilio Varzea 587
+244;64322;716 Aricanduva 13;13;CNMK;Sao Paulo;SP;RIO GRANDE DO SUL;Avenida Diario de Noticias, 300 - Loja 1
+245;64341;714 Interlagos Shop 10;10;CNMK;Sao Paulo;SP;PARANA;Rua Voluntarios da Patria, 170
+246;64353;711 Metro Tatuape 8;8;CNMK;Sao Paulo;SP;DISTRITO FEDERAL  ;Ca 4 - Lago Norte
+247;64365;721 Patio Higienopolis 6;6;CNMK;Sao Paulo;SP;SAO PAULO  ;Avenida dos Autonomistas, 1400 - Ancora
+248;64494;687 Shopping D 10;10;CNMK;Sao Paulo;SP;SAO PAULO;Rod Raposo Tavares, 23600 - Cotia
+249;64382;713 Grand Plaza 10;10;CNMK;Santo Andre;SP;TOCANTINS;Av. Juscelino Kubitschek s/n
+250;64384;696 Center Vale 6;6;CNMK;São Jose dos Campos;SP;SAO PAULO;Rod. Raposo Tavares s/n, Km 14.5
+251;64387;710 Sp Market 11;11;CNMK;Sao Paulo;SP;SAO PAULO;Alameda Terracotta, 545, Area Ceramics
+252;64388;712 Colinas 8;8;CNMK;São Jose dos Campos;SP;SAO PAULO;Rua Capitao Pacheco e Chaves
+253;64394;705 Central Plaza 10;10;CNMK;Sao Paulo;SP;MINAS GERAIS;Avenida Paulo Gracindo, 15,
+254;64495;688 Market Place 8;8;CNMK;Sao Paulo;SP;RIO DE JANEIRO;Av Das Americas 3900
+255;64496;709 Praiamar 10;10;CNMK;Santos;SP;PERNAMBUCO;AV Republica do Libano, S/N Lj 4001
+256;64497;727 Villa Lobos 7;7;CNMK;Sao Paulo;SP;MATO GROSSO ;Av. J M de Figueiredo 500
+257;64594;684 Metro Santa Cruz 11;9;CNMK;Sao Paulo;SP;SAO PAULO;Av. Dom Pedro I, 7181
+258;64601;725 Iguatemi Campinas 11;11;CNMK;Campinas;SP;SAO PAULO;Av Dr Antonio Maria Laet 566
+259;64802;689 Jacarei 5;5;CNMK;Jacarei;SP;PARANA;Av. Theodoro Victorelli, 150
+260;64817;699 Center Norte 5;5;CNMK;Sao Paulo;SP;GOIAS;AV Perimentral Norte 8303
+261;64938;2132 Iguatemi 6;6;CNMK;Sao Paulo;SP;SAO PAULO;Av. Kennedy, 700
+262;65024;715 Eldorado 9;9;CNMK;Sao Paulo;SP;SAO PAULO;Rua Giovanni Battista Pirelli, 15
+263;65053;690 Boulevard Tatuape 5;5;CNMK;Sao Paulo;SP;MINAS GERAIS;Rod Br-381 Fernao Dias Km 492.601
+264;65543;682 Cidade Jardim 7;7;CNMK;Sao Paulo;SP;RIO DE JANEIRO;Av. Embaixador Abelardo Bueno, 1300
+265;65608;723 Patio Paulista 7;7;CNMK;Sao Paulo;SP;ESPIRITO SANTO;Rua Luciano das neves n° 2418
+266;65620;759 Guarulhos 15;15;CNMK;Guarulhos;SP;SAO PAULO;Av. Raimundo Pereira de Magalhaes 1465
+267;65645;757 Cinemark Uniao Osasco 10;10;CNMK;Osasco;SP;SÃO PAULO;Av. Otto Baumgart, 500
+268;65691;663 Shopping Granja Vianna 5;5;CNMK;Cotia;SP;SAO PAULO;Av Paulista 1230
+269;998437;662 Raposo Tavares 7;7;CNMK;Sao Paulo;SP;RIO DE JANEIRO;Av Geremario Dantas 404
+270;1000640;2100 Park Shopping Sao Caetano 7;7;CNMK;São Caetano do Sul;SP;SANTA CATARINA;Rodovia Br-282
+271;1000668;2103 Mooca Plaza Shopping 6;6;CNMK;Sao Paulo;SP;SAO PAULO;Av Narciso Yague Guimaraes, 1001
+272;1029258;2105 Via Vale 6;6;CNMK;Taubate;SP;RORAIMA;Avenida Glaycon de Paiva, 160
+273;1030118;758 Tucuruvi 6;6;CNMK;Sao Paulo;SP;MINAS GERAIS;Rua Humberto Pizzo, 999
+274;1033065;2109 Golden Square Sao Bernardo 5;5;CNMK;São Bernardo do Campo;SP;BAHIA;Rodovia Lomato Júnior km06
+275;1033896;2115 Atrium 7;7;CNMK;Santo Andre;SP;PARANA;Av. Das Cataratas 3570
+276;1049685;2110 Tietê Plaza Shopping 7;7;CNMK;Sao Paulo;SP;BAHIA;BVD Shopping Camacaari, S/N
+277;1050336;2114 Lar Center 3;3;CNMK;Sao Paulo;SP;SAO PAULO;Rodovia Alkindar Monteiro Junqueira, 1013
+278;1050737;2119 Cidade de São Paulo 6;6;CNMK;Sao Paulo;SP;SAO PAULO;Av Antartica 408
+279;1052523;2120 Mogi 7;7;CNMK;Mogi das Cruzes;SP;RIO GRANDE DO SUL;Av. das Nacoes Unidas, 2001
+280;1063129;2128 Bragança 4;4;CNMK;Bragança;SP;RIO DE JANEIRO;Rua Presidente Kennedy 425
+281;1066816;2102 West Plaza 7;7;CNMK;Sao Paulo;SP;RIO GRANDE DO SUL;Av. Assis Brasil 2611/401
+282;1082092;2140 Mogi Guaçu 4 ;4;CNMK;Mogi Guaçu;SP;SAO PAULO;Rua Princesa Isabel, 88
+283;997404;661 Capim Dourado 6;6;CNMK;Palmas;TO;BAHIA;Av Asis Maron S/n Praca Shopping
+284;1031499;Cinépolis Ponta Negra 10;10;CNPL;Manaus;AM;SAO PAULO;R. São José, 933 - Setor Central
+285;1041480;Cinepolis Manaus Plaza 8;8;CNPL;Manaus;AM;PARÁ;Av. Visconde Souza Franco, 776 Lj. 501
+286;1041489;Cinepolis Millenium 8;8;CNPL;Manaus;AM;SAO PAULO;Rua Amador Beuno 219
+287;1052427;Cinepolis Amapá Garden 8;8;CNPL;Macapá;AP;BAHIA;Rod. BA-526, 305
+288;65687;Cinépolis Salvador Norte 8;8;CNPL;Salvador;BA;RIO DE JANEIRO;Avenida Borges de Medeiros, 1424
+289;1006650;Cinépolis Bela Vista 9;9;CNPL;Salvador;BA;SAO PAULO;Alameda Rio Negro, 111 Alphaville
+290;1033947;Cinépolis North Shopping Jóquei 5;5;CNPL;Fortaleza;CE;SANTA CATARINA;Rod. BR 470 s/n
+291;1045075;Cinépolis RioMar Fortaleza 10;10;CNPL;Fortaleza;CE;SAO PAULO;Av. José Pinheiro Borges - Itaquera
+292;1062778;Cinépolis RioMar Kennedy 6;6;CNPL;Fortaleza;CE;SAO PAULO;Rua Jacy Teixeira Camargo, 940 Jd Lago
+293;1044075;Cinépolis Moxuara 5;5;CNPL;Cariacica;ES;MARANHAO;Av Euclides Figueiredo 1000
+294;1059544;Cinepolis Cerrado 7;7;CNPL;Goiânia;GO;PERNAMBUCO;Av  Barratos De Manezes 800
+295;998577;Cinépolis São Luis Shopping 10;10;CNPL;São Luís;MA;PARAIBA;Av Flavio Ribeiro Coutinho 805
+296;1009150;Cinepolis Estacao BH 6;6;CNPL;Belo Horizonte;MG;RIO DE JANEIRO;R. Barão de São Gonçalo, 100 - Neves
+297;1041408;Cinepolis Uberlandia 10;10;CNPL;Uberlândia;MG;RIO GRANDE DO SUL;Av. Rio Branco 425
+298;1000688;Cinépolis Norte Sul Plaza 7;7;CNPL;Campo Grande;MS;MATO GROSSO DO SUL;Av. Presidente Ernesto Geisel 2300
+299;1082837;Cinepolis Três Lagoas 4;4;CNPL;Três Lagoas;MS;PARÁ;Rod. Augusto Montenegro, 4300, Lj.2026
+300;1041450;Cinepolis Três Américas 8;8;CNPL;Cuiabá;MT;SAO PAULO;Av. Juscelino Kubitschek 2041 Vila Olimp
+301;1075176;Cinépolis Shopping Estação Cuiaba 7;7;CNPL;Cuiabá;MT;BAHIA;Av. dos rodoviários
+302;65674;Cinépolis Boulevard Belem 7;7;CNPL;Belem;PA;SAO PAULO;Rua Gral. Div. Pedro Rodriguez 400
+303;1006633;Cinépolis Parque Belem 7;7;CNPL;Belem;PA;MINAS GERAIS;Av. Cristiano Machado 11833
+304;998607;Cinépolis Manaira Shopping 11;11;CNPL;João Pessoa;PB;SANTA CATARINA;Rodovia BR 101 – KM210 – s/n – área 1
+305;1056681;Cinepolis Mangabeira 5;5;CNPL;João Pessoa;PB;SAO PAULO;Av Nove de Julho, 3333
+306;998589;Cinépolis Shopping Guararapes 12;12;CNPL;Jaboatão dos Guararapes;PE;SAO PAULO;Av. Rotary 624
+307;1073119;Cinepolis Patteo Olinda 8;8;CNPL;Olinda;PE;AMAZONAS;Av. Coronel Teixeira, 5705
+308;1055616;Cinépolis Rio Poty 12;12;CNPL;Teresina;PI;SAO PAULO;Av Luiz Eduardo de Toledo Prado, 900
+309;1033690;Cinepolis Patio Batel 8;8;CNPL;Curitiba;PR;RIO GRANDE DO NORTE;Av Senador Salgado Filho, 2234
+310;1079385;Cinépolis Jockey Plaza Curitiba 8 ;8;CNPL;Curitiba;PR;RIO GRANDE DO NORTE;Av Doutor Medeiros Filho, 2395
+311;65696;Cinépolis Lagoon 6 3D;6;CNPL;Rio de Janeiro;RJ;SAO PAULO;Rua Gral Marcondes Salgado 11
+312;998616;Cinépolis São Gonçalo Shop. 8;8;CNPL;São Gonçalo;RJ;PARANA;Av. do Batel, 1868
+313;1075495;Cinepolis Rio Design Barra 3;3;CNPL;Rio de Janeiro;RJ;SAO PAULO;Av. Gisele Constantino, s/n
+314;1032984;Cinépolis Natal Shopping 8;8;CNPL;Natal;RN;CEARÁ;Av Lineu Machado, 419
+315;1032987;Cinépolis Natal Norte 6;6;CNPL;Natal;RN;MINAS GERAIS;Av. João Naves de Ávila, 1331 Loja 310
+316;1000681;Cinépolis San Pelegrino 6;6;CNPL;Caxias do Sul;RS;MATO GROSSO;Av. Brasília 177
+317;1067872;Cinepolis Santa Maria 5;5;CNPL;Santa Maria;RS;AMAZONAS;Av. Djalma Batista, 2100 - Chapada
+318;1070637;Cinépolis JP Porto Alegre 4;4;CNPL;Porto Alegre;RS;AMAZONAS;Av Djalma Batista 1661 G3 Chapada
+319;997531;Cinépolis Blumenau Norte Shopping 7;7;CNPL;Blumenau;SC;SAO PAULO;Av. José Munia, 4775
+320;1010307;Cinépolis Continente Park 8;8;CNPL;São José;SC;SAO PAULO;Presidente Juscelino Kubitschek de Oliveira, 5000
+321;65653;Cinépolis Santa Ursula 8;8;CNPL;Ribeirão Preto;SP;SAO PAULO;Rua Tucunares 500 Sala 93
+322;65683;Cinépolis Shopping Largo 13 8;8;CNPL;Sao Paulo;SP;ESPIRITO SANTO;Rodovia BR 262, 6.555
+323;65727;Cinépolis Iguatemi Alphaville 9;9;CNPL;Barueri;SP;CEARÁ;Rua Desembargador Lauro Nogueira 1355
+324;998557;Cinépolis Metro Itaquera 8;8;CNPL;Sao Paulo;SP;SAO PAULO;Bartholomeu de Carlos 230
+325;998566;Cinépolis Campinas Shopping 10;10;CNPL;Campinas;SP;AMAPA;Rodovia Juscelino Kubstchek de Oliveira, 2141
+326;1006641;Cinépolis JK Iguatemi 8;8;CNPL;Sao Paulo;SP;PIAUI;Av. Marechal Castelo Branco, 911
+327;1007138;Cinépolis Parque Barueri 9;9;CNPL;Barueri;SP;PARAIBA;Avenida Hilton Souto Maior, 3.901
+328;1010517;Cinepolis Jundiai Shopping 10;10;CNPL;Jundiai;SP;GOIAS;Av anhanguera 10790
+329;1031285;Cinépolis São Bernardo 8;8;CNPL;São Bernardo do Campo;SP;CEARÁ;Av Sargento Herminio Sampaio 3100
+330;1032082;Cinépolis Iguatemi Ribeirão Preto 6;6;CNPL;Ribeirão Preto;SP;SAO PAULO;Est Ernestina Vieira, 149
+331;1033165;Cinépolis Nações Bauru 6;6;CNPL;Bauru;SP;SAO PAULO;Estrada do Mandi, 1205
+332;1033699;Cinépolis Iguatemi Esplanada 10;10;CNPL;Sorocaba;SP;RIO GRANDE DO SUL;Rua Irma Dulce, 550 - Lojas 1049 – GLEBA 2A – Bairro Renascença
+333;1041542;Cinepolis Plaza Avenida 7;7;CNPL;São José do Rio Preto;SP;RIO GRANDE DO SUL;Av. João Pessoa 1831
+334;1041792;Cinépolis Iguatemi Rio Preto 7;7;CNPL;São José do Rio Preto;SP;PERNAMBUCO;R. Eduardo de Moraes s/n
+335;1042031;Cinepolis Marilia 5;5;CNPL;Marilia;SP;MATO GROSSO;Av Miguel Sutil 9300
+336;1050302;Cinépolis Parque Shopp Maia 11;11;CNPL;Guarulhos;SP;RIO DE JANEIRO;Avenida da Américas 7777
+337;1062785;Cinépolis Plaza Shopp Carapicuíba 5;5;CNPL;Carapicuíba;SP;SAO PAULO;Av. Selma Parada Bailarina 505
+338;1065616;Cinépolis Itaquá Garden 5;5;CNPL;Itaquaquecetuba;SP;PARANA;Av. Victor Ferreira do Amaral 2633
+339;1079074;Cinépolis Galleria Shopping 5;5;CNPL;Campinas;SP;SAO PAULO;Rua Cardoso Ribeiro 970
+340;1079503;Cinépolis Ourinhos 4;4;CNPL;Ourinhos;SP;SAO PAULO;Rua Andorra 500
+341;1079580;Cinépolis Jardim Oriente 7;7;CNPL;São José dos Campos;SP;SAO PAULO;Rua Pamplona 1704  Jardim Paulista
+342;1082167;Cinépolis Jardim Pamplona 5 ;5;CNPL;Sao Paulo ;SP;MATO GROSSO DO SUL;BR-158, 163
+343;64050;Cine Show Nova Friburgo 3;3;CSHW;Nova Friburgo;RJ;RIO DE JANEIRO;Pca Pres Getulio Vargas 139-3 Pav
+344;64076;Shopping Volta Redonda 4;4;CSHW;Volta Redonda;RJ;RIO DE JANEIRO;R. Doze, 300 - Vila Santa Cecília
+345;64571;Resende Shopping 2;2;CSHW;Resende;RJ;RIO DE JANEIRO;Avenida Saturnino Braga, 369
+346;64772;Cine Show Barra Mansa 2;2;CSHW;Barra Mansa;RJ;RIO DE JANEIRO;Avenida Joaquim Leite, 577
+347;64992;Cine Show Teresopolis 3;3;CSHW;Teresopolis;RJ;RIO DE JANEIRO;Rua Edmundo Bittencourt, 101
+348;1004112;Cine Show Angra dos Reis 4;4;CSHW;Angra dos Reis;RJ;RIO DE JANEIRO;Estrada Municipal 200
+349;1004217;Cine Show Barra do Pirai 2;2;CSHW;Barra do Pirai;RJ;RIO DE JANEIRO;Rua: Coronel Carlos Araujo 60
+350;1010512;Cine Show Agulhas Negras 2;2;CSHW;Resende;RJ;RIO DE JANERIO;Abel Rodriguez Ponte 67
+351;1039979;Cine Show Cadima 3;3;CSHW;Nova Friburgo;RJ;RIO DE JANEIRO;Rua Moisés Amélio 17
+352;1045137;Cine Show Tres Rios 3;3;CSHW;Três Rios;RJ;RIO DE JANEIRO;Barao do Rio Branco 303
+353;1079950;Cine Show Macae 5;5;CSHW;Macae;RJ;SANTA CATARINA;Av Marcolino Martins Cabral 2525
+354;1061610;Cine Show Farol 4;4;CSHW;Tubarão;SC;SANTA CATARINA;Rua Bocaiuva, 2468
+355;1067927;Cine Show Beiramar 5;5;CSHW;Florianopolis;SC;RIO DE JANEIRO;Rua Bento Pessanha 800
+356;65586;Espaço Itaú de Cinema Salvador 4;4;ESPA;Salvador;BA;BAHIA;Praca Castro Alves S/n Centro
+357;1003696;Espaço Itaú de Cinema Brasilia 9;9;ESPA;Brasilia;DF;SAO PAULO;Rua Augusta, 1475
+358;64852;Espaço Itaú de Cinema Curitiba 5;5;ESPA;Curitiba;PR;SAO PAULO;Rua Frei Caneca, 569
+359;64896;Espaço Itaú de Cinema Botafogo 6;6;ESPA;Rio de Janeiro;RJ;SAO PAULO;Rua Fradique Coutinho, 361
+360;64659;Espaço Itaú de Cinema Porto Alegre 8;8;ESPA;Porto Alegre;RS;RIO DE JANEIRO;Praia de Botafogo, 316
+361;64319;Espaço Itaú de Cinema Augusta 5;5;ESPA;Sao Paulo;SP;SAO PAULO;Rua Turiassu 2100
+362;64549;Espaço Itaú de Cinema Frei Caneca 9;9;ESPA;Sao Paulo;SP;RIO GRANDE DO SUL;Rua Tulio De Rose, 80  Passo Da Areia
+363;64591;CineSala1;1;ESPA;Sao Paulo;SP;PARANA;Rua Comendador Araújo, 731, Curitiba
+364;65537;Espaço Itaú de Cinema Pompeia 11;11;ESPA;Sao Paulo;SP;DISTRITO FEDERAL;Shopping Casa Park  SGCV Sul - Lote 22
+365;63970;Estação NET Botafogo 3;3;ESTA;Rio de Janeiro;RJ;RIO DE JANEIRO;Rua Voluntarios Da Patria, 88
+366;64039;Estação NET Rio 5;5;ESTA;Rio de Janeiro;RJ;RIO DE JANEIRO;Rua Voluntários da Pátria, 35
+367;64510;Estação NET Ipanema 2;2;ESTA;Rio de Janeiro;RJ;RIO DE JANEIRO;Rua Visconde de Pirajá, 605 
+368;65515;Estação NET Gávea 5;5;ESTA;Rio de Janeiro;RJ;RIO DE JANEIRO;Rua Marques De Sao Vicente 52 4 Andar
+369;64018;Candido Mendes 1;1;GCAS;Rio de Janeiro;RJ;RIO DE JANEIRO;Rua Joana Angélica, 63 Ipanema
+370;64961;Santa Teresa 1;1;GCAS;Rio de Janeiro;RJ;RIO DE JANEIRO;Rua Paschoal C  Magno 136
+371;1042475;Cine Museu da República 1;1;GCAS;Rio de Janeiro;RJ;RIO DE JANEIRO;Rua do Catete, 153
+372;1072040;Barra Point 2;2;GCAS;Rio de Janeiro;RJ;RIO DE JANEIRO;Av. Armando Lombardi, 350
+373;64075;GNC Iguatemi Caxias 6;6;GNC;Caxias do Sul;RS;RIO GRANDE DO SUL;Rodovia RSC 453, 2780, Km 3,5
+374;64129;GNC Lindoia 2;2;GNC;Porto Alegre;RS;RIO GRANDE DO SUL;Av. Assis Brasil 3522
+375;64133;GNC Praia De Belas 6;6;GNC;Porto Alegre;RS;RIO GRANDE DO SUL;Av. Praia de Belas, 1181
+376;64541;GNC Moinhos 4;4;GNC;Porto Alegre;RS;SANTA CATARINA;Rua Visconde de Taunay, 235
+377;65581;GNC Iguatemi 6;6;GNC;Porto Alegre;RS;SANTA CATARINA;Rua 7 De Setembro 1213
+378;64150;GNC Mueller 3;3;GNC;Joinville;SC;RIO GRANDE DO SUL;Rua Olavo Barreto Viana, 36
+379;64194;GNC Neumarkt 6;6;GNC;Blumenau;SC;SANTA CATARINA;Rua Santa Catarina, 1, Balneario Camboriú
+380;65482;GNC Balneário Camboriu 8;8;GNC;Camboriu;SC;RIO GRANDE DO SUL;Av Joao Wallig, 1800
+381;65650;GNC Garten 6;6;GNC;Joinville;SC;SANTA CATARINA;Av. Rolf Wiest 333
+382;1059307;GNC Nações Criciúma 6;6;GNC;Criciúma;SC;SANTA CATARINA;Av. Jorge Elias de Lucca 677
+383;1063818;Cine Gracher Pato Branco 3;3;GRAC;Pato Branco;PR;SANTA CATARINA;Av. Consul Carlos Renaux, 56
+384;1065589;Cine Gracher Arapongas 3;3;GRAC;Arapongas;PR;SANTA CATARINA;Rodovia Antonio Heil, 200
+385;64197;Cine Gracher 3;3;GRAC;Brusque;SC;SANTA CATARINA;Avenida dos Ferroviários, 1045
+386;1033337;Cine Gracher Havan 3;3;GRAC;Brusque;SC;PARANA;Rod BR-158, 6000
+387;1052556;Cine Gracher Porto União 3;3;GRAC;Porto União;SC;PARANA;Rod. BR 369,  s/n
+388;1072256;Cine Gracher Indaial 4;4;GRAC;Indaial;SC;SANTA CATARINA;Rodovia BR 470, nº 2002
+389;1073358;Cine Gracher Joaçaba 3;3;GRAC;Joaçaba;SC;SANTA CATARINA;Rua Adolfo Ziguelli 800
+390;1074271;Cine Gracher Porto Belo 4;4;GRAC;Porto Belo;SC;SANTA CATARINA;Avenida Governador Celso Ramos, 800
+391;1075695;Cine Gracher Havan São Bento 4;4;GRAC;São Bento do Sul;SC;SANTA CATARINA;Rodovia Deputado Genésio Tureck, 219
+392;1080921;São Jose 2;2;GRUC;Jequié;BA;PARAIBA;Rua Doutor Pedro Firmino, 470
+393;1087609;Amargosa 3;3;GRUC;Amargosa;BA;SAO PAULO;Rua Guanabara, 2919
+394;1065953;Ibiapaba 2;2;GRUC;Tianguá;CE;SAO PAULO;Rua Monsenhor Soares 425
+395;1078232;Maranguape 3;3;GRUC;Maranguape;CE;SANTA CATARINA;Av Dom Pedro Ii 35
+396;1081090;Cine Eusebio 5;5;GRUC;Eusébio;CE;SANTA CATARINA;Rua 15 de Novembro, 303
+397;1082666;Cine Inter Santa Ines 2;2;GRUC;Santa Ines;MA;SAO PAULO;Av Marechal Deodoro Da Fonseca
+398;1067198;Sete Lagoas 4;4;GRUC;Sete Lagoas;MG;SANTA CATARINA;Rua Independencia 91
+399;1057181;Aquidauana 1;1;GRUC;Aquidauana;MS;SAO PAULO;Avenida XV de Novembro, 89 - Centro
+400;64860;Guedes 3;3;GRUC;Patos;PB;SAO PAULO;Av Literario Grecco 600
+401;1061277;Cinemaxxi Cidade Luz 3;3;GRUC;Guarabira;PB;PERNAMBUCO;Av. Henrique de Holanda, 3000, Redenção
+402;1074971;Cinemaxxi da Serra 1;1;GRUC;Solânea;PB;SANTA CATARINA;Av. Anita Garibaldi, 461
+403;1043780;Vitória de Santo Antão 4;4;GRUC;Vitória de Santo Antão;PE;SAO PAULO;Jean Anastace Kovelis, 213
+404;1081006;Cine Picos 3;3;GRUC;Picos;PI;MATO GROSSO DO SUL;Rua Oscar Tindade de Barros 1169
+405;1064874;West Side 3;3;GRUC;Cascavel;PR;SAO PAULO;R. Paiquere, 200 - Jardim Paiquerê
+406;65042;Videira 2;2;GRUC;Videira;SC;PARAIBA;Av. Otacilio Lira Cabral 1300
+407;65049;Rio Do Sul 2;2;GRUC;Rio do Sul;SC;PARANA;Av. Brasil, 2962
+408;1029245;Cine Concordia 1;1;GRUC;Concordia;SC;CEARÁ;rua Zeca Teles de Menezes 200 Tianguá
+409;1045582;Fraiburgo 1;1;GRUC;Palhoça;SC;MINAS GERAIS;Av. Otavio Campelo Ribeiro 2801
+410;64196;Andradina 4;4;GRUC;Andradina;SP;SAO PAULO;Rod Prefeito Joaquim Simao s/n
+411;64251;Itapetininga 5;5;GRUC;Itapetininga;SP;PARAIBA;Rua Praça 26 de Novembo
+412;1005377;Cine La Plage 3;3;GRUC;Guarujá;SP;CEARÁ;Rua Coronel Antonio Botelho de Sousa 254
+413;1032231;Grupo Cine Itapecerica 4;4;GRUC;Itapecerica da Serra;SP;SAO PAULO;Alcides Ramos Nogueira, 650
+414;1033119;Fernandopolis 2;2;GRUC;Fernandopolis;SP;SAO PAULO;Avenida Duque de Caxias 2225
+415;1055095;Cajamar 3;3;GRUC;Cajamar;SP;BAHIA;Rua Brigadeiro Sá Bittencourt, 444
+416;1059196;Valinhos 3;3;GRUC;Valinhos;SP;PIAUI;Av. Senador Elvidio Nunes 5233
+417;1069108;Santa Isabel 2;2;GRUC;Santa Isabel;SP;CEARA;Av Eusebio de Queiroz 1890
+418;1080315;Pindamonhangaba 4;4;GRUC;Pindamonhangaba;SP;MARANHAO;Av Marechal Castelo Branco 3912
+419;1080891;Varzea Paulista 4;4;GRUC;Varzea Paulista;SP;BAHIA;Av Doutor Luis Sandes 100
+420;1087616;Pacajus 4 (Temp Closed);4;GRUC;Pacajus;;CEARÁ;Av. Vice Prefeito Expedito Chaves Calvante 13
+421;1062006;Reserva Cultural de Cinema Niterói 5;5;IMOV;Niteroi;RJ;SAO PAULO;Av  Paulista 900
+422;64907;Reserva Cultural de Cinema 4;4;IMOV;Sao Paulo;SP;RIO DE JANEIRO;Av. Visconde do Rio Branco 880, São Domingos
+423;65021;Cine Romeu 1;1;INBR;Cruzeiro do Sul;AC;RONDONIA;Av. Rio Branco 4966
+424;1062556;Cine Teatro Recreio 1;1;INBR;Rio Branco;AC;RORAIMA;Av. Capitão Ene Garcez, 1883
+425;63686;Cine Arte Pajucara 1;1;INBR;Maceió;AL;TOCANTINS;Avenida Conego Joao Lima 2037
+426;1065443;Cine Kimak 2;2;INBR;Manacapuru;AM;RONDONIA;Av  Seis De Maio, 1126
+427;1071657;Cine Casarão 1;1;INBR;Manaus;AM;ALAGOAS;Av Dr Antonio Gouveia 1113 Pajucara
+428;1056760;Imperator Vila Nova 2;2;INBR;Macapá;AP;CEARA;Rua Major Facundo 500
+429;1042005;Cine Hobby 2;2;INBR;Eunapolis;BA;PARAIBA;Av  Presidente Kennedy S/n
+430;1078703;Cine Xtreme 1;1;INBR;Itamaraju;BA;PERNAMBUCO;Henrique Dias 609
+431;63723;Cineteatro Sao Luiz 1;1;INBR;Fortaleza;CE;PIAUI;Av  Raul Lopes, 1000 Bairro Dos Noivos
+432;64717;Renato Aragao 3;3;INBR;Sobral;CE;CEARA;Av. John Sanford, 1800
+433;64551;Cinemas Benfica 4;4;INBR;Fortaleza;CE;CEARA;Av Carapinima 2200
+434;65679;Cinema Francisco Lucena 2;2;INBR;Limoeiro do Norte;CE;MINAS GERAIS;Cacadao A Bernades 132 loja 61
+435;1032093;Cinema do Dragão – Fundação Joaquim Nabuco 2;2;INBR;Fortaleza;CE;MINAS GERAIS;Rua Coronel 352
+436;1033934;Cinema O Bom Vizinho 2;2;INBR;Quixadá;CE;MINAS GERAIS;Rua Tridentes 95
+437;1055472;Cinema Aracati 2;2;INBR;Aracati;CE;MINAS GERAIS;Pc Mons Messias Bragança 178
+438;1081412;Cinema Bom Vizinho Acaraú 2;2;INBR;Acaraú;CE;MINAS GERAIS;Rua Herbster 298
+439;63785;Cine Drive-in 1;1;INBR;Brasilia;DF;MINAS GERAIS;Rio Grande Do Sul 1007
+440;63786;Cine Brasilia 1;1;INBR;Brasilia;DF;MINAS GERAIS;Rua Tiradentes 390
+441;1004071;Cultura Liberty Mall 4;4;INBR;Brasilia;DF;RIO DE JANEIRO;R Dr Nelson De Sa Earp 88
+442;64545;Metropolis 1;1;INBR;Vitória;ES;RIO DE JANEIRO;Trav  Dos Pescadores #88, Buzios
+443;1066026;Centro Cultural Sesc Glória Vitoria 1;1;INBR;Vitória;ES;MINAS GERAIS;Rua Doutor Alves Pequeno, 237, 3º andar,
+444;63760;Casa De Cultura 1;1;INBR;Goiânia;GO;RIO DE JANEIRO;Rua Marquês de São Vicente, 476 - Gávea
+445;63772;Plaza 3;3;INBR;Itumbiara;GO;RIO DE JANEIRO;Rua Miguel De Frias 9, Icarai
+446;63780;Prime Anapolis 4;4;INBR;Anapolis;GO;RIO DE JANEIRO;Rua Vinte e Três, 0, Sn, Jd Normândia
+447;64962;Cinemax 1;1;INBR;Morrinhos;GO;RIO DE JANEIRO;Praca Visconde Do Rio Preto,280
+448;1031310;Cine Quelipe 1;1;INBR;Planaltina;GO;SAO PAULO;Praça Cônego Joaquim Alves 167
+449;1086850;Cine Lume Goiânia 2;2;INBR;Goiânia;GO;SAO PAULO;Avenida Rodolfo Guimarães, 635 Brotas
+450;1030223;Cine Star Imperatriz 3;3;INBR;Imperatriz;MA;SAO PAULO;Rua Nhonho do Livramento, 1554
+451;1052478;Cine Lume 1;1;INBR;São Luís;MA;SAO PAULO;Tr Anchieta, 40  Pederneiras
+452;1086663;Cine Lume Balsas 2;2;INBR;Balsas;MA;SAO PAULO;Rua Cel Diogo, 1323
+453;64708;Calcadao 1;1;INBR;Viçosa;MG;SAO PAULO;Pernambuco 256
+454;63815;Cine Teatro Barbacena 2;2;INBR;Barbacena;MG;SAO PAULO;Rua Augusta 2075 Jardim Paulista
+455;63836;Espaco Cinemax - Atletico 2;2;INBR;Itabira;MG;SAO PAULO;Rua Honduras, 1400
+456;63867;Roxy 1;1;INBR;Passos;MG;SAO PAULO;Rua Sete  995
+457;63872;Maraja 1;1;INBR;Pedro Leopoldo;MG;SAO PAULO;Rua João Teixeira da Frota 1184
+458;63883;Ultravisao 4;4;INBR;Poços de Caldas;MG;SAO PAULO;Rua Aurora, 522 - Santa Efigenia
+459;63893;Gloria 1;1;INBR;São João del Rei;MG;SAO PAULO;Rua Fernando Costa, 95
+460;64713;Cine Veredas 1;1;INBR;Muriae;MG;SAO PAULO;Rua Gonçalves Dias, 543
+461;64517;14 Bis 1;1;INBR;Guaxupe;MG;SAO PAULO;Av  Das Esmeraldas 701
+462;64678;Cine Cambui 1;1;INBR;Cambui;MG;SAO PAULO;Rua Professor Germano Negrini 150 Centro
+463;65023;Serra Cine 1;1;INBR;Nova Serrana;MG;ACRE;Av. Rodrigues Alves, 60
+464;65033;Center Cine 1;1;INBR;Oliveira;MG;MINAS GERAIS;Rua Capitao Joaquim Norberto 77
+465;65709;Centro Cult. João Bracks 1;1;INBR;Manhuaçu;MG;ESPIRITO SANTO;Av Fernando Ferrari, 514, Goiabeiras
+466;997656;Vitoria 1;1;INBR;Santa Barbara;MG;SAO PAULO;Av  Joao Lemos 578 B
+467;1003531;Cine Clube Itajubá 1;1;INBR;Itajubá;MG;RIO DE JANEIRO;Rua 14, 235 - Vila Santa Cecília
+468;1031957;Cinema Belas Artes 3;3;INBR;Belo Horizonte;MG;MINAS GERAIS;Pça Cnel. Justiniano, 72, Subsolo
+469;1049521;Gloria Shopping 1;1;INBR;São João del Rei;MG;SAO PAULO;Rua Joao Pessoa 842 - Centro
+470;1073407;Patrocine Cinemas 2;2;INBR;Patrocinio;MG;SAO PAULO;Rua Berta, 111
+471;1080334;Cine Barão Shopping 1;1;INBR;Barão de cocais ;MG;SAO PAULO;Sao Sebastiao 920
+472;1082645;Cine Aliança 1;1;INBR;São João Nepomuceno;MG;SAO PAULO;Av  Marechal Tito,7579
+473;64304;Rondon Plaza Shopping 3;3;INBR;Rondonopolis;MT;SAO PAULO;Av  Presidente Kennedy 126
+474;64520;Vip 2;2;INBR;Sinop;MT;SAO PAULO;Rua Padre Arnaldo Caiaffa, 10
+475;64526;Cinemais 2;2;INBR;Tangará da Serra;MT;RIO DE JANEIRO;Estrada Uniao Industria 11 000 Loja 102
+476;64746;Vila Rica 2;2;INBR;Primavera do Leste;MT;SAO PAULO;Rod. Marechal Rondon, km 335
+477;64832;Cine Teatro Xin 2;2;INBR;Caceres;MT;MINAS GERAIS;Rua Pitangui
+478;65641;Cine Libero Luxardo;1;INBR;Belem;PA;MINAS GERAIS;Pc 15 de Novembro, 15
+479;1031434;Cinemax Xinguara 2;2;INBR;Xinguara;PA;SAO PAULO;Rua 9 Julho, 671
+480;1058216;Itacine 1;1;INBR;Itaituba;PA;RIO DE JANEIRO;Estrada Camboatá, 2300 
+481;63871;Bangue 1;1;INBR;João Pessoa;PB;SAO PAULO;Rua Major Jose Inacio, 2154
+482;1004044;Cine RT Remigio 1;1;INBR;Remigio;PB;GOIAS;Praca Civica 2 Centro
+483;1071860;Cine Garden 1;1;INBR;Catolé do Rocha;PB;GOIAS;Praça da República, 256
+484;63987;Cinema da Fundação Joaquim Nabuco 2;2;INBR;Recife;PE;GOIAS;Avenida Universitaria 2221
+485;998602;Costa Dourada 4;4;INBR;Cabo de Santo Agostinho;PE;DISTRITO FEDERAL;Área Especial do Autódromo Brasília
+486;1003718;São Luiz 1;1;INBR;Recife;PE;DISTRITO FEDERAL;Eqs 106/107 Ala Sul
+487;1081769;Theatro Cinema Guarany 1;1;INBR;Recife ;PE;MATO GROSSO;Av  Lions Internacional, 1950
+488;64000;Teresina 7;7;INBR;Teresina;PI;PARANA;Pernambuco,784
+489;64518;Cine Aston 2;2;INBR;Paranavai;PR;MATO GROSSO;Av  Das Figueiras 140 A
+490;63884;Cineplex Batel 5;5;INBR;Curitiba;PR;MATO GROSSO;Av. Nilo Torres, 151,
+491;63903;Cultural Gloria/cine Max 3;3;INBR;Francisco Beltrão;PR;MATO GROSSO;Rua Rondonopolis 351
+492;63915;Cianorte/ Municipal 1;1;INBR;Cianorte;PR;MATO GROSSO;Rua Padre Cassemiro 3
+493;64927;Ivaipora 1;1;INBR;Ivaipora;PR;GOIAS;Rua Major Limirio 792
+494;65013;Cinemaxs Fiorella 1;1;INBR;Campo Mourão;PR;PARANA;Rua Coronel Dulcidio
+495;65513;Cineplex Cataratas 4;4;INBR;Foz do Iguaçu;PR;PARANA;Av. Júlio Assis Cavalheiro, 390
+496;65619;Palladium Imax 1;1;INBR;Curitiba;PR;PARANA;Av  Maranhao 62 - Shop  Urban
+497;1006509;Cine Café 1;1;INBR;Santo Antônio da Platina;PR;RIO GRANDE DO SUL;Avenida Borges de Medeiros, 2697, Centro
+498;1049495;Cine Teatro Valeria Luercy 1;1;INBR;Jaguariaíva;PR;RIO GRANDE DO SUL;Rua Andradas, 748
+499;1056344;Cinemateca Joao Batista Groff 1;1;INBR;Curitiba;PR;RIO GRANDE DO SUL;General Lima E Silva 776
+500;1067462;Cinema.com Irati 1;1;INBR;Irati;PR;RIO GRANDE DO SUL;Rua Marquês do Herval, 1604
+501;1074753;Cinemaxs Paraná Família 2;2;INBR;Campo Mourão;PR;RIO GRANDE DO SUL;Rua Marques Do Herval 1604
+502;1076787;Cinema.com Prudentopolis 1;1;INBR;Prudentopolis;PR;PARANA;Praca Presidente Kennedy 1111 Centro
+503;1078160;Cine Passeio 2;2;INBR;Curitiba;PR;RIO GRANDE DO SUL;Av Rio Grande 451 Cassino
+504;63968;Bauhaus 2;2;INBR;Petropolis;RJ;RIO GRANDE DO SUL;Rua Moran, 1285 / Centro
+505;64009;Cine Clube Bardot 1;1;INBR;Armação dos Buzios;RJ;RIO GRANDE DO SUL;Av 7 Setembro, 1062 sl 9 Centro
+506;64041;Inst Moreira Salles 1;1;INBR;Rio de Janeiro;RJ;PARANA;Av  Goioere 2020
+507;64046;Cine Arte UFF 1;1;INBR;Niteroi;RJ;PARANA;Av Costa E Silva 85 Loja 326
+508;64074;Gacemss 1;1;INBR;Volta Redonda;RJ;PARANA;Av. Pres. Kennedy, 4121 - Portão, Curitiba
+509;64067;Cine Gloria 2;2;INBR;Valenca;RJ;PARÁ;Av. Gentil Bittencourt 650, Nazare
+510;64673;9 De Abril 1;1;INBR;Volta Redonda;RJ;SAO PAULO;Avenida Joaquim Lopes Aguila, 416
+511;65034;Estacão Itaipava 1;1;INBR;Petropolis;RJ;CEARA;Rua Carlos Erbas C. Pinheiro
+512;65568;Ponto Cine 1;1;INBR;Rio de Janeiro;RJ;MINAS GERAIS;Av. Aamaral Franco 224
+513;997798;Joia RJ 1;1;INBR;Rio de Janeiro;RJ;MINAS GERAIS;Rua Joao Mota 81
+514;1003767;Cine mais 1;1;INBR;Bom Jesus do Itabapoana;RJ;SAO PAULO;Rua Rodrigues Alves 870
+515;1029561;CineStar Especial - Laura Alvim 3;3;INBR;Rio de Janeiro;RJ;SAO PAULO;Av Francisco Jales 2991
+516;64703;Columbia III 1;1;INBR;Rolim de Moura;RO;RIO DE JANEIRO;Av. Nossa Senhora Copacabana 680
+517;64931;Milani 2;2;INBR;Ji-Paraná;RO;TOCANTINS;Area Verde da 302
+518;1067838;Cineart 3;3;INBR;Cacoal;RO;PERNAMBUCO;Rod. PE 60 - n° 3200
+519;64192;Super K 6;6;INBR;Boa Vista;RR;SANTA CATARINA;Rod José Carlos Daux, 8600
+520;64087;Embaixador 1;1;INBR;Gramado;RS;MINAS GERAIS;Rua Dr. Pereira Cabral 150
+521;64094;Cinemateca Porto Alegre 3;3;INBR;Porto Alegre;RS;PERNAMBUCO;Rua Da Aurora 175 - Boa Vista
+522;64101;Guion Center 3;3;INBR;Porto Alegre;RS;RIO DE JANEIRO;Praca Governador Portela 67
+523;64168;Cisne 3;3;INBR;Santo Angelo;RS;PARAIBA;Gov Flavio Coutinho 30
+524;64176;Lux 1;1;INBR;São Luiz Gonzaga;RS;DISTRITO FEDERAL;Rua Scn Quadra 02 Bloco D - 289
+525;64959;Cine Dunas 1;1;INBR;Rio Grande;RS;RIO GRANDE DO SUL;Rua Sete de Setembro 36
+526;64985;Via 7 Cachoeira Do Sul 2;2;INBR;Cachoeira do Sul;RS;PARANA;Rua 24 de maio, 347
+527;65012;Cine Sete 1;1;INBR;Bage;RS;SAO PAULO;Avenida Allan Kardec, 1451
+528;1006503;Cine Via Sete Sta Cruz do Sul 2;2;INBR;Santa Cruz do Sul;RS;RIO GRANDE DO SUL ;Rua Luiz Antunes 312 - Bairro Panazzolo
+529;1009263;Sala de Cinema Ulysses Geremia 1;1;INBR;Caxias do Sul;RS;SAO PAULO;Av. Antônio Paschoal, 912
+530;1056343;Cine Bancários 1;1;INBR;Porto Alegre;RS;SAO PAULO;Rua Hungria 1000
+531;1058696;Cine Santa Cruz 2;2;INBR;Santa Cruz do Sul;RS;RIO DE JANEIRO;Av. Vieira Souto, 176
+532;1060568;MaxiCine 1;1;INBR;Santiago;RS;MARANHAO;Rua Piaui 580
+533;1080591;Prime Uruguaiana 3;3;INBR;Uruguaiana;RS;GOIAS;Quadra QA 01 MC Lote 01
+534;1086970;Cinemateca Capitólio 1;1;INBR;Porto Alegre;RS;SERGIPE ;Rua Laranjeiras 307
+535;998740;Paradigma Cine Arte 1;1;INBR;Florianopolis;SC;PARÁ;Rua Brasil Esq Rua Duque de Caxias s/n
+536;1051887;Poly Vídeo Cinema 1;1;INBR;Otacílio Costa;SC;MINAS GERAIS;Rua Gonçalves Dias 1581
+537;1068603;Cine Lumine Caçador 1;1;INBR;Caçador;SC;CEARA;Rua Dragão do Mar 81, Praia de Iracema
+538;1069867;Cine Lúmine Curitibanos 1;1;INBR;Curitibanos;SC;CEARÁ;Rua J de Queiroz Pessoa, 2500
+539;1072376;Cine Multi 1;1;INBR;Florianopolis;SC;SAO PAULO;Av Altlântica 1659
+540;1072776;Cineramabc 1;1;INBR;Camboriu;SC;SAO PAULO;Avenida Adhemar de Barros 276
+541;1076684;Cine Lúmine Campos Novos 1;1;INBR;Campos Novos;SC;BAHIA;Avenida Condelheiro luiz viana 623
+542;1031399;Cinema Vitoria 1;1;INBR;Aracaju;SE;PARANA;Salomão Felix da Silva s/n
+543;64224;Cine Batatais 2;2;INBR;Batatais;SP;MINAS GERAIS;Rua Ministro Gabriel Passos, 299 centro
+544;64238;Sao Jose 1;1;INBR;Brotas;SP;SANTA CATARINA;Rua Vinicius de Moraes, 27
+545;64245;Cine Monte Alto 1;1;INBR;Monte Alto;SP;MARANHAO;Av. Colares Moreira, Edifício Office Tower, loja 25 e 28. Renascença II
+546;64261;Setima Arte 1;1;INBR;Pederneiras;SP;CEARA;Rua Alexandrino 1748
+547;64277;Cine Mococa 1;1;INBR;Mococa;SP;RIO GRANDE DO SUL;Rua General Camara 424
+548;64282;Cine Clube 1;1;INBR;Presidente Epitácio;SP;PARANA;Rua Carlos Cavalcanti, 1174
+549;64296;Cinesesc 3;3;INBR;Sao Paulo;SP;AMAPA;Av. Presidente Vargas, N 341
+550;64305;Clube Atlet Paulistano 1;1;INBR;Sao Paulo;SP;PARA;Av. Dr. Hugo de Mendonça 515, Bairro Comércio
+551;64346;Cic-centro Integ De Cult 1;1;INBR;Santa Fe do Sul;SP;RIO GRANDE DO SUL;Av Senador Alberto Pasqualine, 18
+552;64630;Shopping Sao Pedro 1;1;INBR;São Pedro;SP;RIO GRANDE DO SUL;Av Julio de Castilhos 518
+553;64409;Mege cine Tupã 1;1;INBR;Tupa;SP;ACRE;Rua Eduardo Asmar 1291
+554;64415;Votuporanga 1;1;INBR;Votuporanga;SP;SAO PAULO;Av. Prefeito Jose Mauricio de Camargo s/n
+555;64444;Center Lupo 3;3;INBR;Araraquara;SP;AMAZONAS;Estrada Manoel Urbano 3820
+556;64908;Esmeralda 3;3;INBR;Marilia;SP;ESPIRITO SANTO;Av. Jerônimo Monteiro, 428
+557;64485;Center Sao Roque 2;2;INBR;São Roque;SP;PARANA;Rua da cidadania Frei Jaime 37, Irati
+558;64615;Cine Belluzzo 1;1;INBR;Bariri;SP;SAO PAULO;Rua Do Osmio 975
+559;64753;Cine Teatro Matao 2;2;INBR;Matao;SP;RONDONIA;Antonio Deodato Durce
+560;64771;Cine Segall 1;1;INBR;Sao Paulo;SP;SANTA CATARINA;Rua Onio Pedrassani , 645
+561;64805;Cineclube Cauim 1;1;INBR;Ribeirão Preto;SP;SAO PAULO;Rua da Republica 929
+562;64845;Itaim Paulista 3;3;INBR;Sao Paulo;SP;SAO PAULO;Av Engenheiro Ivanil Francischini 3587
+563;64877;Cinemar Itanhaem 2;2;INBR;Itanhaem;SP;SANTA CATARINA;Rua Laes, 17
+564;64886;Cine Ferry Boats Plaza 3;3;INBR;Guarujá;SP;SAO PAULO;Av Paulista 2424
+565;65017;Cine Fun 4;4;INBR;Bauru;SP;AMAZONAS;Rua Barroso 279
+566;65541;Cine Sao Jose 1;1;INBR;Cesario Lange;SP;PARAIBA;Praça Prefeito Jose Sergio Maia 73
+567;65577;Cine Sao Carlos 2;2;INBR;São Carlos;SP;SANTA CATARINA;Rod Doutor Antonio Luiz Moura Gonzaga 3339
+568;65672;Cine Avenida 2;2;INBR;Leme;SP;SANTA CATARINA;Rua São Paulo 581
+569;997686;Cine Itapolis 1;1;INBR;Itapolis;SP;MINAS GERAIS;Av. João Alves do Nascimento 2264
+570;997790;Cine Teatro Jales 1;1;INBR;Jales;SP;PARANA;Rodovia Br 159 - Avelino Piacentini 90
+571;1009074;Cine Pop Bebedouro 1;1;INBR;Bebedouro;SP;SAO PAULO;Rua João Salgueiro 159
+572;1009625;StarCine Sertaozinho 2;2;INBR;Sertãozinho;SP;SANTA CATARINA;Rua Marechal Floriano 39
+573;1028998;Hebraica Sao Paulo;1;INBR;Sao Paulo;SP;PARANA;Rua Candido de Abreu 922  
+574;1034513;Star Cine Ilha Solteira 1;1;INBR;Ilha Solteira;SP;PARANA;Riachuelo 410
+575;1041802;Cine Hos 1;1;INBR;Adamantina;SP;SÃO PAULO;Rua da Consolação 2423
+576;1063573;Multiplex Itatiba Mall 3;3;INBR;Itatiba;SP;BAHIA;Av. Brasil 1123
+577;1067657;Multiplex Vic Center 4;4;INBR;Santa Bárbara d`Oeste;SP;SAO PAULO;Av Dom Pedro II 1226
+578;1069414;Cine Miziara 1;1;INBR;Taquaritinga;SP;SAO PAULO;Avenida Nove de Julho 1155
+579;1068881;Cinemec Ibitinga 1;1;INBR;Ibitinga;SP;MINAS GERAIS;Avenida Getulio Vargas, 640
+580;1070098;IMS Paulista 1;1;INBR;Sao Paulo;SP;RIO GRANDE DO SUL;Rua Quinze de Novembro 1438
+581;1075931;Gremio Ferroviario 1;1;INBR;Porto Ferreira;SP;CEARÁ;Coronel Sales 175
+582;1078650;Petra Belas Artes 6;6;INBR;Sao Paulo;SP;PERNAMBUCO;Rua da Aurora 463/469 - Boa Vista 
+583;1079648;Moviplex Cinemas 1;1;INBR;Salto;SP;MINAS GERAIS;Israel Pinheiro 757
+584;1079861;Sala Cult 1;1;INBR;Jundaí;SP;MARANHAO;Rua Dr. Irineu Alcides Bays
+585;64867;Top Cine Araguaina 4;4;INBR;Araguaina;TO;GOIAS;Rua - 08 Nº 501 Centro Goiânia - GO
+586;998435;Cine Cultura - Sinhozinho 1;1;INBR;Palmas;TO;RIO GRANDE DO SUL;Rua Demétrio Ribeiro 1085
+587;64960;Josue Formiga 2;2;JOSU;Formiga;MG;MINAS GERAIS;Rua General Carneiro 239 Centro
+588;1004059;Josue Cine - Arcos 2;2;JOSU;Arcos;MG;MINAS GERAIS;Av. Magalhaes Pinto 255
+589;1004061;Cine Samonte 1;1;JOSU;Santo Antonio do Monte;MG;MINAS GERAIS;av. Tancredo Neves 323
+590;1004063;Cine Canastra 1;1;JOSU;Piumhi;MG;MINAS GERAIS;Dr. Avelino de Queiroz 193
+591;1055937;Josue Sobradinho 1;1;JOSU;Córrego Fundo;MG;MINAS GERAIS;Estrada principal Sobradinho
+592;1063624;Josue Cine - Pains 1;1;JOSU;Pains;MG;MINAS GERAIS;Av. Gonçalves de Melo, 980
+593;1064348;Josue Universitario 1;1;JOSU;Formiga;MG;MINAS GERAIS;Av. Arnaldo Senna, 311
+594;997783;Kinoplex Maceió 6;6;KINO;Maceió;AL;CEARA;Av. Bezerra de Menezes, 2450 - São Geraldo
+595;1042136;Kinoplex Amazonas 5;5;KINO;Manaus;AM;PERNAMBUCO;Rua José de Alencar, 105 - Boa Vista
+596;63713;Kinoplex North Shopping 6;6;KINO;Fortaleza;CE;RIO DE JANEIRO;Rua Barao De Sao Francisco 236
+597;63741;Kinoplex Parkshopping 11;11;KINO;Brasilia;DF;RIO DE JANEIRO;Estrada do Portella 222
+598;63743;Kinoplex Patio Brasil 6;6;KINO;Brasilia;DF;RIO DE JANEIRO;Rua Visconde Do Rio Branco 360
+599;63746;Kinoplex Terraco Shopping 5;5;KINO;Brasilia;DF;RIO DE JANEIRO;Avenida  Ayrton Senna 3000
+600;65634;Kinoplex Boulevard 4;4;KINO;Brasilia;DF;RIO DE JANEIRO;Av N S de Copacabana 945 A
+601;64672;Kinoplex Praia Costa 7;7;KINO;Vila Velha;ES;RIO DE JANEIRO;Rua Do Catete 311 Catete
+602;63768;Kinoplex Goiânia 6;6;KINO;Goiânia;GO;SAO PAULO;Av. Guilherme Campos, 500 - Parque das F
+603;1068530;Kinoplex Golden 4;4;KINO;São Luís;MA;ESPIRITO SANTO;Av. Carioca, 353 - Praia de Itaparica
+604;1054736;Kinoplex Uberaba 6;6;KINO;Uberaba;MG;SAO PAULO;Rua Joaquim Floriano 462
+605;64781;Kinoplex Boa Vista 6;6;KINO;Recife;PE;SAO PAULO;Avenida dos Autonomistas, 1828
+606;63991;Kinoplex Shopping Boulevard RJ 7;7;KINO;Rio de Janeiro;RJ;RIO DE JANEIRO;Av  Pastor Martin Luther King Jr  126
+607;64022;Kinoplex Madureira 5;5;KINO;Rio de Janeiro;RJ;RIO DE JANEIRO;Av  Afranio De Melo Franco 290 Lj 401
+608;64035;Kinoplex Bay Market 4;4;KINO;Niteroi;RJ;RIO DE JANEIRO;Estrada da Gávea 899 - Gávea
+609;64048;Kinoplex Via Parque 6;5;KINO;Rio de Janeiro;RJ;RIO DE JANEIRO;Av Maracana 987
+610;64424;Roxy 3;3;KINO;Rio de Janeiro;RJ;RIO DE JANEIRO;Rod. Presidente Dutra, 4200
+611;64425;Kinoplex São Luiz 4;4;KINO;Rio de Janeiro;RJ;DISTRITO FEDERAL;SAI/SO, Área 6580
+612;64993;Kinoplex Nova America 7;7;KINO;Rio de Janeiro;RJ;DISTRITO FEDERAL;Rua Scs s/n Quadra 7 - Asa Sul
+613;65030;Kinoplex Leblon 4;4;KINO;Rio de Janeiro;RJ;DISTRITO FEDERAL;SHC aos ea 2/8 lote 5
+614;65514;Kinoplex Fashion Mall 4;4;KINO;Rio de Janeiro;RJ;GOIAS;Av T-10, 1300 - Setor Bueno
+615;65520;Kinoplex Tijuca 6;6;KINO;Rio de Janeiro;RJ;DISTRITO FEDERAL;Setor Terminal Norte - Conjunto J
+616;65528;Kinoplex Grande Rio 6;6;KINO;São João de Meriti;RJ;SAO PAULO;Rua Olimpiadas 360 Vila Olimpia
+617;65654;Kinoplex West Shopping 5;5;KINO;Rio de Janeiro;RJ;RIO DE JANEIRO;Estrada do Mendanha, 550 loja 401E
+618;1009942;CineCarioca Meier 3;3;KINO;Rio de Janeiro;RJ;ALAGOAS;Av. Gustavo Paiva 2990
+619;1047596;Kinoplex Avenida 5;5;KINO;Campos dos Goytacazes;RJ;RIO DE JANEIRO;Rua Dias da Cruz, 170 - Méier
+620;1051919;Cine Odeon NET 1;1;KINO;Rio de Janeiro;RJ;AMAZONAS;Avenida Djalma Batista, 482 - Chapada
+621;1059315;Kinoplex RioSul 6;6;KINO;Rio de Janeiro;RJ;RIO DE JANEIRO;Rua 28 de Março, 574
+622;1060398;Kinoplex Nova Iguaçu 7;7;KINO;Nova Iguaçu;RJ;RIO DE JANEIRO;Praça Floriano, 7
+623;1063333;Kinoplex Iguaçu Top 6;6;KINO;Nova Iguaçu;RJ;MINAS GERAIS;Avenida Leopoldino de Oliveira, 5100
+624;64602;Kinoplex Dom Pedro 15;15;KINO;Campinas;SP;RIO DE JANEIRO;Av Lauro Sodré 445
+625;64738;Kinoplex Itaim 6;6;KINO;Sao Paulo;SP;RIO DE JANEIRO;Avenida Abilio Augusto Tavora 1111
+626;64942;Kinoplex Osasco 7;7;KINO;Osasco;SP;RIO DE JANEIRO;Av. Governador Roberto Silveira, 540
+627;65652;Kinoplex Vila Olimpia 7;7;KINO;Sao Paulo;SP;MARANHAO;Av. dos Holandeses, 200 – Loja Âncora 07
+628;1078741;Kinoplex Parque da Cidade 6;6;KINO;Sao Paulo;SP;SAO PAULO;Av. das Nações Unidas, 14401
+629;1027062;Kinoplex Vale Sul 6;6;KIVS;São Jose dos Campos;SP;SAO PAULO;Andromeda 227 Jd Satelite
+630;1006521;Cine Laser - Sorriso 2;2;LASE;Sorriso;MT;RONDONIA;Rua Marques Henrique, 3344,
+631;1062705;Cine Laser - Barra do Garças 3;3;LASE;Barra Do Garcas;MT;MATO GROSSO;Av Tancredo Neves 543
+632;1006574;Cine Laser - Santarem 2;2;LASE;Santarém;PA;PARÁ;Av Furtado 3551
+633;64988;Cine Laser - Vilhena 2;2;LASE;Vilhena;RO;RONDONIA;Av Capitao Silvino 3790
+634;1039989;Cine Laser - Ariquemes 3;3;LASE;Ariquemes;RO;MATO GROSSO  ;Av. Senador Valdon Varjão 2077
+635;1078389;Cine Laser - Ji-Paraná 4;4;LASE;Ji-Paraná;RO;SERGIPE;Av Jose Amancio Bispo 5419
+636;1087562;Cine Laser  - Rolim de Moura 2;2;LASE;Rolim de Moura;RO;RONDONIA;Rua das Seringueiras 1201
+637;1076155;Cine Laser - Passo Fundo 5;5;LASE;Passo Fundo;RS;RIO GRANDE DO SUL;Av Presidente Varga 73
+638;1078100;Cine Laser - Itajai 2;2;LASE;Itajai;SC;SANTA CATARINA;Rua Delfim Mário de Pádua Peixoto, 500 
+639;1066619;Cine Laser - Itabaiana 4;4;LASE;Itabaiana;SE;RONDONIA;Av. Recife 5502 
+640;64459;Topazio Shopping Jaragua 4;4;LUIC;Indaiatuba;SP;SAO PAULO;Rua Humaitá, 773
+641;997792;Topazio Polo Shop. 5;5;LUIC;Indaiatuba;SP;SAO PAULO;Al. Filtros Mann, 670
+642;1043868;Lumiere Shopping Farol 2;2;LUME;Maceió;AL;SAO PAULO;Av. José Nelson Machado, 280
+643;65622;Lumiere Catalao Shopping 3;3;LUME;Catalao;GO;GOIAS;R  Joselim Gomes Pires, 2300
+644;65695;Lumiere Portal Norte 3;3;LUME;Goiânia;GO;GOIAS;Av. Anhanguera 14.404
+645;65694;Lumiere Portal Sul 4;4;LUME;Aparecida de Goiânia;GO;GOIAS;Rua Independência Qd. 1 Lt. 1
+646;1006747;Lumiere Luziania Shopping 3;3;LUME;Luziania;GO;PARANA;Av. Dom Pedro 350
+647;1029195;Lumiere Banana Shop 5;5;LUME;Goiânia;GO;PARANA;R. Mato Grosso, 310
+648;997302;Lumiere Total 5;5;LUME;Ponta Grossa;PR;TOCANTINS;Quadra 101 Sul Rua Ns A
+649;997621;Lumiere Royal 5;5;LUME;Londrina;PR;GOIAS;Rua Ophir Jose Braz s/n
+650;65636;Lumiere Catanduva Shopping 3;3;LUME;Catanduva;SP;GOIAS;Rua 21 N 66 Setor Central
+651;1006613;Lumiere Palmas 5;5;LUME;Palmas;TO;ALAGOAS;Av Fernandes Lima 2551
+652;1065951;Uniplex Colombo 2;2;MCHN;Colombo;PR;SAO PAULO;Rua Olavo Bilac, 62
+653;1082597;Uniplex Paranagua 4;4;MCHN;Paranagua;PR;SAO PAULO;Av Paulina De Moraes 590
+654;1069128;Uniplex Joinvile 2;2;MCHN;Joinville;SC;SAO PAULO;Rua Arlindo Luz 290
+655;64779;Cine Center Lins 1;1;MCHN;Lins;SP;SAO PAULO;Rua Rui Barbosa 300/323
+656;64804;Cine Itapeva 1;1;MCHN;Itapeva;SP;SAO PAULO;Dr. Jose de Mello 146
+657;64812;Cinema Center 2;2;MCHN;Ourinhos;SP;SAO PAULO;Av. Painguás 1646 – Vila Urupes
+658;1007258;Cine Plaza 1;1;MCHN;Assis;SP;PARANA;Rua Dorval Ceccon, 664
+659;1009089;Center Jaboticabal 1;1;MCHN;Jaboticabal;SP;SANTA CATARINA;Rua Mario Lobo 106
+660;1058221;Cine Uniplex 2;2;MCHN;Pirassununga;SP;SAO PAULO;Av prefeito o paulo Novaes 5
+661;1072325;Uniplex Avaré Mall 2;2;MCHN;Avaré;SP;PARANA;João Eugenio 771
+662;1010702;Moviecom Macapá Shopping 5;5;MCOM;Macapá;AP;PARÁ;Rod  Br 316 Km 01s/n Lojas 289/290
+663;64986;Moviecom Conquista Sul 3;3;MCOM;Vitoria da Conquista;BA;PARÁ;Trav  Pe  Eutiquio 1078
+664;63781;Moviecom Buriti 6;6;MCOM;Aparecida de Goiânia;GO;PARÁ;Av  Presidente Getulio Vargas 4277
+665;1055099;Moviecom Shopping Passeio 4;4;MCOM;São Luís;MA;RIO GRANDE DO NORTE;Av. Eng Roberto Freire, 8790
+666;63835;Vale 5;5;MCOM;Ipatinga;MG;BAHIA;Av  Juracy Magalhaes S/n
+667;64777;Moviecom Castanheira 7;7;MCOM;Belem;PA;MINAS GERAIS;Rodovia BR 381 - Horto
+668;65539;Moviecom Belem 6;6;MCOM;Belem;PA;SAO PAULO;Av  Rio Negro 1100
+669;65580;Moviecom Castanhal 3;3;MCOM;Castanhal;PA;SAO PAULO;Av  Manoel Goulard 2400
+670;1032303;Moviecom Pátio Marabá 5;5;MCOM;Marabá;PA;SAO PAULO;Av  Santa Barbara 777
+671;64736;Praia Shopping 7;7;MCOM;Natal;RN;SAO PAULO;Av  Charles Schneider 1700
+672;64223;Moviecom Franca 4;4;MCOM;Franca;SP;SAO PAULO;Av  Frederico Ozaña 6000
+673;64285;Moviecom Center 4;4;MCOM;Presidente Prudente;SP;SAO PAULO;Acesso Heitor De Souza Pinheiro 2270
+674;64312;Tivoli 4;4;MCOM;Santa Bárbara d`Oeste;SP;SAO PAULO;Av. Dr. Quinzinho, 511
+675;64407;Taubaté 5;5;MCOM;Taubate;SP;SAO PAULO;Rua Dr  Joao Ribeiro, 304 Ancora G Penha
+676;64432;Maxi 7;7;MCOM;Jundiai;SP;SAO PAULO;R. Borba Gato, 59, Sto. Amaro
+677;64595;Jaragua 5;5;MCOM;Araraquara;SP;SAO PAULO;Av  John Boyd Dunlop, 350 Loja 9
+678;64596;Center Jau 2;2;MCOM;Jau;SP;GOIAS;Av  Rio Verde Q 102/04
+679;64843;Cine Center Penha 6;6;MCOM;Sao Paulo;SP;AMAPA;R. Leopoldo Machado, 2334 - Trem
+680;64889;Boa Vista 5;5;MCOM;Sao Paulo;SP;PARÁ;Quadra Quinze
+681;64966;Unimart 6;6;MCOM;Campinas;SP;SAO PAULO;Av Rosa Molina Pannocchia, 331
+682;1033397;Moviecom Guarulhos 4;4;MCOM;Guarulhos;SP;SAO PAULO;Av. Ítalo Adami, 1809
+683;1052482;Moviecom Páteo Itaquá 5;5;MCOM;Itaquaquecetuba;SP;MARANHAO;Av. Contorno Norte, 145
+684;1055908;Multicine Sobral 5;5;MSS;Sobral;CE;RIO GRANDE DO NORTE;Av. Joao da Escóssia, 1515 
+685;1081096;Multicine Iande Shopping 4;4;MSS;Fortaleza;CE;GOIAS;Av. Presidente Tancredo Neves 100
+686;1052609;Multicine Santa Maria 6;6;MSS;Brasilia;DF;GOIAS;Rod BR 070, Km 08
+687;1003866;Multicine Jatai 3;3;MSS;Jatai;GO;PIAUÍ;AV São Sebastião  2400 LJ 150  Parnaíba Shopping
+688;1006991;Multicine Aguas Lindas 4;4;MSS;Águas Lindas de Goiás;GO;GOIÁS;Av Nero Macedo 400
+689;1047774;Multicine Cidade Jardim 3;3;MSS;Goiânia;GO;DISTRITO FEDERAL;CL 114 Bl. D, Av. Alagado
+690;1062873;Multicine Caxias 4;4;MSS;Caxias;MA;CEARA;AV Monsenhor Aloisio Pinto, 300
+691;1068106;Multicine Timon 4;4;MSS;Timon;MA;MARANHAO;Rod br 316, 4362
+692;1077745;Multicine Patos 4;4;MSS;Patos;PB;MARANHAO;Av. Piaui 700
+693;1043758;Multicine Parnaíba 4;4;MSS;Parnaíba;PI;PIAUI;Rod Br-316 Avenida Severo Eulalio 304
+694;1073593;Multicine Piauí Shopping 4;4;MSS;Picos;PI;PIAUI;Rod Br 343
+695;1077743;Multicine Floriano 4;4;MSS;Floriano;PI;PARAIBA;R. Horacio Nobrega
+696;65685;Multicine Mossoro 5;5;MSS;Mossoro;RN;CEARA;Av Edson da Mota Correia 620
+697;65505;Movie Arte Cinemas 1;1;MVAC;Erechim;RS;RIO GRANDE DO SUL;Avenida Sete de Setembro, 1200, Erechim
+698;65697;Movie Arte Bento L'America 2;2;MVAC;Bento Gonçalves;RS;RIO GRANDE DO SUL;Rua 13 de Maio 877
+699;1060908;Movie Arte Bento 3;3;MVAC;Bento Gonçalves;RS;RIO GRANDE DO SUL;Rua Marechal Deodoro, 263
+700;1067763;Movie Arte Nova Prata 1;1;MVAC;Nova Prata;RS;RIO GRANDE DO SUL;Rua Clemente Tarasconi 153
+701;64603;Orient Cineplace 4;4;ORIE;Feira de Santana;BA;CEARA;Avenida Padre Cícero, 2555
+702;1048593;Cineplace 2;2;ORIE;Serrinha;BA;PERNAMBUCO;Avenida Monsenhor Ângelo Sampaio, 100 
+703;63745;Cariri Shopping 6;6;ORIE;Juazeiro do Norte;CE;BAHIA;Av  Joao Durval Carneiro 3665
+704;64416;River Shopping 4;4;ORIE;Petrolina;PE;BAHIA;Rua Lauro Mota s/n
+705;65583;Cinemais Anapolis 5;5;PEDR;Anapolis;GO;MINAS GERAIS;Praça A. C. Conceição, 05
+706;63869;Cinemais Patos de Minas 3;3;PEDR;Patos de Minas;MG;MINAS GERAIS;Av. Santa Beatriz da Silva, 1501
+707;63928;Cinemais Uberaba 8;8;PEDR;Uberaba;MG;SAO PAULO;Av Juscelino Kubitschek de Oliveira, 351
+708;1004142;Cinemais Montes Claros 5;5;PEDR;Montes Claros;MG;GOIAS;Av Brasil, 505 Loja 1
+709;1029307;Cinemais Juiz de Fora 5;5;PEDR;Juiz de Fora;MG;MINAS GERAIS;Av.Donato Quintino,90
+710;1048988;Cinemais Ituiutaba 2;2;PEDR;Ituiutaba;MG;MINAS GERAIS;Rua Morais E Castro 300
+711;1050235;Cinemais Araxa 2;2;PEDR;Araxa;MG;MINAS GERAIS;Rua Vinte e Dois 645
+712;1061189;Cinemais Juiz de Fora Jardim Norte 6;6;PEDR;Juiz de Fora;MG;MINAS GERAIS;Av. Prefeito Aracely de Paula 1005
+713;64941;Cinemais Guaratingueta 5;5;PEDR;Guaratingueta;SP;SAO PAULO;Estrada Chiquito de Aquino, 46
+714;1056359;Cinemais Lorena 4;4;PEDR;Lorena;SP;MINAS GERAIS;Av Brasil 6345
+715;1052012;Planet Cinemas Caruaru 4;4;PLAC;Caruaru;PE;PERNAMBUCO;Agamenon Magalhães 444 Shopping Difusora
+716;1071669;Planet Cinemas Niteroi 6;6;PLAC;Niteroi;RJ;RIO DE JANEIRO;Estrada Francisco Cruz Nunes 6501
+717;65639;PlayArte Manauara 10 3D;10;PLAY;Manaus;AM;SAO PAULO;Pça. Samuel Sabatini 200
+718;64331;PlayArte Metropole 9 3D;9;PLAY;São Bernardo do Campo;SP;SAO PAULO;Rua Ipiranga, 757
+719;64345;Playarte Maraba 5 3D;5;PLAY;Sao Paulo;SP;SAO PAULO;Av. Pereira Barreto 42
+720;64359;PlayArte ABC 5 3D;5;PLAY;Santo Andre;SP;SAO PAULO;Av  Paulista 2064
+721;64731;PlayArte Bristol 5;5;PLAY;Sao Paulo;SP;SAO PAULO;Rua Treze de Maio 1947
+722;64902;PlayArte Splendor Paulista 2;2;PLAY;Sao Paulo;SP;SAO PAULO;Praça Leonor Kaupa, 100
+723;64904;PlayArte Plaza Sul 6 3D;6;PLAY;Sao Paulo;SP;AMAZONAS  ;Av. Mario Ypiranga, 1300 - Adrianópolis
+724;65659;PlayArte Praça da Moça 7 3D;7;PLAY;Diadema;SP;SAO PAULO;Rua Manoel da Nobrega 712
+725;1078361;Playarte Ibirapuera 6;6;PLAY;Sao Paulo;SP;SAO PAULO;Av. Ibirapuera 3103
+726;63923;Cineplus Agua Verde 2;2;PLUS;Curitiba;PR;PARANA;Av. República Argentina, 1927
+727;64948;Cineplus Jardim das Américas 6;6;PLUS;Curitiba;PR;PARANA;Av  Nossa Senhora De Lourdes, 63
+728;65032;Cineplus Campo Largo 2;2;PLUS;Curitiba;PR;PARANA;R. Quinze de Novembro, 2295 - Alto da Rua Quinze
+729;65511;Cineplus Xaxim 4;4;PLUS;Curitiba;PR;PARANA;R. Francisco Derosso, 3488 - Xaxim
+730;1004243;Cineplus Castro 2;2;PLUS;Castro;PR;PARANA;Cnel Olegario de Macedo 57
+731;1065803;Cineplus Castello Center Shopping 2;2;PLUS;Fazenda Rio Grande;PR;SANTA CATARINA;Rua Vitorino Bacelar, 49
+732;1064108;Cineplus Mafra 1;1;PLUS;Mafra;SC;PARANA;Rua Jacaranda 82
+733;1029207;Moviemax Royal 2;2;PMC;São Lourenço da Mata;PE;PERNAMBUCO;Av. Dr. Luiz Corrêia de Araújo S/N
+734;1029209;Moviemax Rosa e Silva 4;4;PMC;Recife;PE;PERNAMBUCO;Avenida Conselheiro Rosa E Silva, 1460 - Aflitos
+735;1029213;Moviemax Eldorado 2;2;PMC;Garanhuns;PE;PERNAMBUCO;Av. Rui Barbosa, 1071 - Heliopolis
+736;1072667;Moviemax Camara Shopping 5;5;PMC;Camaragibe;PE;PERNAMBUCO;Rua Manoel Honorato da Costa 555
+737;1075174;Moviemax Igarassu Shopping 3;3;PMC;Igarassu;PE;PERNAMBUCO;Av. Mário Melo S/Nº, KM 1
+738;1055374;Premier L E Magalhães 2;2;PRCIN;Luis Eduardo Magalhães;BA;DISTRITO FEDERAL;Quadra 14 - Area Especial 3 E 4 - Sobradinho
+739;1067291;Premier Barreiras 1;1;PRCIN;Barreiras;BA;GOIAS;Avenida Maestro João Luiz do Espírito Santo 200
+740;1075828;Premier Guanambi 1;1;PRCIN;Guanambi;BA;MINAS GERAIS;Rua Natal Justino da Costa 999
+741;1078088;Premier Brumado 1;1;PRCIN;Brumado;BA;BAHIA;Goias, 10
+742;63751;Premier Sobradinho 3;3;PRCIN;Brasilia;DF;BAHIA;Rua das Turbinas 1562
+743;64561;Premier Formosa 2;2;PRCIN;Formosa;GO;BAHIA;Av do Trabalho 2135
+744;1048802;Premier Unaí 1;1;PRCIN;Unaí;MG;BAHIA;Av Otavio Mangabeira, 157
+745;1078079;Cinemax Cinema Pato Branco 3;3;QUEL;Pato Branco;PR;SANTA CATARINA;Pca  Lauro Muller 566
+746;64745;Queluz - Canoinhas 1;1;QUEL;Canoinhas;SC;PARANA;Av Tupi 1655
+747;64881;Cine Santa Helena 2;2;RCMX;Tatui;SP;SAO PAULO;Pc Bandeira, 14 - Tatuí
+748;64899;Cinemax Piraju 1;1;RCMX;Piraju;SP;SAO PAULO;Washington Osorio De Oliveira 660
+749;1045127;Cinesercla PátioMix Teixeira de Freitas ;4;SERC;Teixeira de Freitas;BA;PARAIBA;Av. Pref. Severino Bezerra Cabral, 1190
+750;1059560;Cinesercla Cajazeiras 4;4;SERC;Salvador;BA;PARAIBA;Avenida Odon Bezerra 184 - Tambiá
+751;1069058;Cinesercla Outlet Feira de Santana 5;5;SERC;Feira de Santana;BA;MINAS GERAIS;Av. Vilarinho 1300 - Venda Nova
+752;1081393;Cinesercla Avenida 5;5;SERC;Feira de Santana;BA;MINAS GERAIS;Av  Joao C  Oliveira 1275
+753;1031280;Cinesercla PatioMix Linhares 3;3;SERC;Linhares;ES;RIO DE JANEIRO;Rua Prof Goncalves Filgueira 100
+754;1033409;Cinesercla Shopping Montserrat 5;5;SERC;Serra;ES;RIO DE JANEIRO;Av. Rodovia Rio Santos s/nº lote B
+755;63807;Cinesercla Shopping Norte 5 ;5;SERC;Belo Horizonte;MG;SAO PAULO;Rua Fiorino Beltramo, 150 - Osasco
+756;63823;Cinesercla Big Shopping 5;5;SERC;Contagem;MG;SERGIPE;Av. Coletora A, 0, Ns. do Socorro
+757;1031275;Cinesercla GV 4;4;SERC;Governador Valadares;MG;MINAS GERAIS;Av. Sete de Setembro, 3500 – Loja 145
+758;63866;Cinesercla Partage Campina Grande 5;5;SERC;Campina Grande;PB;ESPIRITO SANTO;Av Cerejeiras, 300
+759;64783;Cinesercla Tambiá 6 ;6;SERC;João Pessoa;PB;ESPIRITO SANTO;Avenida Eldes Scherrer de Souza 2162
+760;64654;Cinesercla Nilópolis Square 3;3;SERC;Nilopolis;RJ;BAHIA;Avenida São Paulo 2575
+761;65755;Cinesercla PatioMix Itaguaí 4  ;4;SERC;Itaguaí;RJ;BAHIA;Estrada do Coqueiro Grande s/ nº loja 128
+762;1027166;Cinesercla Shopping Premio 4;4;SERC;Aracaju;SE;BAHIA;Av. Deputado Luis Eduardo Magalhães, s/n - BR 324
+763;1006530;Cinesercla Osasco Plaza 4;4;SERC;Osasco;SP;BAHIA;Avenida Noide Ferreira de Cerqueira 571
+764;64621;Cine 7arte Stadium 2;2;SETI;Caldas Novas;GO;GOIAS;Rua Antonio Augusto Guimaraes S/n Centro
+765;64616;Cine 7 Arte 1;1;SETI;Goiatuba;GO;GOIAS;Rua: Sao Francisco, 960, Centro
+766;1061316;Spcine CEU Butantã 1;1;SPCI;Sao Paulo;SP;JARDIM ESMERALDA;Rua Engenheiro Heitor Antonio Garcia 1700
+767;1060629;Spcine Cine Olido 1;1;SPCI;Sao Paulo;SP;SAO PAULO;Av Sao Joao, 473
+768;1060627;Spcine Cidade Tiradentes 1;1;SPCI;Sao Paulo;SP;TIRADENTES;Av Inacio Monteiro 6900
+769;1060631;Spcine Roberto Santos 1;1;SPCI;Sao Paulo;SP;SAO PAULO;Rua Cisplatina 550
+770;1060633;Spcine Paulo Emilio Salles Gomes 1;1;SPCI;Sao Paulo;SP;PARAISO;Rua Vergueiro 1000
+771;1060635;Spcine Aricanduva 1;1;SPCI;Sao Paulo;SP;JARDIM SANTA TERESNH;Rua Olga Fadel Abarca, s/n
+772;1060638;Spcine Caminho do Mar 1;1;SPCI;Sao Paulo;SP;JABAQUARA;Rua Engenheiro Armando de Arruda Pereira, 5241
+773;1060639;Spcine Feitiço da Vila 1;1;SPCI;Sao Paulo;SP;SAO PAULO;Rua Feitico da Vila, 399
+774;1061462;Spcine Jacana 1;1;SPCI;Sao Paulo;SP;JARDIM GUAPIRA;Av Antonio Cesar Neto 105
+775;1060644;Spcine Jambeiro 1;1;SPCI;Sao Paulo;SP;GUAINASES;Av Jose Pinheiro
+776;1060646;Spcine Meninos 1;1;SPCI;Sao Paulo;SP;SAO JOAO CLIMACO;Rua Barbinos, 111
+777;1060647;Spcine Parque Veredas 1;1;SPCI;Sao Paulo;SP;CANGAÍBA;Rua Daniel Muller, 347
+778;1060650;Spcine Paz 1;1;SPCI;Sao Paulo;SP;BRASILANDIA;Rua Daniel Cerri, 1549
+779;1060652;Spcine Perus 1;1;SPCI;Sao Paulo;SP;PIRITUBA;Rua Bernardo Jose Lorena s/n
+780;1060653;Spcine Quinta do Sol 1;1;SPCI;Sao Paulo;SP;CANGAÍBA;Avenida Luis Imparato, 564
+781;1060654;Spcine Sao Rafael 1;1;SPCI;Sao Paulo;SP;SAO MATEUS;Rua Cinira Polonio, 100
+782;1060656;Spcine Tres Lagos 1;1;SPCI;Sao Paulo;SP;CAPELA DO SOCORRO;Estreada do Barro Branco, s/n
+783;1060660;Spcine Vila Atlantica 1;1;SPCI;Sao Paulo;SP;PIRITUBA;Rua Venancio Dias, 840
+784;1060662;Spcine Vila do Sol 1;1;SPCI;Sao Paulo;SP;CAMPO LIMPO;Avenica Dos Funcionarios Publicos, 369
+785;1061463;Spcine Lima Barreto 1;1;SPCI;Sao Paulo;SP;SAO PAULO;Rua Vergueiro, 1000
+786;1072089;Spcine Centro Cultural São Paulo 2;2;SPCI;Sao Paulo;SP;SAO PAULO;Rua Vergueiro 1000
+787;1033365;Cinesystem Parque Shop Maceio 9;9;SYST;Maceió;AL;RIO DE JANEIRO;Av das Américas 19019
+788;1042073;Cinesystem Arapiraca 6;6;SYST;Arapiraca;AL;RIO DE JANEIRO;Rua Fonseca, 240 - Bangu
+789;1030064;Cinesystem Shopping Boulevard 6;6;SYST;Vila Velha;ES;RIO DE JANEIRO;Av Maestro Paulo E Silva, 400
+790;65660;Cinesystem Rio Anil 6;6;SYST;São Luís;MA;SAO PAULO;Av Ayerton Senna, 1511
+791;1030149;Cinesystem Imperatriz 5;5;SYST;Imperatriz;MA;PARANA;Rua Brigadeiro Franco, 2300, Loja 412
+792;1055196;Cinesystem Santarém 5;5;SYST;Santarém;PA;PARANA;Marechal Floriano Peixoto 4984
+793;1071450;Cinesystem Ananindeua 10;10;SYST;Ananindeua;PA;RIO GRANDE DO SUL;Rua Primeiro de Março, 821 - Centro
+794;1058232;Cinesystem Paulista 9;9;SYST;Paulista;PE;PARANA;Rua Manoel Pereira, 1615 Loja 14
+795;63875;Cinesystem Curitiba 6;6;SYST;Curitiba;PR;PARANA;Rua Itacolomi, 292 Loja 400
+796;64747;Cinesystem Cidade 5;5;SYST;Curitiba;PR;SANTA CATARINA;Av Madre Benvenuta 687
+797;64952;Cinesystem Hiper Condor 2;2;SYST;Paranagua;PR;MARANHAO;Av. São Luís Rei da França, 8 - Angelim
+798;64973;Cinesystem Total Curitiba 5;5;SYST;Curitiba;PR;RIO DE JANEIRO;Rua Itapera - Irajá
+799;1010425;Cinesystem Londrina Norte Shopping 6;6;SYST;Londrina;PR;SAO PAULO;Rua Jose Camilo de Camargo 5
+800;64049;Cinesystem Recreio 5;5;SYST;Rio de Janeiro;RJ;PARANA;Avenida Américo Deolindo Garla 224 - Londrina
+801;65495;Cinesystem Bangu 6;6;SYST;Rio de Janeiro;RJ;ESPIRITO SANTO;Rodovia do Sol 5000
+802;65632;Cinesystem Ilha Plaza 4;4;SYST;Rio de Janeiro;RJ;MARANHAO;Rodovia br-010
+803;65728;Cinesystem Via Brasil 6;6;SYST;Rio de Janeiro;RJ;ALAGOAS;Av Comendador Gustavo Paiva 5945
+804;1047961;Cinesystem Americas 9;9;SYST;Rio de Janeiro;RJ;ALAGOAS;Rua Jose Jailson Nunes s/n
+805;1050465;Cinesystem Parque Shopping Sulacap 9;9;SYST;Rio de Janeiro;RJ;RIO GRANDE DO SUL;Rua Saturnino de Brito 399
+806;1055563;Cinesystem Itaboraí 5;5;SYST;Itaboraí;RJ;RIO DE JANEIRO;Av Das Americas 15500
+807;64874;Cinesystem Bourbon 5;5;SYST;São Leopoldo;RS;RIO DE JANEIRO;Av. Marechal Fontenellé 3545, LJ 246
+808;1044248;Cinesystem Rio Grande 4;4;SYST;Rio Grande;RS;PARÁ;Eng. Fernado Guilhon, S/N
+809;65043;Cinesystem Iguatemi 7;7;SYST;Florianopolis;SC;RIO DE JANEIRO;Rod BR101 s/n – km295
+810;65633;Cinesystem Litoral Plaza 6;6;SYST;Praia Grande;SP;PERNAMBUCO;ROD PE-15 - KM 16.5 Ancora N 20 3 Pavimento, North Way Shopping
+811;1007163;Cinesystem Hortolândia 5;5;SYST;Hortolândia;SP;SAO PAULO ;Av Giovanni Gronchi, 5930
+812;1063510;Cinesystem Morumbi 9;9;SYST;Sao Paulo;SP;PARÁ;Rod BR 316 4500KM 04
+813;1074263;Mobi Cine Salvador 2;2;TOP;Salvador;BA;PARA;Praça Celio Miranda 420
+814;1079168;Mobi Cine Goianesia 2;2;TOP;Goianesia;GO;PARA;RUA  LAURO SODRE   675
+815;1069595;Mobi Cine Açailandia 3;3;TOP;Açailandia;MA;SERGIPE;Av. Lourival Batista, 560
+816;1067677;Mobi Cine Paracatu 3;3;TOP;Paracatu;MG;TOCANTINS;Av Maranhão Quadra A lote 2 e 3
+817;1049490;Mobi Cine 2;2;TOP;Paragominas;PA;MINAS GERAIS;Rua Olegario Maciel 1481
+818;1056732;Mobi Cine Tucurui 3;3;TOP;Tucurui;PA;MARANHAO;Av Santa Luzia 1442, Açailandia
+819;1070681;Mobi Cine Redenção 3;3;TOP;Redenção;PA;PARÁ;Rua Frei Gil de Vila Nova
+820;1059268;MobiCine Gloria 2;2;TOP;Nossa Senhora da Glória;SE;BAHIA;Rua Portão da Piedade, 155
+821;1063340;Mobi Cine Gurupi 3;3;TOP;Gurupi;TO;GOIAS;Av Goiás Sul 633
+822;64257;Millenium 2;2;TPCX;Itatiba;SP;SAO PAULO;Rua Doutor Jorge Tibiriçá, 55
+823;65661;Top Cine Paulinia 2;2;TPCX;Paulinia;SP;SAO PAULO;Av. Jose Lozano de Araujo 1515
+824;1055855;Top Cineplex 4;4;TPCX;Campinas;SP;SAO PAULO;Av. Washington Luis, 2480
+825;1052083;UCI Manaus 8;8;UCIB;Manaus;AM;RIO DE JANEIRO;Av Das Americas 5000 Loja 301
+826;1042304;UCI Shopping Parangaba 6;6;UCIB;Fortaleza;CE;SAO PAULO;Av Cnel F Ferreira Leite 1540
+827;1031830;UCI Bosque dos Ipês 6;6;UCIB;Campo Grande;MS;SAO PAULO;Av Giovanni Gronchi 5819
+828;1056725;Uci Bosque 6;6;UCIB;Belem;PA;SAO PAULO;Av. Regente Feijó, 1759
+829;63877;Uci Estacao Plaza Show 10;10;UCIB;Curitiba;PR;SAO PAULO;Rua Conselheiro Moreira De Barros 2780
+830;65601;Uci Palladium 8 3d;8;UCIB;Curitiba;PR;PARANA;R. Sete de Setembro, 2775 - Batel
+831;64077;Uci New York City 18;18;UCIB;Rio de Janeiro;RJ;PARANA;Av. Pres. Kennedy, 4121 - Portão, Curitiba
+832;1027189;UCI Park Campo Grande 7;7;UCIB;Rio de Janeiro;RJ;RIO DE JANEIRO;Estrada do Monteiro 1200
+833;1069455;UCI Canoas 7;7;UCIB;Canoas;RS;MATO GROSSO DO SUL;Avenida Cônsul Assaf Trad, 4634 - Novos Estados
+834;64279;Uci Ribeirao Shopping 11;11;UCIB;Ribeirão Preto;SP;CEARA;Av. Germano Frank, 300
+835;64397;Uci Jardim Sul 11 3d;11;UCIB;Sao Paulo;SP;AMAZONAS;Avenida Noel Nutels, 1762
+836;64493;Uci Shop Analia Franco 9;9;UCIB;Sao Paulo;SP;PARA;Avenida Centenario, 1052
+837;65545;Uci Santana Parque Shop 8;8;UCIB;Sao Paulo;SP;RIO GRANDE DO SUL;Av Farroupilha 4545
+838;64734;Uci Shopping Iguatemi 12;12;UCIK;Fortaleza;CE;PERNAMBUCO;R. Padre Carapuceiro, 777 - Boa Viagem
+839;1030188;UCI Shopping Ilha 8;8;UCIK;São Luís;MA;PERNAMBUCO;Av. Governador Agamenon Magalhães, 153 - Santo Amaro
+840;65535;Uci Kinoplex Independencia 5;5;UCIK;Juiz de Fora;MG;CEARA;Av  Washington Soarez, 85
+841;63990;Uci Shopping Recife 10;10;UCIK;Recife;PE;PERNAMBUCO;Rua Doutor Joao Santos Filho 255 L316
+842;64005;Uci Shop Tacaruna 10;10;UCIK;Recife;PE;RIO DE JANEIRO;Avenida Dom Hélder Câmara, 5474
+843;65570;Uci Kinoplex Casa Forte 5;5;UCIK;Recife;PE;MINAS GERAIS;Avenida Independência, 3600
+844;1041341;UCI Kinoplex de Lux 4;4;UCIK;Recife;PE;MARANHAO;Av. Daniel de La Touche, 987
+845;65039;Uci Kinoplex Norte 10 3d;10;UCIK;Rio de Janeiro;RJ;PERNAMBUCO;R. Padre Carapuceiro, 777
+846;63706;Uci Shop Iguatemi 12 3d;12;UCOR;Salvador;BA;BAHIA;Av  Tancredo Neves 148
+847;65626;Uci Paralela 6;6;UCOR;Salvador;BA;BAHIA;Av Luiz Viana Filho, 8544
+848;1032286;UCI Shopping Barra 8;8;UCOR;Salvador;BA;BAHIA;Av. Centenário, 2992
+849;63958;Panambi 2;2;VIRG;Toledo;PR;SAO PAULO;Av  Doutor Alfonso Vergueiro 1766
+850;63964;Vip 1;1;VIRG;Umuarama;PR;SAO PAULO;Comendadore Pereira Inacio 99
+851;64486;Cineplay Sorocaba 8;8;VIRG;Sorocaba;SP;PARANA;Rua Haroldo Hamilton 478
+852;64823;Cineplay Panoramico 8;8;VIRG;Sorocaba;SP;PARANA;Rua Cambé, 4134 
+853;1079693;Cine Estação 3 ;3;VIRG;Franco da Rocha ;SP;SAO PAULO;Rua Basilio Fazzi 290
+854;1081172;Cine Teatro Maria Auxiliadora 1;1;WSCinemas;Quirinopolis;GO;RIO GRANDE DO SUL;Av  Paraguassu 2205
+855;1071478;Cine Sul Cinemas 2;2;WSCinemas;Medianeira;PR;RIO GRANDE DO SUL;Rua Ramiro Barcelos 1756
+856;1077446;Cine Sul Telemaco Borba 2;2;WSCinemas;Telemaco Borba;PR;RIO GRANDE DO SUL;Rua Sepé 1896
+857;64069;Cine Arte Paraguassu 1;1;WSCinemas;Capao Da Canoa;RS;PARANA;Rua Sergipe 2620
+858;1058847;Cine Arte Tanopolis 1;1;WSCinemas;Monte Negro;RS;PARANA;Av. Osvaldo Gomes de Lima 37
+859;1066331;Cine Arte Capão da Canoa 1;1;WSCinemas;Capao Da Canoa;RS;GOIAS;Av Quirino Candido de Moraes, SN . Quadra B Lote 02
+860;1082663;Cine Sul 2;2;WSCinemas;Lençois Paulista;SP;SAO PAULO;Rua Porto Alegre 100

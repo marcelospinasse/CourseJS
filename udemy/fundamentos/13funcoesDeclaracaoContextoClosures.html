@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Função - Declaração, Contexto e Closures</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>Funções - Declaração, Contexto e Closures:</h1>
+    <p id="pList"></p>
+<script>
+    //Function "print" bellow replaces documento.write that has issues in browsers!
+    // Os ... faz com que seja possível fazer esta função varias vezes usando multiplos argumentos - não só t 
+    function print(...t){
+        var p = document.createElement("p")
+        var texto = document.createTextNode(t)
+        p.appendChild(texto)
+        document.getElementById("pList").appendChild(p)
+    }
+    // print(`  ${ }.`)
+    //-----Tipos de declaração de função-----
+
+    // function declaration - preferível, pois o compilador carrega todas função antes
+    function soma(x, y){
+        return  x+ y
+    }
+    print(`${soma(0, 1)}) Function declaration é preferível, pois o compilador carrega todas função antes e assim consegue execurtar as funções declaradas posteriormente.`)
+
+    // function expression
+    const diferenca = function(x, y) {
+        return x - y
+    }
+
+    //named function expression
+    const multi = function multi(x, y) {
+        return x * y
+    }
+
+    //----- Contexto léxico-----
+    const valor = "2) Global - esta variável é impressa.  Isto devido ao escopo de minhaFuncao que pega o valor global e não a local do valor da chamada."
+
+    function minhaFuncao(){
+        print(valor)
+    }
+
+    function exec() {
+        const valor = "Local"
+        minhaFuncao()
+    }
+
+    exec()
+
+
+    //-----Closures-----
+    //contexto léxico em ação
+     print(`${soma(0, 3)}) Closure é o escopo criado quando uma função é declarada.  Este escopo permite a função a acessar e manipular variáveis externas à função.`)
+    
+     const x = "global"
+
+    function fora() {
+        const x = "local"
+        function dentro() {
+            return x
+        }
+        return dentro
+    }
+
+    const myFuncao = fora()
+    print(`4) ${myFuncao()} - a função carrega seu escopo / origem, por isto retorna local`)
+
+
+
+
+    
+
+
+
+</script>
+</body>
+</html>

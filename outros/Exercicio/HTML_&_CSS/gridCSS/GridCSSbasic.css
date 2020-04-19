@@ -1,0 +1,99 @@
+html, body {
+  background-color: #ffeead;
+  margin: 10px;
+  font-size: 20px;
+}
+
+p {
+  color: #96ceb4;
+  text-align: center;
+}
+
+.flexbox-header > div {
+  display: flex;
+  font-size: 1em;
+  padding: 10px 20px;
+}
+
+.flexbox-header {
+  background-color: #96ceb4;
+  color: #ffeead;
+}
+
+
+.header {
+    background-color: #96ceb4;	
+}
+
+.header :nth-child(2) {
+    padding: 0 40px;
+}
+
+.menu {
+    background-color: #ff6f69;
+}
+
+.content {
+    background-color: #ffcc5c;
+}
+
+.footer {
+    background-color: #88d8b0;
+}
+
+.grid-page > div {
+    color: #ffeead;
+    display: flex;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: #ffeead;
+}
+
+.color > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  color: #ffeead;
+}
+
+html, body {
+  background-color: #ffeead;
+  margin: 10px;
+}
+
+.color > div:nth-child(1n) {
+  background-color: #96ceb4;	
+}
+
+.color > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.color > div:nth-child(2n) {
+  background-color: #ff6f69;
+}
+
+.color > div:nth-child(4n) {
+  background-color: #ffcc5c;
+}
+
+h1{
+  font-size: 18px;
+  color: rgb(252, 79, 79);
+  text-align: center;
+
+}
+
+.separacao{
+  height: 10px;
+  background-color: black;
+  margin: 10px 0;
+}

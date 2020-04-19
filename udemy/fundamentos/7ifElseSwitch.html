@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>If Else Switch case</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>If Else Switch case:</h1>
+    <p id="pList"></p>
+<script>
+    //Function "print" bellow replaces documento.write that has issues in browsers!
+    // Os ... faz com que seja possível fazer esta função varias vezes usando multiplos argumentos - não só t 
+    function print(...t){
+        var p = document.createElement("p")
+        var texto = document.createTextNode(t)
+        p.appendChild(texto)
+        document.getElementById("pList").appendChild(p)
+    }
+
+    //If Else
+    Number.prototype.entre = function(inicio, fim){    //prototype para incluir uma propriedade em Number para verificar um range de valor entre inicio e fim.
+        return this >= inicio && this <= fim
+    }
+
+    const ImprimirResultado = function (nota){
+        if(nota.entre(9, 10)) {
+            print("Parabéns!")
+        } else if((nota.entre(7, 8.99))) {
+            print("Aprovado!") 
+        } else if ((nota.entre(3, 6.99))) {
+            print("Repuração!")
+        } else if ((nota.entre(1, 2.99))) {
+            print("Reprovado!")
+        } else {
+            print("Nota inválida!")
+        }
+    }
+    
+    ImprimirResultado(11)
+    ImprimirResultado(9.5)
+    ImprimirResultado(7.5)
+    ImprimirResultado(5.5)
+    ImprimirResultado(1.5)
+    ImprimirResultado(-1.5)
+
+    print("----- Switch case -----")
+
+    //Switch
+    const ImprimirResultado2 = function(nota){
+        switch (Math.floor(nota)){
+            case 10:
+            case 9:
+                print("Parabéns.")
+                break
+            case 8:
+            case 7:
+                print("Aprovado.")
+                break
+            case 6:
+            case 5:
+            case 4:
+                print("Recuperação.")
+                break
+            case 3:
+            case 2:
+            case 1:
+                print("Reprovado.")
+                break
+            default:
+                print("Nota Invalida.")
+                break
+        }
+    }
+   
+    ImprimirResultado2(11)
+    ImprimirResultado2(9.5)
+    ImprimirResultado2(7.5)
+    ImprimirResultado2(5.5)
+    ImprimirResultado2(1.5)
+    ImprimirResultado2(-1.5)
+    
+
+
+
+
+   
+
+
+
+
+</script>
+</body>
+</html>

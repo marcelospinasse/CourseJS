@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table class="quarterback-stats">
+      <caption>
+        Produtos
+      </caption>
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Preço</th>
+          <th>Quantidade</th>
+          <th>Total</th>
+        </tr>
+        <tbody>
+        <tr>
+            <td>iPad</td>
+            <td>R$1.999,00</td>
+            <td>1</td>
+            <td>R$1.999,00</td>
+        </tr>
+            <tr>
+            <td>Notebook</td>
+            <td>R$2.999,00</td>
+            <td>1</td>
+            <td>R$2.999,00</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>R$4.998,00</td>
+            </tr>
+        </tfoot>
+        </tbody>
+      </thead>
+    </table>
+
+<style>
+
+table{
+    caption-side: top;
+    align-self: auto;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.quarterback-stats{
+    width: 600px;
+    border: 1px solid black;
+    border-collapse: collapse;
+     margin-left: auto;
+  margin-right: auto;
+}
+
+.quarterback-stats td, .quarterback-stats th{
+    border: 1px solid black;
+}
+
+.quarterback-stats td{
+    text-align: center;
+    padding: 0.3em;
+}
+
+.quarterback-stats th{
+    text-align: center;
+    font-weight: bold;
+    padding: 0.3em;
+    background-color: rgb(7, 159, 206);
+    color: #fff;
+}
+
+.quarterback-stats tr:nth-child(odd){
+    background-color: #7cb9e8;
+}
+
+.quarterback-stats tr:hover{
+    background-color: #2e5894;
+    color: white;
+}
+
+
+
+</style>
+
+  </body>
+</html>

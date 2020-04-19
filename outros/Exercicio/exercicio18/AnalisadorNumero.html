@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="AnalisadorNumero.css">
+
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    
+    <section>
+    <div class="inputDados">
+        <span>Número (entre 1 e 100):</span>
+        <input id="inptNumber" type="number" class="inptNumber">
+        <input id="inptBtn" type="button" class="inptBtn" value="Adicionar" onclick="verificar()">
+    </div>
+    <div>
+        <select id="optionInpt" name="resutado" id="res" size="10">
+        
+        </select>
+    </div>
+    <div>
+        <input id="btnFinalizar" type="button" value="Finalizar" onclick="finalizar()">
+    </div>
+
+    <div>
+        <p id="listArray"></p>
+        <p id="MaiorArray"></p>
+        <p id="MenorArray"></p>
+        <p id="SomaArray"></p>
+        <p id="MediaArray"></p>
+    </div>
+
+</section>
+
+    <footer>
+        <p>Rodapé do site</p></footer>
+    
+<script src="AnalisadorNumero.js"></script>
+
+</body>
+</html>

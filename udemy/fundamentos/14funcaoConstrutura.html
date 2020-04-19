@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Função Construtora</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>Função Construtora:</h1>
+    <p id="pList"></p>
+<script>
+    //Function "print" bellow replaces documento.write that has issues in browsers!
+    // Os ... faz com que seja possível fazer esta função varias vezes usando multiplos argumentos - não só t 
+    function print(...t){
+        var p = document.createElement("p")
+        var texto = document.createTextNode(t)
+        p.appendChild(texto)
+        document.getElementById("pList").appendChild(p)
+    }
+    // print(`  ${ }.`)
+
+    function carro(velocidadeMaxima = 200, delta = 5){
+        //atributo privado
+        let velocidadeAtual = 0
+
+        //metodo publico
+        this.acelerar = function (){
+            if (velocidadeAtual + delta <= velocidadeMaxima){
+                velocidadeAtual +=delta
+            } else{
+                velocidadeAtual = velocidadeMaxima
+            }
+        }
+
+        //metodo publico
+        this.getVelocidadeAtual = function(){
+            return velocidadeAtual
+        }
+    }
+
+    let uno = new carro()
+    uno.acelerar()
+    uno.acelerar()
+    uno.acelerar()
+    print(`A velocidade do Uno foi para ${uno.getVelocidadeAtual()}.`)
+
+    let ferrari = new carro(300, 20)
+    ferrari.acelerar()
+    ferrari.acelerar()
+    ferrari.acelerar()
+    print(`A velocidade da Ferrari foi para ${ferrari.getVelocidadeAtual()}`)
+
+ document.getElementsByTagName("body")[0].onclick = function (e) {
+        print("Velocidade aumentada!!!")    
+        uno.acelerar() 
+        print(`A velocidade do Uno foi para ${uno.getVelocidadeAtual()}.`)
+        ferrari.acelerar()
+        print(`A velocidade da Ferrari foi para ${ferrari.getVelocidadeAtual()}`)
+
+    }
+
+
+</script>
+</body>
+</html>

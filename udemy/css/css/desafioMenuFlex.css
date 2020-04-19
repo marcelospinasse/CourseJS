@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: lightcyan;
+  font-family: "Oswald", sans-serif;
+}
+
+.cabecalho {
+  height: 80px;
+  width: 100%;
+  background-color: #333;
+  border-bottom: 5px solid lightskyblue;
+  box-sizing: content-box;
+}
+
+.logo img {
+  height: 40px;
+  padding: 0px 15px;
+  
+}
+.menu-toggle {
+  color: #eee;
+  background-color: #555;
+  border: solid 1px #777;
+  border-radius: 5px;
+  height: 40px;
+  padding: 10px 20px;
+  margin: 20px 15px;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.cabecalho a {
+  color: #eee;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.menu a {
+  padding: 15px;
+}
+
+.menu a:hover,
+.menu a.selected {
+  background-color: lightskyblue;
+  color: black;
+}
+
+.botao {
+  border-radius: 30px;
+  padding: 5px 20px;
+  margin: 10px;
+}
+
+.destaque {
+  background-color: orangered;
+  color: white;
+}
+
+@media (min-width: 679px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+@media (max-width: 680px) {
+  .menu {
+    display: none;
+  }
+}
+
+@media (max-width: 910px) {
+  .autenticacao {
+    display: none;
+  }
+}
+
+/*Flexbox*/
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  flex-grow: 10;
+}

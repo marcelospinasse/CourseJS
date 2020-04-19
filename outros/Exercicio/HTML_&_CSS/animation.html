@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition -CSS Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*Para resetar o CSS do style.css*/
+        *{background: local; 
+        color:inherit;
+        font-size: inherit;}
+        *{z-index: 0;} 
+        /*-------------------------------*/
+
+        div{
+            width: 200px;
+            height: 100px;
+            margin: 10px;
+            color:white;
+            text-align: center;
+        }
+
+
+       
+        .transition{
+            background: red;
+            transition: all 2s linear;
+        }
+
+        .transition:hover{
+            background: orange;
+            transform: translateX(100px);
+        }
+
+
+        .animation{
+            background: blue;
+            /* animation-name: move; 
+            animation-duration: 5s;
+            animation-iteration-count: infinite; */
+            /*Para animation é necessário sempre ter estas 03 propriedades acima. Versão curta abaixo:*/
+            animation: move 5s infinite;
+        }
+
+        @keyframes move{
+            0%{transform: translateX(20px);}
+            50% { transform: translateX(120px);}
+            75% {transform: translateX(-100px) ; background: red;}
+            100% {transform: translatex(-200px); background: green;}
+
+        }
+
+        /* Animation film mode  */
+        .animationFilmMode{
+            background: rgb(8, 119, 54);
+            animation: FilmMode 5s 2;
+            animation-fill-mode: forwards; } /*deixa a animação no estado final determinado*/
+
+        @keyframes FilmMode{
+            0%{opacity: 0;}
+            25%{opacity: 0.25; transform: translateX(200px)}
+            50%{opacity: 0.5; transform: translateX(-50px)}
+            70%{opacity: 0.99; transform: translateX(100px)}
+            100%{opacity: 0.4; transform: translateX(10px)}
+
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+    <!-- Header do Curso de HTML & CSS -->
+    <div class="header"><h1>Curso de HTML e CSS</h1></div>
+    <div class="menu"><a href="index.html">Home</a></div>
+    <!-- Header do Curso de HTML & CSS -->
+    <!-- Responsive Design, Styles on different Screens - Nobile Frist-->
+    
+<div class="transition">transition</div>
+<div class="animation">animation</div>
+
+<!-- animation film mode -->
+
+<div class="animationFilmMode">animation film mode</div>
+
+</body>
+</html>

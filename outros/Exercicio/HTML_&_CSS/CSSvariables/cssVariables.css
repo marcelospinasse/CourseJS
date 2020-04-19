@@ -1,0 +1,44 @@
+/*Variables declaration*/
+:root {
+    --red: #ff6f69;
+    --beige: #ffeead; 
+    --yellow: #ffcc5c;
+}
+
+
+/*Styles*/
+html, body {
+    background: var(--beige);
+    color: var(--red);
+}
+
+#navbar{
+    --nav-red: #ff6f19;
+}
+
+#navbar a {
+    color: var(--nav-red);
+}
+
+.item {
+    --red: #ff8e69;
+    background: var(--yellow);
+}
+
+button {
+    background: var(--red);
+    color:var(--yellow);
+}
+
+.featured{
+    --yellow: #ffe55b;
+    --red: #ff5564;
+}
+
+@media all and (max-width: 600px) {
+   :root {
+    --red: red;
+    --beige: beige; 
+    --yellow: orange;
+   }
+ }

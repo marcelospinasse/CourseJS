@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object vs JSON</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>Object vs JSON:</h1>
+    <p id="pList"></p>
+    <p id="demo"></p>
+
+<script src="printBrowser.js"> //funcao Print no arquivo printBrowser.js</script> 
+<script>
+    //Transformando em JSON com stringify
+    const obj = {a: 1, b:2, c:3, soma() {return a + b +c}}
+    print(JSON.stringify(obj))
+
+    //Transformando de JSON para objeto - textos e atributos dentro de JSON devem ser sobre aspas duplas ("")
+    print(JSON.parse('{"a": 1, "b": 2, "c": 3}'))
+    console.log(JSON.parse('{"a": 1, "b": 2, "c": 3}')) //A string maior precisa ser entre pastas simple(') e os nomes dos atributos obrigatoriamente entre aspas duplas (").
+
+    var text = '{ "employees" : [' +
+        '{ "firstName":"John" , "lastName":"Doe" },' +
+        '{ "firstName":"Anna" , "lastName":"Smith" },' +
+        '{ "firstName":"Peter" , "lastName":"Jones" } ]}'
+
+    console.log(JSON.parse(text))
+
+    //--------------------------------------------------------------
+
+    const carrinho = [
+        '{ "nome" : "Borracha" , "preco" : 3.45}',
+        '{ "nome" : "Caderno" , "preco" : 13.90}',
+        '{ "nome" : "Kit de Lapis" , "preco" : 41.22}',
+        '{ "nome" : "Caneta" , "preco" : 7.50}'
+    ]
+    //retornar um array com os preços
+
+    
+    const paraObjeto = json => JSON.parse(json)
+    const apenasPreco = produto => produto.preco
+
+    const precos = carrinho.map(paraObjeto).map(apenasPreco)
+    console.log(precos)
+    print("Preços : " + precos.join(" - ")) 
+
+    //--------------------------------------------------------------
+
+    const alunos = [
+        { nome: "João", nota: 7.2, bolsista: false },
+        { nome: "Maria", nota: 9.2, bolsista: true },
+        { nome: "Pedro", nota: 9.8, bolsista: false },
+        { nome: "Ana", nota: 8.7, bolsista: true }
+    ]
+
+    
+    //resolução apresentada pelo curso
+
+    //desafio reduce 1: todos alunos são bolsitas?
+    const todosBolsistas = (resultado, bolsista) => resultado && bolsista
+    print(alunos.map(a => a.bolsista).reduce(todosBolsistas) + " - nem todos são bolsistas")
+
+    //desatio reduce 2: algum aluno é bolsista?
+    const algumBolsistas = (resultado, bolsista) => resultado || bolsista
+    print(alunos.map(a => a.bolsista).reduce(algumBolsistas) + " - alguns alunos são bolsistas")
+ 
+    //meu codigo no desafio
+    const checkBolsita = aluno => aluno.bolsista
+    const eBolsista = alunos.map(checkBolsita)
+
+    somaTotal = eBolsista.reduce(somar)
+    function somar(total, value) {
+        return total + value
+    }
+
+    // console.log(eBolsista)
+    // print(eBolsista)
+    print(somaTotal + " alunos são bolsitas, logo nem todos são porém alguns são")
+
+
+
+</script>
+</body>
+</html>

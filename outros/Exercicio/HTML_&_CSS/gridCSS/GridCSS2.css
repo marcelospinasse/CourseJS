@@ -1,0 +1,69 @@
+/*REPEAT AUTO-FILL MINMAX*/
+.container{
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill , minmax(100px, 1fr));
+    grid-auto-rows: 100px; /*faz com que todas as linhas tenham 100px quando feito o resize da tela*/
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/*FOTO GALERY*/
+
+.container2 > div > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.container2 {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-auto-rows: 75px;
+    grid-auto-flow: dense; /*remove os espaços vazios e encaixa uma imagem para cobrir o espaço*/
+}
+
+.horizontal{
+    grid-column: span 2;
+}
+
+.vertical{
+    grid-row: span 2;
+}
+
+.big{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.container3 {
+    border: 1px dotted black;
+    height: 200px;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 75px);
+    grid-template-rows: repeat(2, 75px);
+    justify-content: space-evenly; /*alinha horizontalmente os itens*/
+    align-content: space-around;/*alinha verticalmente os itens*/
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.container4 {
+    border: 1px dotted black;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: 100px 100px;
+}
+
+.container5 {
+    border: 1px dotted black;
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-rows: 100px 100px;
+}

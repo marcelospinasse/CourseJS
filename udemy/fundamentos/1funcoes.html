@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funções</title>
+</head>
+<style>
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>Funções:</h1>
+<script>
+    //armazenando uma função em uma variável
+    const imprimirSoma = function(a,b) {
+        document.write((a+b) + ".</br>");
+    }
+    imprimirSoma(2,3);
+
+    //Armazenando uma função arrow wm uma variável
+    const subtracao = (a, b) => {
+        return a-b;
+    }
+    document.write(subtracao(3, 2) + ".</br>");
+
+    //Função arrow com retorno implícito
+    const soma = (a , b) => a + b;
+    document.write(soma(2 , 3) + ".</br>");
+
+    //função com um único parâmetro
+    const printar = a => document.write(a + ".</br>");
+    printar("Bem legal")
+
+
+
+
+</script>
+</body>
+</html>

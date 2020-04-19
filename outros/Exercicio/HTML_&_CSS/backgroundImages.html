@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Start of this page */
+        
+        /*Para resetar o CSS do style.css*/
+        *{background: local;
+        color:inherit;
+        font-size: inherit;}
+
+        div {min-height: 100vh;
+            color:rgb(171, 7, 221);
+            font-size: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+}
+
+        .big_img{ background: url("./images/techFoto5.jpeg");
+            background-repeat: no-repeat;
+            background-size: cover;
+             background-attachment: fixed; /*para dar o eveito paralax*/
+           }
+
+        /* .small_img{ background: url("./images/techFoto2_150px.jpeg"); 
+            background-repeat: repeat;  
+            background-repe background-position: center;at: no-repeat;
+            /* background-repeat: repeat-x;
+            background-repeat: repeat-y;
+            background-repeat: space; */
+            /* background-size: cover; */
+            /* background-size: contain; 
+            background-position: center;} */ 
+        
+        .folder_img{ background: url("./images/foto3.jpeg");
+            background-repeat: no-repeat; 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;}
+
+        /* End of this page*/
+    </style>
+
+</head>
+<body>
+    <!-- Header do Curso de HTML & CSS -->
+    <div class="big_img">
+        <h1>I'm a big image!</h1>
+    </div>
+   
+    <!-- <div class="small_img">
+        <h1>I'm a folder image!</h1>
+    </div> -->
+
+    <div class="folder_img">
+        <h1>I'm a folder image!</h1>
+    </div>
+
+    <div class="big_img">
+        <h1>I'm a big image!</h1>
+    </div>
+
+    <!-- Header do Curso de HTML & CSS -->
+
+
+
+</body>
+</html>

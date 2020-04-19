@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>destructuring</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>Destructuring:</h1>
+    <ul id="myList">
+
+    </ul>
+<script>
+    //Function "print" bellow replaces documento.write that has issues in browsers!
+    // Os ... faz com que seja possível fazer esta função varias vezes usando multiplos argumentos - não só t 
+    function print2(...t) {
+        var li = document.createElement("li"); // Create a <li> li
+        var textnode = document.createTextNode(t); // Get  text to li from t
+        li.appendChild(textnode); // Append the text to <li>
+        document.getElementById("myList").appendChild(li); // Append <li> to <ul>  id="myList"
+    };
+
+    //agora usando p (paragrafo)
+    function print(...t){
+        var p = document.createElement("p")
+        var texto = document.createTextNode(t)
+        p.appendChild(texto)
+        document.getElementById("myList").appendChild(p)
+    }
+
+    //Forma padrão
+    const pessoa = {
+        nome: "Marcelo",
+        idade: 49,
+        endereco: {
+            logradouro: "Avenida Jurema",
+            numero: 437
+        }
+    }
+    let nome = pessoa.nome
+    print(nome);
+    let idade = pessoa.idade
+    print (pessoa.idade)
+
+    //Com a forma destructuring
+    const {nome : n, idade : i} = pessoa
+    print(n); print(i);
+    print(n, i)
+
+    const { endereco : {logradouro : l ,numero : m , cep : c}} = pessoa // destructuring objeto dentro de objeto
+    print(l); print(m); print(c); // cep não existe
+    print(l, m)
+
+    //destructuring arrays
+    const [n1, , n3,  n5, n6 = 0] = [10, 7, 9, 8]
+    print(n1, n3, n5, n6)
+
+    //destructuring arrays dentro de outro array
+    const [ ,[ , nota]] = [[ , 8, ], [9 , 6, 8]]
+    print(nota)
+
+    function rand({ min = 0, max = 1000}) {
+        const valor = Math.random() * (max - min) + min
+        return Math.floor(valor)
+    }
+    print(rand({max: 50, min: 40}))
+    const ob = { max: 50, min: 40 }
+    print(rand(ob))
+    print(rand({}))
+    print(rand({min: 950 }))
+
+    //agora com arrays
+    function rando([mini = 0, maxi = 1000]) {
+        if (mini > maxi) {[mini , maxi] = [maxi, mini]}
+        const valores = Math.random() * (maxi - mini) + mini
+        return Math.floor(valores)
+    }
+    print(rando([80, 60]))
+    print(rando([500]))
+    print(rando([ , 10]))
+    print(rando([]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

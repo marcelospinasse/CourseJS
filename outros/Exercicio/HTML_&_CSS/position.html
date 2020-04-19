@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position - CSS Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    
+    *{margin:0 ; padding: 0; box-sizing: border-box}
+
+    .one{float: left; background: red; height: 250px; width: 33.33%;}
+    .two{float: left; background: blue; height: 250px; width: 33.33%;}
+    .three{float: left; background: green; height: 250px; width: 33.33%;}
+
+    h1{clear: both;}/*jogo o elemento para debaixo de todos outros elementos.*/
+
+    .special{
+        background: lightcoral ; font-size: 20px;
+        position: absolute;
+        top: 50%;
+        right: 40%;
+        position: fixed; /*é posicionado sempre em relação a um position - relative*/
+    }
+
+    </style>
+
+</head>
+<body>
+    <!-- Header do Curso de HTML & CSS -->
+    <div class="header"><h1>Curso de HTML e CSS</h1></div>
+    <div class="menu"><a href="index.html">Home</a></div>
+    <!-- Header do Curso de HTML & CSS -->
+
+    <div class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, hic. Nulla iste, amet alias nesciunt explicabo unde illum pariatur, quae, ut facere placeat asperiores repellat! Vel eum earum facilis dicta?</div>
+
+    <div class="two">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, hic. Nulla iste, amet alias nesciunt
+    explicabo unde illum pariatur, quae, ut facere placeat asperiores repellat! Vel eum earum facilis dicta?</div>
+    <div class="three">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, hic. Nulla iste, amet alias nesciunt
+    explicabo unde illum pariatur, quae, ut facere placeat asperiores repellat! Vel eum earum facilis dicta?</div>
+    <div class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, hic. Nulla iste, amet alias nesciunt
+    explicabo unde illum pariatur, quae, ut facere placeat asperiores repellat! Vel eum earum facilis dicta?<span class="special">Hey, I'm absolute</span></div>
+
+    <h1>Trabalhando com Position!</h1>
+
+</body>
+</html>

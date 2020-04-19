@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TesteInserirImagem</title>
+    <style>
+    
+        body{ 
+            background-color: azure;
+            font: normal 18px Arial;
+            color:midnightblue;
+            text-align: center;
+
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div>
+        A imagem precisa aparecer aqui:
+
+    </div id='imagem'>
+
+
+
+    <script>
+        var imgs = document.createElement('img')
+            imgs.setAttribute('id' , 'foto')
+            imgs.setAttribute('src' , 'homemjovem.png')
+            document.body.appendChild(imgs)
+    </script>
+</body>
+</html>

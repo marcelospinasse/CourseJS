@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Modificando HTML #03</title>
+		<link rel="stylesheet" href="css/estilo.css" />
+		<script src="js/jquery.js"></script>
+	</head>
+
+	<body class="conteudo exercicio">
+		<h1>Modificando HTML #03</h1>
+		<div id="conteudo"></div>
+
+		<table class="table">
+			<thead>
+				<tr>
+					<th>A</th>
+					<th>B</th>
+					<th>C</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td scope="row">a</td>
+					<td>b</td>
+					<td>c</td>
+				</tr>
+				<tr>
+					<td scope="row">1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<script>
+			$(document).ready(function () {
+				const pessoas = [
+					{ nome: "Ana", nota: 9.1 },
+					{ nome: "Bianca", nota: 8.4 },
+					{ nome: "Carlos", nota: 7.6 },
+					{ nome: "Julia", nota: 9.7 },
+				];
+
+				$("#conteudo")
+					.append("<table></table>")
+					.append("<thead></thread>")
+					.append("<tr></tr>")
+					.append("<th>NOME</th><th>NOTA</th>");
+				// $("#conteudo").append("<tbody></tbody>").append("<tr></tr>").append(`<td>${pessoas[0].nome}</td>`).append(`<td>${pessoas[0].nota}</td>`)
+				// $("#conteudo").append("<tbody></tbody>").append("<tr></tr>").append(`<td>${pessoas[0].nome}</td>`).append(`<td>${pessoas[1].nota}</td>`)
+				// $("#conteudo").append("<tbody></tbody>").append("<tr></tr>").append(`<td>${pessoas[0].nome}</td>`).append(`<td>${pessoas[2].nota}</td>`)
+				// $("#conteudo").append("<tbody></tbody>").append("<tr></tr>").append(`<td>${pessoas[0].nome}</td>`).append(`<td>${pessoas[3].nota}</td>`)
+
+				const linhas = pessoas.map((p) => {
+					const tdNome = $("<td>").append(p.nome);
+					const tdNota = $("<td>").append(p.nota);
+					return $("<tr>").append(tdNome, tdNota);
+				});
+
+				//  $("#conteudo ").append("<tbody></tbody>").append(linhas)
+
+				const tabela = $("<table>")
+					.append(linhas)
+					.css("border", "dotted 3px white");
+				$("#conteudo").append(tabela);
+			});
+		</script>
+	</body>
+</html>

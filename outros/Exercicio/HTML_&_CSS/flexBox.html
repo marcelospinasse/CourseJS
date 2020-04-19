@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FlexBox- CSS Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html, body{box-sizing: border-box; height: 100%; padding: 10px;}
+
+        .main-nav > div:nth-child(1){background-color:rgb(25, 197, 240);}
+        .main-nav > div:nth-child(2){background-color:rgb(252, 175, 144);}
+        .main-nav > div:nth-child(3){background-color:rgb(252, 156, 244);}
+
+
+        .home, .search, .login{
+            background-color: rgb(207, 112, 24);
+            color:rgb(237, 238, 162); 
+            font-size: 1.5em;
+            font-weight: bold;
+            text-align: center;
+            padding: 0.5em; 
+        }
+
+        .main-nav{
+            border: 3px solid rgb(196, 196, 196);
+            display: flex;
+            /*direction of itens*/
+            flex-direction: row; /*set default*/
+            /* flex-direction: column; */
+            /*positioning itens along axis*/
+            justify-content: flex-start;/*set default*/
+            /* justify-content: flex-end;
+            justify-content: space-around;
+            justify-content: space-evenly;
+            justify-content: center; */
+            /*positioning single item*/
+        }
+
+            /*To align a itens in the center of the container: align-items: center / justify-content: center*/
+
+        /* .main-nav{ */
+            /*Aligning itens verticaly - * html, body and main-nav height=100%*/
+            /* height: 100%; */
+            /*set default*/
+            /* align-items: stretch;  */
+            /*push itens to top left*/
+            /* align-items: flex-start;  */
+            /*push itens to bootton left*/
+            /* align-items: flex-end;  */
+            /*push itens to center*/
+            /* align-items: center;  */
+            /* } */
+
+            /*To align a single item:*/
+        /* .main-nav  .home{ align-self: flex-start;} */
+        /* .login {align-self: flex-end; margin-left: auto;} */
+        /*to centralize*/
+        /* .search{margin:auto;}  */
+
+
+        /* .login{ */
+            /*positioning single item*/
+            /* margin-left: auto; */
+        /* } */
+
+        /* .search{ */
+           /*empurra os dois itens, Search e Login, para direita*/
+            /* margin-left: auto;  */
+        /* } */
+
+        /* .main-nav .home, .search, .login { */
+            /*strech the itens across the row.*/
+            /* flex: 1; */
+            /*flex is a contraction to flex-grow, flex-shrink and flex-basis*/
+        /* } */
+
+        /* .main-nav .search{ */
+           /*To act in just one item*/
+            /* flex: 2; */
+            /*If only one item is "flex", it grows to ajust de layout and the others itens stay with same width*/
+        /* } */
+ 
+        /*Flex Direction Column*/
+        /* .main-nav{ */
+            /* flex-direction: column; */
+        /*To push to botton it is necessary to put height 100% in html, body and container*/
+        /* height: 100%; */
+        /* justify-content: flex-end; */
+        /* justify-content: center; */
+        /* align-items: flex-end; */
+        /* } */
+
+        /*Wrapping items*/
+        /* .main-nav > div { */
+            /* width: 200px;
+        }
+        .main-nav{
+                    flex-wrap: wrap; */
+        /* } */
+
+        /*flex is a contraction to flex-grow, flex-shrink and flex-basis*/
+        /* .home{ */
+            /* flex: 1 1 0; */
+            /*the default values are 1 1 0, to grow, shrink and basis*/
+            /* flex-grow: 1;
+            flex-shrink: 1; */
+            /*flex-basis defines the width of the item*/
+            /* flex-basis: 0; */
+        /* } */
+        /* .login{ */
+            /* flex: 1 1 200px; */
+            /*is the same of:*/
+            /* flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 200px; */
+        /* } */
+
+        /*order*/
+        /* .item1{order: 1;}
+        .item2{order: 2;}
+        .item3{order: -1;} */
+
+
+
+
+    </style>
+
+</head>
+<body>
+    <!-- Header do Curso de HTML & CSS -->
+    <div class="header"><h1>Curso de HTML e CSS</h1></div>
+    <div class="menu"><a href="index.html">Home</a></div></br>
+    <!-- Header do Curso de HTML & CSS -->
+    <!-- Responsive Design, Styles on different Screens - Mobile Frist-->
+    
+        <nav class = "main-nav">
+            <div class="item1 home">Home</div>
+            <div class="item2 search">Search</div>
+            <div class="item3 login" >Login</div>
+        </nav>
+
+</body>
+</html>

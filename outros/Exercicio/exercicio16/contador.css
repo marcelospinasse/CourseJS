@@ -1,0 +1,54 @@
+body{font:normal 12pt Arial;
+    color:rgb(243, 242, 247);
+    background-color: rgb(34, 144, 247);
+    padding:2px;
+}
+
+header{font:normal 12pt Arial;
+    color:rgb(245, 245, 247);
+    background-color:rgb(34, 144, 247);
+    padding: 10px;
+    text-align: center; 
+}
+
+section{
+        background-color: aliceblue;
+        color: black;
+        border-radius: 10px;
+        padding: 15px;
+        width: 30%;
+        margin: auto;
+        box-shadow: 5px 5px 10px rgb(41, 73, 99);
+    }
+
+footer{font:normal 12pt Arial;
+    color:rgb(255, 255, 255);
+    background-color: rgb(34, 144, 247);
+    text-align: center;
+    font-style: italic;
+    margin-top: 15px;
+}
+
+.input{
+    display: inline-flex;
+    align-content: center;
+    margin: 5px;
+    padding: 2px;
+    width: 60%;
+    border-radius: 10%;
+}
+
+.btnContar{
+    margin: 15px 0 10px 0;  
+}
+
+
+.dialog{
+    display: block;
+    margin-bottom: 10px;}
+
+label{ 
+    display: inline-block;
+    width: 30%;}
+
+    

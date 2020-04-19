@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operador Ternario</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>Operador Ternario:</h1>
+    <ul id="myList">
+
+    </ul>
+<script>
+    //Function "print" bellow replaces documento.write that has issues in browsers!
+    // Os ... faz com que seja possível fazer esta função varias vezes usando multiplos argumentos - não só t 
+    function print(...t){
+        var p = document.createElement("p")
+        var texto = document.createTextNode(t)
+        p.appendChild(texto)
+        document.getElementById("myList").appendChild(p)
+    }
+
+    //Operador ternário ("?")
+    //metodo tradicional
+    var nota = 6
+    const resultado = function(){
+        if(nota >=7) {
+            return result = "Aprovado..."}
+            else{return result = "Reprovado..."}; 
+    };
+    print((resultado(nota)))
+
+    //arrow function usando variável pré-declarada ("nota")
+    const resultado2 = () => nota >= 7 ? "Aprovado!" : "Reprovado!"
+    print((resultado2(nota)))
+
+    //arrow function declarando uma variável internamente ("grade")
+    const resultado3 = grade => grade >= 7 ? "Aprovado!!!" : "Reprovado!!!"
+    print((resultado3(8)))
+
+
+
+
+</script>
+</body>
+</html>

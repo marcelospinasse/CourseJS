@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modelo de Exercício</title>
+    <link rel="stylesheet" href="contador.css">
+
+</head>
+<body>
+    <header>
+        <h1>Contador</h1>
+    </header>
+    
+    <section>
+    <div>
+        <div>
+            <label for="inptInicio">Início: </label>
+            <input id="inptInicio" class="inptInicio input" type="number" name="inptInicio"> 
+        </div>
+        <div>
+            <label for="inptFim">Fim: </label>
+            <input id="inptFim" class="inptFim input" type="number" name="inptFim">
+        </div>
+        <div>
+            <label for="inptPasso">Passo: </label>
+            <input id="inptPasso" class="inptPasso input" type="number" name="inptPasso">
+        </div>
+        <div>
+            <input class="btnContar"  type="button" value="Calcular" onclick="calcular()">
+            <!-- <button class="btnContar" type="button" role="button" onclick="calcular()">Contar</button> -->
+        </div>
+    </div>
+        <div>  
+            <p id="dialog"></p>
+            <P id="result" class="result" id="result">Aqui vai o resultado:</P>
+            <p id="mySpan"></p>
+        </div>
+
+
+</section>
+
+    <footer>
+        <p>Rodapé do site</p></footer>
+    
+<script src="contador.js"></script>
+
+</body>
+</html>

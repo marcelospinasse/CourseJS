@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<STYle> 
+
+.wrapper{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        /*grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;*/
+        grid-gap: 1rem;
+    }
+
+    .wrapper2{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        /*grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1rem;
+        grid-row-gap: 1rem;*/
+        grid-gap: 1rem;
+    }
+
+.wrapper > div {
+    background: #eee;
+    padding: 1rem;
+}
+
+.wrapper2 > div {
+    background: #eee;
+    padding: 1rem;
+}
+
+.wrapper > div:nth-child(odd){
+    background: #ddd;
+}
+
+
+
+</STYle>
+
+<body>
+
+        <div class="wrapper">
+            <div>
+                <form action="">
+                    <label for="name">First Name</label>
+                     <input type="text" name="" id="name">
+                     <input type="email" name="" id="" value="email@email.com">
+                     <button type="submit">Submit</button>
+                </form>
+             </div>
+            <div>
+                <input type="password" placeholder="password">
+            </div>
+            <div>
+                <input type="email" name="" id="" value="email@email.com">
+                <button type="submit">Submit</button>
+            </div>
+            <div>
+                <input type="submit" name="submit">
+            </div>
+
+            <div class="wrapper2">
+                <div>
+                    <textarea name="areas" id="areas" cols="10" rows="5"></textarea>
+                </div>
+                <div>
+                    Select your coding language: <br>
+                    <input type = "radio" name="coding" id="" value="JavaScript" checked>
+                    <input type = "radio" name="coding" id="" value="Java">
+                    <input type = "radio" name="coding" id="" value="Python"><br>
+                    <input type="submit" name="submit please">
+                </div>
+                <div>
+                        Select your coding languages: <br>
+                        <input type = "checkbox" name="coding" id="" value="JavaScript">
+                        <input type = "checkbox" name="coding" id="" value="Java" checked>
+                        <input type = "checkbox" name="coding" id="" value="Python"><br>
+                        <input type="submit" name="submit please">
+                    </div>
+                     <div>
+                        <select name="languages" id="">
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Java">Java</option>
+                            <option value="Python">Python</option>
+                        </select>
+                    </div>
+                <div>
+                    <textarea name="area" id="area" cols="10" rows="5"></textarea>
+                </div>
+            </div>
+
+    </div>
+    <SCRIpt></SCRIpt>
+</body>
+
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Funções</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>Funções:</h1>
+    <p id="pList"></p>
+<script>
+    //Function "print" bellow replaces documento.write that has issues in browsers!
+    // Os ... faz com que seja possível fazer esta função varias vezes usando multiplos argumentos - não só t 
+    function print(...t){
+        var p = document.createElement("p")
+        var texto = document.createTextNode(t)
+        p.appendChild(texto)
+        document.getElementById("pList").appendChild(p)
+    }
+    // print(`  ${ }.`)
+
+    //Funções
+    function soma1(){
+        let soma = 0
+        for(i in arguments){
+            soma += arguments[i]
+        }
+        return soma
+    }
+
+    print()
+    print(`Soma = ${soma1(1)}.`)
+    print(`Soma = ${soma1(1.1, 2.2, 3.3)}.`)
+    print(`Soma = ${soma1(1.1, 2.2, "teste")}.`)
+    print(`Soma = ${soma1('a', 'b', 'c')}.`)
+
+    //03 estratégias de trabalhar com valor padrão
+    function soma2(a, b, c) {
+        a = a !== undefined ? a : 1  // Se usar != também pega valor nulo.
+        b = 1 in arguments ? b : 1 //b é o segundo elemento (1), se estiver vazio = 1.
+        c = isNaN(c) ? 1 : c //estrategia mais segura.  Se é Não é numero = valor padrão, senão "c".
+        return a + b + c
+    }
+    print("-----(3)estratégia 2-----")  
+    print(`Somas = ${soma2()}, ${soma2(3)}, ${soma2(1, 2, 3)}, ${soma2(0, 0, 0)}.`)
+
+    //Estratégia para ser utilizada para uma variável dentro de uma função
+    function soma3(a, b, c){
+        let var1 = a || 1
+        let var2 = b || 1
+        let var3 = c || 1
+        return var1 + var2 + var3
+    }
+    print("-----estratégia 3-----")  
+    print(`Somas = ${soma3()}, ${soma3(3)}, ${soma3(1, 2, 3)}, ${soma3(0, 0, 0)}, ${soma3(0, 0, "teste")}.`) //cuidado que 0 (zero) em JS é null, logo assume valor de 1 so exemplo acima.
+
+    //Usando valor padrão do es2015 - 4 estratégia, mais nova e a preferida
+    function soma4( a = 1, b = 1, c = 1){
+        return a + b + c
+    }
+    print("-----estratégia 4-----")  
+    print(`Somas = ${soma4()}, ${soma4(3)}, ${soma4(1, 2, 3)}, ${soma4(0, 0, 0)} - esta é a forma mais atual, recomendade e mais correta!`)
+
+    //uso do this
+    const pessoa = {
+        saudacao : "Olá, bom dia!",
+        falar (){
+            print(this.saudacao)  //this neste caso é igual ao objeto pessoa
+        }
+    }
+    pessoa.falar()
+
+    //conflito entre paradigmas: funcional e OO
+    const falar = pessoa.falar
+    falar()  //dá resultado undefined
+
+    //Resolvedo com o bind
+    const falardepessoa = pessoa.falar.bind(pessoa)
+    falardepessoa()
+
+    //Funções Anônimas
+    const soma = function(x, y){
+        return x + y
+    }
+
+    const imprimirResultado = function(a, b, operacao = soma) {
+        print(operacao(a, b))
+    }
+
+    imprimirResultado(1, 1)
+    imprimirResultado(2, 2, soma)
+    imprimirResultado(3, 3, function (x, y){return x + y}) //passando uma funcao anonima diretamente para outra funcao.
+    imprimirResultado(4, 4, (x, y) => x + y) // passando uma arrow function para uma funcao.
+
+
+</script>
+</body>
+</html>

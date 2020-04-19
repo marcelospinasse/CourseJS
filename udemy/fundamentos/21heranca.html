@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Herança</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>Herança:</h1>
+    <p id="pList"></p>
+    <p id="demo"></p>
+
+<script src="printBrowser.js"> //funcao Print no arquivo printBrowser.js</script> 
+<script>
+    const pai = {nome: "Marcelo", corCabelo: "castanho"}
+
+    const filho1 = Object.create(pai)
+    filho1.nome = "Mateo"
+    print(Object.keys(filho1))
+
+
+    const filha2 = Object.create(pai, {
+        nome: {value: "Micaela", writable: false, enumerable: true}
+    })
+    for(let key in filha2) {
+        filha2.hasOwnProperty(key) ?
+        print(key) : print(`Por herança: ${key}`)
+    } //para verificar se a propriedade pertence ao objeto ou se recebeu por herança (do prototipo)
+    print(Object.keys(filha2))
+
+
+    const filha3 = Object.create(pai, {
+            nome: { value: "Marcela", writable: false, enumerable: true },
+            cursando: {value: "Medicina", writable: false, enumerable:true}
+    })
+    print(Object.keys(filha3))
+
+    //-----com funções----- 
+
+    function MeuObjeto(){
+        print(MeuObjeto.prototype)
+    }
+
+    const obj1 = new MeuObjeto
+    const obj2 = new MeuObjeto
+    //todos onejetos criados a partir de uma função construtura apontam para o mesmo prototipo (objeto)
+    console.log(obj1.__proto__ === obj2.__proto__)
+
+    MeuObjeto.prototype.nome = "Anônimo"
+    MeuObjeto.prototype.falar = function(){
+        print(`Meu nome é ${this.nome}.`)
+    }
+
+    obj1.falar()
+    obj2.nome = "Marcelo"
+    obj2.falar()
+
+    const obj3 = {}
+    obj3.__proto__=MeuObjeto.prototype
+    obj3.nome="Obj3"
+    obj3.falar()
+
+    // Resumindo a loucura...
+    console.log((new MeuObjeto).__proto__ === MeuObjeto.prototype)
+    console.log(MeuObjeto.__proto__ === Function.prototype)
+    console.log(Function.prototype.__proto__ === Object.prototype)
+    console.log(Object.prototype.__proto__ === null)
+    //Todas true!
+
+    //-----Algumas implementações-----
+    console.log(typeof String)
+    console.log(typeof Array)
+    console.log(typeof Object)
+
+    String.prototype.reverse = function(){
+        return this.split('').reverse().join('')
+    }
+    print("celia regina".reverse())
+
+    Array.prototype.first = function(){
+        return this[0]
+    }
+    print([1, 2, 3, 4, 5].first())
+
+    //-----simulando o NEW-----
+    function Aula(nome, videoID) {
+        this.nome = nome
+        this.videoID = videoID
+    }
+
+    const aula1 = new Aula('Bem Vindo', 123)
+    const aula2 = new Aula('Até Breve', 456)
+    console.log(aula1, aula2)
+    print(`Aula1 = ${Object.entries(aula1)} declarado com NEW.`)
+    print(`Aula2 = ${Object.entries(aula2)} declarado com NEW.`)
+
+    // simulando o new
+    function novo(f, ...params) {
+        const obj = {}
+        obj.__proto__ = f.prototype
+        f.apply(obj, params)
+        return obj
+    }
+
+    const aula3 = novo(Aula, 'Bem Vindo', 123)
+    const aula4 = novo(Aula, 'Até Breve', 456)
+    console.log(aula3, aula4)
+    print(`Aula3 = ${Object.entries(aula3)} declarado com NOVO.`)
+    print(`Aula4 = ${Object.entries(aula4)} declarado com NOVO.`)
+
+
+    
+
+
+
+
+</script>
+</body>
+</html>

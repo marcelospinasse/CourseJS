@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Call Back</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>Call Back:</h1>
+    <p id="pList"></p>
+<script>
+    //Function "print" bellow replaces documento.write that has issues in browsers!
+    // Os ... faz com que seja possível fazer esta função varias vezes usando multiplos argumentos - não só t 
+    function print(...t){
+        var p = document.createElement("p")
+        var texto = document.createTextNode(t)
+        p.appendChild(texto)
+        document.getElementById("pList").appendChild(p)
+    }
+    // print(`  ${ }.`)
+
+    const fabricantes = ["Mercedes", "Audi" , "BMW"]
+
+    function imprimir(nome, indice) {
+        print(`${indice + 1} - ${nome}`)
+    }
+
+    fabricantes.forEach(imprimir)
+
+    //com uma arrow function
+    fabricantes.forEach(fabrics => print(fabrics))
+
+    // --------------------------------------------
+    const notas = [7.7, 6.5, 5.2, 8.9, 3.6, 7.1, 9.0]
+    
+    //Sem callBack
+    let notasBaixas = []
+    for (let i in notas) {
+        if(notas[i] < 7){
+            notasBaixas.push(notas[i])
+        }
+    }
+    for (let i in notasBaixas) {print(notasBaixas[i])}
+    
+    //Com callBack e usanso filter
+    notasBaixas2 = notas.filter(function(nota){
+        return nota < 7
+    })
+    print(notasBaixas2)
+
+    //Com callBack e arrow function e filter
+    notasBaixas3 = notas.filter (nota => nota < 7)
+    print(notasBaixas3)
+
+    //Disparanto um evento no browser
+    document.getElementsByTagName("body")[0].onclick = function (e) {
+        print("O evento ocorreu!!!")
+    }
+
+
+
+    
+
+</script>
+</body>
+</html>

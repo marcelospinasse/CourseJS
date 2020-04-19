@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get and Set</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>Getter and Setter:</h1>
+    <p id="pList"></p>
+    <p id="demo"></p>
+
+<script src="printBrowser.js"> //funcao Print no arquivo printBrowser.js</script> 
+<script>
+    //Getter and Setter
+    const sequencia = {
+        _valor: 1,  // _ significa convencão que é unidade privada
+        get valor() {return this._valor++},
+        set valor(valor) {
+            if(valor > this._valor){
+                this._valor = valor
+            }
+    }
+}
+
+print(sequencia.valor, sequencia.valor, sequencia.valor)
+sequencia.valor = 1000
+print(sequencia.valor, sequencia.valor, sequencia.valor)
+sequencia.valor = 900
+print(sequencia.valor, sequencia.valor, sequencia.valor)
+
+
+</script>
+</body>
+</html>

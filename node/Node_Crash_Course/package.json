@@ -1,0 +1,23 @@
+{
+  "name": "node_crash_course",
+  "version": "1.0.0",
+  "description": "Node Crash Course",
+  "main": "index.js",
+  "scripts": {
+    "star": "node index",
+    "dev": "nodemon index"
+  },
+  "author": "Marcelo",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "Node Crash Course"
+  },
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "uuid": "^7.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

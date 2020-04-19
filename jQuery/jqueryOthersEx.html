@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+<body>
+    
+
+    <script type="text/javascript">
+
+    var customer = {
+        name: "Marcelo Spinassé",
+        speak: function(){
+            return "My name is " + this.name; 
+        },
+
+        address: {
+            street: "Av. jurema, 437",
+            city: "São Paulo",
+            state: "SP" 
+        }
+    };
+
+    document.write(customer.speak() + ". <br/>");
+    document.write(customer.name + " mora na " + customer.address.street + " em " + customer.address.city + ". <br/>");
+
+    customer.address.country = "Brasil"
+
+    document.write(customer.address.country  + ". <br/>");
+
+    //constructor
+
+    function Person (name, street){
+        this.name = name;
+        this.street = street;
+        this.info = function(){
+            return "My name is " + this.name + " and I leave in " + this.street + ". <br/>"; 
+            }
+    };
+    
+    //criando um novo objeto
+    var marceloSpinasse = new Person("Marcelo Spinasse" , "São Paulo");
+    document.write(marceloSpinasse.info());
+
+    //alterando os atributos de um objeto
+    function changeName(Person){
+        Person.name = "Mateo Spinassé";
+    }
+
+    changeName(marceloSpinasse);
+     document.write("Marcelo mudou o nome para " + marceloSpinasse.name + ". <br/>");
+
+     //prototype -adicional uma propriedade ou função a um objeto
+     // ---------- PROTOTYPE ----------
+     // Every function has a prototype property that contains an object
+     // You can add properties and methods to the prototype object
+     // and then when you call for them to execute they are used
+     // just as if they belonged to the object
+     function Mammal(name){
+        this.name = name;
+        this.GetInfo = function(){
+            return "The mammal name is " + this.name;
+        }
+     }
+
+    var grover = new Mammal("Grover");
+    document.write(grover.GetInfo() + ". <br/>");
+
+    Mammal.prototype.sound = "Grrrr";
+    Mammal.prototype.makeSound = function(){
+        return this.name + " faz " + this.sound + ". <br/>" 
+    }
+
+    document.write(grover.makeSound());
+
+    for(var prop in grover) {
+        document.write(prop + " : " + grover[prop] + "<br/>");
+    }
+
+    // Check which property belongs to prototype vs. the object grover
+    document.write("name Property of Grover : " + grover.hasOwnProperty("name") + "<br />");
+
+    document.write("sound Property of Grover : " + grover.hasOwnProperty("sound") + "<br />");
+
+    //You can add methods to built in JS objects
+    Array.prototype.inArray = function inArray(value){
+        for(i=0; i < this.length; i++){
+            if(this[i] == value){
+                return true;
+            }
+        }
+        return false;
+    }
+
+    var SampArray = [1, 2, 3, 4, 5];
+    document.write("3 in array is " + SampArray.inArray(3) + ". <br/>"); 
+    
+    // ---------- PRIVATE PROPERTIES ----------
+    // All properties in an object are public in that any function
+    // can modify or delete these properties.
+    // You can make properties private by declaring them as
+    // variables in a constructor
+
+
+    function SecretCode(){
+        var secretNum = 78;
+
+        this.guessNum = function(num){
+            if(num > secretNum){
+                return "Lower";
+            } else if (num < secretNum) {
+                return "Higher"
+            } else {
+                return "You guessed it!"
+            }
+        }
+
+        this.getNum = function(){
+            secretNum = 150;
+            for(i=0; i!= secretNum ; i++){
+                if(i = secretNum) 
+                 {return secretNum};
+            }
+            
+        }
+
+    };
+
+    var secret = new SecretCode();
+    
+    document.write("Value of SecretNumber : " + secret.secretNum + ". <br/>");
+    document.write("Value of SecretNumber is 30? - Is " + secret.guessNum(30) + ". <br/>");
+    document.write("Value of SecretNumber is 80? - Is " + secret.guessNum(80) + ". <br/>");
+    document.write("Value of SecretNumber is 78? " + secret.guessNum(78) + ". <br/>");
+    document.write("Value of SecretNumber got by a FOR loop is " + secret.getNum() + ". <br/>");
+
+    // ---------- GETTERS AND SETTERS ----------
+    // Getters and Setters can protect data, or provide useful
+    // ways to set its value
+    // I'll show you a bunch of getters and setters you may come
+    // in contact with
+
+
+    var address = {
+        street: "No Street",
+        city: "No City",
+        state: "No State",
+     
+        get  getAddress(){
+            return this.street + ", " + this.city + ", " + this.state;
+        },
+
+        set setAddress(theAddress){
+            var parts = theAddress.toString().split(", ");
+            this.street = parts[0] || "";
+            this.city = parts[1] || "";
+            this.state = parts[2] || "";
+        }
+
+    }
+
+    address.setAddress = "Av Jurema, Sao Paulo, SP";
+
+    document.write("Address:" + address.getAddress + ". <br/>");
+    document.write("City: " + address.city + ". <br/>");
+
+    // ---------- CONSTRUCTOR GETTERS AND SETTERS ----------
+        // Still used even though it is (Deprecated)
+        function Coordinates() {
+            this.latitude = 0.0;
+            this.longitude = 0.0;
+        }
+
+        // Define the getter with the prototype to assign it to with
+        // the property name and the getter function
+        Object.__defineGetter__.call(Coordinates.prototype, "getCoords", function () {
+            return "Lat: " + this.latitude + " Long: " + this.longitude;
+        });
+
+        // Define the setter with the prototype to assign it to with
+        // the property name and the setter function
+        Object.__defineSetter__.call(Coordinates.prototype, "setCoords", function (coords) {
+            var parts = coords.toString().split(", ");
+            this.latitude = parts[0] || '';
+            this.longitude = parts[1] || '';
+        });
+
+        var testCoords = new Coordinates();
+
+        testCoords.setCoords = "40.71, 74.00";
+
+        document.write("Coordinates : " + testCoords.getCoords + "<br />");
+
+        // ---------- GETTERS AND SETTERS WITH DEFINEPROPERTY ----------
+        function Point() {
+            this.xPos = 0;
+            this.yPos = 0;
+        }
+
+    // Use defineProperty to set getters and setters
+    // Pass the prototype to attach to along with the property name
+    // and define the functions to associate with get and set
+    // Na declaração abaixo, "pointsPos" é o nome do objeto que será usado no 
+    // final para resgatar os valores.
+    Object.defineProperty(Point.prototype, "pointPos", {
+        get: function(){
+            return "X: " + this.xPos + " Y: " + this.yPos;
+        }, 
+        set: function(thePoint){
+            var parts = thePoint.toString().split(", ");
+            this.xPos = parts[0] || "";
+            this.yPos = parts[1] || "";
+        }
+    });
+
+    var myCords = new Point();
+    myCords.pointPos = "700 , 400";
+    document.write("Point position " + myCords.pointPos + ". <br/>");
+
+    // ---------- ECMASCRIPT 5.1 GETTERS AND SETTERS ----------
+    var Circle = function (radius){
+        this.valorRadius = radius;
+    }
+
+    Circle.prototype = {
+        set radius(radius) {this.valorRadius = radius;},
+        //porque preciso definir duas vezes que valorRadius = radius ???
+        get radius() {return this.valorRadius;},
+        get area() {return Math.PI * (this.valorRadius * this.valorRadius);}
+
+    };
+
+    var circ = new Circle(10);
+    // circ.radius = 15;
+
+    document.write("A circle with  radius " + circ.radius + " has an area of " + circ.area.toFixed(2) + ". <br/>");
+
+    // ---------- INHERITANCE ----------
+    // When we ask for a property if it isn't found in the main object
+    // then it is searched for in the prototype object. We are able
+    // to inherit methods and variables from any object in a
+    // chain of objec
+
+    function Animal(){
+        this.name = "Animal";
+    // toString is a function in the main Object that every
+    // object inherits from
+        this.toString = function(){
+            return "My name is " + this.name;
+        };
+    }
+
+    function Canine(){
+        this.name = "Canine";
+    }
+
+    function Wolf(){
+        this.name = "Wolf";
+    }
+
+    // Overwrite the prototype for Canine and Wolf
+    Canine.prototype = new Animal();
+    Wolf.prototype = new Canine();
+
+    // After you overwrite prototype its constructor points to the
+    // main object object so you have to reset the constructor after 
+    Canine.prototype.constructor = Canine;
+    Wolf.prototype.constructor = Wolf;
+
+    var arcticWolf = new Wolf();
+ 
+    // Wolf inherits toString from Animal
+    document.write(arcticWolf.toString() + ". <br/>");
+
+    document.write("Wolf instance of Animal : " + (arcticWolf instanceof Animal) + "<br />");
+
+    Animal.prototype.sound = "Grrrrr";
+    Animal.prototype.getSound = function(){
+        return this.name + " says " + this.sound;
+    }
+
+    Canine.prototype.sound = "Wold Canine";
+    Wolf.prototype.sound = "Grrrr Arctic Wold";
+
+    document.write("Wolf does " + arcticWolf.sound + ". <br/>");
+    // More often then not it makes more sense to just inherit the
+        // prototype to speed up the lookup process
+
+    function Rodent() {
+        this.name = "Rodent";
+    }
+
+    function Rat() {
+        this.name = "Rat";
+    }
+
+    Rodent.prototype = new Animal();
+    Rat.prototype = Rodent.prototype;
+    Rodent.prototype.constructor = Rodent;
+    Rat.prototype.constructor = Rat;
+
+    var caneRat = new Rat();
+
+    // Wolf inherits toString from Animal
+    document.write(caneRat.toString() + ". <br />");
+
+// ---------- INTERMEDIATE FUNCTION INHERITANCE ----------
+    function extend(Child, Parent){
+        var Temp = function(){};
+        Temp.prototype = Parent.prototype;
+        Child.prototype = new Temp();
+        Child.prototype.constructor = Child;
+    }
+
+    function Deer(){
+        this.name = "Deeer";
+        this.sound = "Snort";
+    }
+
+    extend(Deer, Animal);
+
+    var elk = new Deer();
+
+    document.write(elk.getSound() + ". <br/>");
+
+    // ------- outro animal -------
+    function Fish(){
+        this.name = "Fish&Chips";
+        this.sound = "Gloob"; 
+    }
+    extend(Fish, Animal)
+    var Baiacu = new Fish();
+    document.write(Baiacu.getSound() + ". <br/>");
+
+    //EC6
+    var addStuff = {
+        sum(num1, num2) {
+            return num1 + num2;
+        }
+    }
+    document.write("The sum is " + addStuff.sum(2,4) + ". <br/>");
+       
+        
+    // EC6 WAY
+    class Pointer{constructor(xPos, yPos) {
+            this.xPos = xPos;
+            this.yPos = yPos;
+        }
+
+        getPos(){
+                return "X: " + this.xPos + " Y: " + this.yPos;
+            }
+    }
+
+    var myCords = new Pointer(600, 300);
+      
+    document.write("Point position " + myCords.getPos() + ". <br/>");
+
+    // ----- MORE OOP IN JAVASCRIPT -----
+
+    // EC6 WAY
+    class Animals {
+        constructor(name) {
+            this.name = name;
+        }
+
+        toString() {
+            return "Animal is named " + this.name;
+        }
+
+        // We can create static functions as well
+        static getAnimal() {
+            return new Animals("No Name");
+        }
+
+    }
+
+    class Dog extends Animals {
+        constructor(name, owner) {
+
+            // We can call the super class now
+            super(name);
+            this.owner = owner;
+        }
+
+        toString() {
+
+            // You can call super class methods as well
+            return super.toString() + "<br />Dog is named " + this.name;
+        }
+    }
+
+    var rover = new Dog("Rover", "Paul");
+
+    document.write(rover.name + " is owned by " + rover.owner + "<br />");
+
+    document.write(rover.toString() + "<br />");
+
+    // Call the static function
+    var bowser = Animals.getAnimal();
+    document.write("Bowser info : " + bowser.toString() + "<br />");
+
+    // ---------- OBSERVER PATTERN ----------
+    // A single object notifies many objects (observers) when a
+    // state change occurs
+    var Observable = function () {
+        this.subscribers = [];
+    }
+
+    Observable.prototype = {
+        subscribe: function (subscriber) {
+            // Add the subscriber object to the list
+            this.subscribers.push(subscriber);
+        },
+        unsubscribe: function (unsubscriber) {
+
+            // Cycle through the subscriber array and delete
+            // the unsubscriber
+            for (i = 0; i < this.subscribers.length; i++) {
+                if (this.subscribers[i] === unsubscriber) {
+                    this.subscribers.splice(i, 1);
+
+                    // We assume it only subscribed once so we
+                    // leave after it is found
+                    return unsubscriber.name;
+                }
+            }
+        },
+        publish: function (data) {
+
+            // Cycle through all subscribers and send them the update
+            for (i = 0; i < this.subscribers.length; i++) {
+                this.subscribers[i].receiveData(data);
+            }
+        }
+    };
+
+    var OrganFanny = {
+        name: "Organ Fanny",
+        receiveData: function (data) {
+            document.write(this.name + " received your info : " + data + "<br />");
+        }
+    }
+
+    var BoldmanYaks = {
+        name: "Boldman Yaks",
+        receiveData: function (data) {
+            document.write(this.name + " received your info : " + data + "<br />");
+        }
+    }
+
+    // Add subscribers and alert them
+    observable = new Observable();
+    observable.subscribe(OrganFanny);
+    observable.subscribe(BoldmanYaks);
+    observable.publish('IBM at $145.30');
+
+    document.write(observable.unsubscribe(OrganFanny) + " Unsubscribed<br />");
+
+    observable.publish('IBM at $145.33');
+
+
+       
+    </script>
+
+</body>
+</html>

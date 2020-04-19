@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Media Queries - CSS Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /*Para resetar o CSS do style.css*/
+        *{background: local;
+        color:inherit;
+        font-size: inherit;}
+        /*-------------------------------*/
+        body{ background: yellow;}
+        .banner{background: blue; border-radius: 50px;}
+        .hello{color: white ; text-align: center; text-decoration: underline; text-transform: capitalize; }
+
+        /*Cuidado com os espaços com a declaração abaixo pois qualquer espaço para de funcionar*/
+        @media screen and (min-width:576px){
+            body{
+                background: violet;
+            }
+            .banner{background: steelblue;
+            }
+            .hello{
+                color: black; font-size: 60px;
+            }
+        }
+
+                @media screen and (min-width:768px){
+            body{
+                background: rgba(1, 6, 49,1);
+            }
+            .banner{background: rgb(16, 122, 87);
+            }
+            .hello{
+                color: rgb(133, 21, 21); font-size: 80px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-decoration: none;
+            }
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <!-- Header do Curso de HTML & CSS -->
+    <div class="header"><h1>Curso de HTML e CSS</h1></div>
+    <div class="menu"><a href="index.html">Home</a></div>
+    <!-- Header do Curso de HTML & CSS -->
+    <!-- Responsive Design, Styles on different Screens - Nobile Frist-->
+    
+    <div class="banner">
+        <h1 class="hello">Hey, I'm learning HTML e CSS</h1>
+    </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Start of this page */
+        
+        /*Para resetar o CSS do style.css*/
+        *{background: local;
+        color:inherit;
+        font-size: inherit;}
+
+        div{ width:  150px; height: 150px; 
+            justify-content: center; text-align: center;
+            display: inline-block;
+            border: dotted 0.5px;}
+
+        .one{background: linear-gradient(red , green);}
+        .five{background: linear-gradient(green , red);}
+        .four{background: linear-gradient(green , red, yellow, blue);}
+        .two{background: linear-gradient(150deg, green , red, yellow, blue);}
+        .three{background: linear-gradient(to top right, green , red, yellow, blue);}
+        .six{background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.9));}   
+        .seven{background: linear-gradient(to left, rgba(9, 47, 129, 0.4), rgba(21, 11, 163, 0.9));}   
+        .eight{background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0,0,0,0.9));}   
+ 
+ 
+        /*Background com linear gradiente sobre uma imagem*/
+        .folder_img{ background: linear-gradient(rgba(87, 87, 87, 0.1), rgba(226, 224, 224, 0.4)) , url("./images/foto3.jpeg");
+            display: flex;
+            width: 1000px ; height: 800px;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            background-repeat: no-repeat; 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color:rgb(20, 19, 20);
+            font-size: 80px;   }
+     
+
+        .banner_img{ background: linear-gradient(rgba(170, 52, 52, 0.1), rgba(102, 9, 9,    0.4)) , 
+            url("./images/foto4.jpeg")
+            center/cover no-repeat fixed; /*modo simplificado para 04 linhas abaixo*/
+            display: flex;
+            width: 1000px ; height: 800px;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            /* background-repeat: no-repeat; 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; */
+            color:rgb(151, 19, 70);
+            font-size: 80px;   }
+
+
+            /*https://www.colorzilla.com/gradient-editor/ 
+              gerador de gradientes completo, basta pegar o código CSS e aplicar*/
+
+            .colorzilla{
+                width: 1000px; height: 500px;
+
+                background: rgb(30,87,153);
+                background: -moz-linear-gradient(left,  rgba(30,87,153,1) 0%, rgba(44,34,181,1) 10%, rgba(41,137,216,1) 21%, rgba(44,34,181,1) 36%, rgba(32,124,202,1) 53%, rgba(44,34,181,1) 69%, rgba(32,124,202,1) 83%, rgba(44,34,181,1) 94%, rgba(125,185,232,1) 100%);
+                background: -webkit-linear-gradient(left,  rgba(30,87,153,1) 0%,rgba(44,34,181,1) 10%,rgba(41,137,216,1) 21%,rgba(44,34,181,1) 36%,rgba(32,124,202,1) 53%,rgba(44,34,181,1) 69%,rgba(32,124,202,1) 83%,rgba(44,34,181,1) 94%,rgba(125,185,232,1) 100%);
+                background: linear-gradient(to right,  rgba(30,87,153,1) 0%,rgba(44,34,181,1) 10%,rgba(41,137,216,1) 21%,rgba(44,34,181,1) 36%,rgba(32,124,202,1) 53%,rgba(44,34,181,1) 69%,rgba(32,124,202,1) 83%,rgba(44,34,181,1) 94%,rgba(125,185,232,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+
+            }
+
+        /* End of this page*/
+    </style>
+
+</head>
+<body>
+    <!-- Header do Curso de HTML & CSS -->
+    
+    <div class="one">One</div>
+    <div class="two">two</div>
+    <div class="three">three</div>
+    <div class="four">four</div>
+    <div class="five">five</div>
+    <div class="six">six</div>
+    <div class="seven">seven</div>
+    <div class="eight">eight</div>
+
+
+    <div class="folder_img">
+        <h1 class="h1folder">I'm a folder image!</h1>
+    </div>
+    <div class="banner_img">
+        <h1 class="Header">I'm a header image!</h1>
+    </div>
+
+    <div class="colorzilla" ></div>
+
+    <!-- Header do Curso de HTML & CSS -->
+
+
+
+</body>
+</html>

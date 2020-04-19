@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Arrow Function</title>
+</head>
+<style>
+*{
+    margin: 1px;
+    padding: 1px;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>Arrow Function:</h1>
+    <p id="pList"></p>
+<script>
+    //Function "print" bellow replaces documento.write that has issues in browsers!
+    // Os ... faz com que seja possível fazer esta função varias vezes usando multiplos argumentos - não só t 
+    function print(...t){
+        var p = document.createElement("p")
+        var texto = document.createTextNode(t)
+        p.appendChild(texto)
+        document.getElementById("pList").appendChild(p)
+    }
+    // print(`  ${ }.`)
+
+    let dobro1 = function(a){
+        return 2 * a
+    }
+
+    let dobro2 = (a) => {return 2 * a}
+
+    let dobro3 = a => 2 * a
+
+
+    print(dobro1(Math.PI))
+    print(dobro2(Math.PI))
+    print(dobro3(Math.PI))
+
+    // let ola = function() {
+    //     return "Ola!"
+    // }
+    let ola = () => "Ola..." //forma padrão. Possui um parametro indefinido vazio
+    print(ola())
+    ola = _ => "Ola!!!" //ou assim - possui um parametro indefinido vazio
+    print(ola())
+
+    //---------------------------------------------------------------
+    // function Pessoa() {
+    //         this.idade = 0
+    //         const self = this
+    //         setInterval(function () {
+    //             let age = self.idade++
+    //             print(self.idade)
+    //         }, 1000) 
+    //     }
+
+    function Pessoa() {  //mesmo exemplo anterior, porém com arrow function - o this não varia com quem está chamando neste caso com arrow function.
+            this.idade = 0
+            setInterval(() => {
+                this.idade++
+                print(this.idade)
+            }, 1000) 
+    }
+    Pessoa()
+
+
+</script>
+</body>
+</html>

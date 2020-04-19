@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./transition.css" />
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Play|Roboto|"
+		/>
+	</head>
+	<body>
+		<header>
+			<div class="menu-btn">
+				<span class="menu-btn-burger"> </span>
+				<div class="nav">
+					<ul class="menu-nav">
+						<li class="menu-nav-item">
+							<a href="index.html" class="menu-nav-link">Home</a>
+						</li>
+						<li class="menu-nav-item">
+							<a href="about.html" class="menu-nav-link">About Me</a>
+						</li>
+						<li class="menu-nav-item">
+							<a href="projects.html" class="menu-nav-link">My Projects</a>
+						</li>
+						<li class="menu-nav-item">
+							<a href="contacts.html" class="menu-nav-link">Contact ME</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+
+		<script>
+			const menuBtn = document.querySelector(".menu-btn");
+			const hamburger = document.querySelector(".menu-btn-burger");
+			let showMenu = false;
+
+			menuBtn.addEventListener("click", toggleMenu);
+
+			const nav = document.querySelector(".nav");
+			const menuNav = document.querySelector(".menu-nav");
+			const menuItem = document.querySelectorAll(".menu-nav-item");
+
+			var num = 1;
+
+			function toggleMenu() {
+				if (!showMenu) {
+					hamburger.classList.add("open");
+					nav.classList.add("open");
+					menuNav.classList.add("open");
+					menuItem.forEach((item) => item.classList.add("open"));
+					menuItem.forEach((item) => {
+						const delay = num * 0.07 + 0.12;
+						item.style.transitionDelay = `${delay}s`;
+						console.log(num);
+						console.log(delay);
+						num++;
+					});
+                    showMenu = true;
+                    num=1;
+				} else {
+					hamburger.classList.remove("open");
+					nav.classList.remove("open");
+					menuNav.classList.remove("open");
+					menuItem.forEach((item) => item.classList.remove("open"));
+					showMenu = false;
+				}
+			}
+		</script>
+	</body>
+</html>
+
+<!-- @for $i from 1 through 1 {
+        .menu-nav__item:nth-child(#{$i}) {
+            transition-delay: ($i * 0.1s) + 0.15s;
+        }
+    } -->
+<!--     
+    for (num = 1; num <= 4; num++) {
+        const delay = num * 0.1 + 0.55;
+        menuItem.style.transitionDelay(`${delay}s`);
+    } -->

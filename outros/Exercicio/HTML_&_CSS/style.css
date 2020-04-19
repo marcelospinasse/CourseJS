@@ -1,0 +1,27 @@
+*{  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: rgb(16, 34, 18);
+    font-size: 1rem;
+    background: rgb(145, 243, 145);
+}
+
+.menu a{
+    display: block;
+    text-decoration: none;
+    background-color: transparent;
+    color: rgb(4, 71, 4);}
+
+a:visited {
+  color: rgb(25, 133, 21);
+  background-color: transparent;
+  text-decoration: none;}
+
+a:hover {
+  color: rgb(11, 58, 15);
+  background-color: transparent;
+  text-decoration: underline;}
+
+a:active {
+  color: rgb(16, 34, 18);
+  background-color: transparent;
+  text-decoration: underline;}
+
+

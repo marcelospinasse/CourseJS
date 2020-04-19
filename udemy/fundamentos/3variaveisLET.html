@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>variáveis LET</title>
+</head>
+<style>
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:rgb(12, 14, 32);
+    background-color: beige;
+    font-size: 0.9em;
+}
+</style>
+<body>
+    <h1>variáveis com LET:</h1>
+<script>
+    //Com LET, no exemplo abaixo, dentro =2, fora = 1.
+    //Se o LET fosse "numero2", como ele não encontraria numero, ambos resultados seria 1, pois não encontrando dento, ele amplia o escopo e busca fora.
+    var numero = 1;
+        {
+            let numero = 2;
+            document.write("dentro = " + numero + ".</br>");
+        };
+        document.write("fora = " + numero + ".</br>");
+        
+    
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body{
+    background-image: url("../images/foto1.jpeg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    font-size: 62.5%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header ul li a:link,.header ul li a:visited .header ul li a:active{
+    text-decoration: none;
+}
+
+a:visited{
+    color: white;
+}
+
+.header{
+    width: 900px;
+    margin: auto;
+}
+
+.header ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: lighter;
+    text-shadow: 2px 2px 3px gray;
+    color: white;
+    text-transform: uppercase;
+}
+
+.header ul li a{
+    padding: 5px;
+    border-radius: 10%;
+}
+
+.header ul li:hover{
+    background-color: rgba(9, 57, 119, 0.3);
+}
+
+.menuWrapper{
+    text-align: right;
+    background-color: brown;
+    color: white;
+    padding: 2em;
+    font-family: 'Permanent Marker' , cursive;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.wrapper{
+    width: 900px;
+    font-size: 1.6em;
+    margin: 0 auto;
+    background-color: white;
+
+
+}
+
+main{
+    padding: 2em;
+    position: relative;
+}
+
+.art-img{
+    float: left;
+    margin: 10px;
+}
+
+h2{
+    margin-bottom: 1em;
+}
+
+hr{
+    margin: 10px;
+}
+
+.vert-nav{
+    list-style-type: none;
+    padding: 0px;
+}
+
+.vert-nav li{
+    display: block;
+    border-bottom: 1px dotted brown;
+    padding: 0.5em 0 0.5em 0.5em;
+}
+
+aside{
+    width: 200px;
+    float: right;
+    background-color: chocolate;
+    /* para fazer a barra lateral descer até o final da página: */
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
+
+}
+
+main{
+    float: left;
+    width: 500px;
+    background-color: white;
+}
+
+/* E para fazer conter a barra lateral de ir até muito abaixo: */
+.wrapper{
+    overflow: hidden;
+}
+
+footer{
+    clear: both;
+    background-color: brown;
+    height: 100px;
+    width: 900px;
+    margin: 0 auto;
+}
+
+.left-nav{
+    width: 200px;
+    float: left;
+    background-color: chocolate;
+    /* para fazer a barra lateral descer até o final da página: */
+    padding-bottom: 5000px;
+    margin-bottom: -5000px;
+
+}
+
+.left-nav li{
+    display: block;
+    border-bottom: 1px dotted brown;
+    padding: 0.5em 0 0.5em 0.5em;
+}
